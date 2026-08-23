@@ -21,20 +21,20 @@ export default function GetInvolvedPage() {
   return (
     <div className="space-y-16 pb-20 bg-[#F8FAFC]">
       
-      {/* DCP STANDARDIZED HERO BANNER */}
+      {/* HERO BANNER */}
       <section className="bg-white border-b border-slate-200 py-12 lg:py-16 shadow-xs">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4 text-center max-w-3xl mx-auto">
-          <div className="dcp-badge mx-auto">
-            <span className="h-2 w-2 rounded-full bg-[#00C853]" />
-            <span>SKIZA GROUND • VOLUNTEER MOBILIZATION</span>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4 text-center max-w-3xl">
+          <div className="inline-flex items-center gap-2 rounded-full bg-slate-100 border border-slate-200 px-3.5 py-1 text-xs font-extrabold text-[#00C853] uppercase tracking-wider mx-auto">
+            <UserCheck className="h-3.5 w-3.5" />
+            <span>GET INVOLVED</span>
           </div>
 
           <h1 className="font-heading text-4xl font-extrabold text-slate-900 sm:text-5xl">
-            Join Team <span className="dcp-gradient-heading">J.M. Gitau 2027</span>
+            Have something to say?
           </h1>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-            Be part of the grassroots movement transforming Naivasha Constituency across all 7 Wards under the Democracy for the Citizens Party (DCP).
+            Naivasha is a conversation, and every community has something worth hearing.
           </p>
         </div>
       </section>

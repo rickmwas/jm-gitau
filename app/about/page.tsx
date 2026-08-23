@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ShieldCheck, Users, Ear, Award, CheckCircle2, MapPin, HeartHandshake } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Users, Ear, CheckCircle2, MapPin, HeartHandshake, UserCheck } from 'lucide-react';
 import { CAMPAIGN_POSTS } from '@/lib/campaignData';
 
 export default function AboutPage() {
@@ -14,17 +14,17 @@ export default function AboutPage() {
       <section className="bg-white border-b border-slate-200 py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4 text-center max-w-3xl">
           
-          <div className="dcp-badge mx-auto">
-            <span className="h-2 w-2 rounded-full bg-[#00C853]" />
-            <span>SKIZA GROUND • LEADERSHIP PROFILE</span>
+          <div className="inline-flex items-center gap-2 rounded-full bg-slate-100 border border-slate-200 px-3.5 py-1 text-xs font-extrabold text-[#00C853] uppercase tracking-wider mx-auto">
+            <UserCheck className="h-3.5 w-3.5" />
+            <span>THE STORY</span>
           </div>
 
           <h1 className="font-heading text-4xl font-extrabold text-slate-900 sm:text-5xl">
-            About <span className="text-[#00C853]">J.M. Gitau</span>
+            Before the politics, there is the person.
           </h1>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-            A record of community engagement, servant leadership, and dedicated representation for the people of Naivasha Constituency under the Democracy for the Citizens Party (DCP).
+            J.M. Gitau&apos;s story is connected to the people and places that make Naivasha home — rooted in community work, local conversations, and everyday realities.
           </p>
         </div>
       </section>
@@ -39,7 +39,7 @@ export default function AboutPage() {
               <div className="relative h-full w-full overflow-hidden rounded-xl bg-slate-100">
                 <Image
                   src={`/${bioPhoto}`}
-                  alt="J.M. Gitau - Naivasha MP Candidate 2027"
+                  alt="J.M. Gitau - Naivasha 2027"
                   fill
                   className="object-cover"
                   priority
@@ -49,7 +49,7 @@ export default function AboutPage() {
                   <div className="flex items-center gap-2">
                     <span className="font-heading text-base font-extrabold text-slate-900">J.M. Gitau</span>
                   </div>
-                  <p className="text-xs text-[#8B4513] font-bold mt-0.5">Naivasha MP Candidate 2027 (DCP)</p>
+                  <p className="text-xs text-[#00C853] font-bold mt-0.5">Naivasha · 2027 (DCP)</p>
                 </div>
               </div>
             </div>
@@ -59,19 +59,19 @@ export default function AboutPage() {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 text-xs font-bold text-[#8B4513] uppercase tracking-wider">
               <Ear className="h-4 w-4 text-[#00C853]" />
-              <span>SKIZA WAKENYA PHILOSOPHY</span>
+              <span>THE JOURNEY</span>
             </div>
             
             <h2 className="font-heading text-3xl font-extrabold text-slate-900 leading-tight sm:text-4xl">
-              Rooted In Community, Driven By Ground Truth.
+              Every place has a story. So does every person.
             </h2>
             
             <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
               <p>
-                J.M. Gitau has dedicated years to active community service across Naivasha Constituency. From listening to agricultural families in Maiela and Sero Moi Ndabi, to engaging small market traders in Biashara Ward and youth groups along the Mai Mahiu transit corridor, his approach to public leadership is defined by direct accessibility and ground-level presence.
+                J.M. Gitau has spent years working alongside communities across Naivasha Constituency. From agricultural families in Maiela and Sero Moi Ndabi to market traders in Biashara Ward and youth along the Mai Mahiu transit corridor, his connection to Naivasha comes from being present on the ground.
               </p>
               <p>
-                Naivasha is one of Kenya&apos;s most dynamic economic constituencies — housing flower farm workers, fishermen along Lake Naivasha, geothermal energy pioneers in Olkaria, logistics enterprises in Mai Mahiu, and vibrant trading communities. J.M. Gitau&apos;s 2027 vision unites all 7 Wards under an equitable developmental agenda centered on youth TVET scholarships, water infrastructure, accessible bursaries, and rural feeder roads.
+                Naivasha is a diverse constituency — home to flower farm workers, fishermen along Lake Naivasha, geothermal energy communities in Olkaria, logistics hubs in Mai Mahiu, and growing trading centers. J.M. Gitau&apos;s commitment is simple: listening first, focusing on the basics, and ensuring every ward is represented fairly.
               </p>
             </div>
 
@@ -82,10 +82,10 @@ export default function AboutPage() {
                   <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-[#00C853] font-bold">
                     <ShieldCheck className="h-5 w-5" />
                   </div>
-                  <h3 className="font-heading text-sm font-bold text-slate-900">Transparent Governance</h3>
+                  <h3 className="font-heading text-sm font-bold text-slate-900">Fair Representation</h3>
                 </div>
                 <p className="text-xs text-slate-600 font-medium leading-relaxed">
-                  Fair and equitable bursary distribution for all students without bias or nepotism.
+                  Transparent bursary distribution and fair resource allocation for all students across all wards.
                 </p>
               </div>
 
@@ -94,92 +94,29 @@ export default function AboutPage() {
                   <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-amber-50 text-[#8B4513] font-bold">
                     <Users className="h-5 w-5" />
                   </div>
-                  <h3 className="font-heading text-sm font-bold text-slate-900">Inclusive Empowerment</h3>
+                  <h3 className="font-heading text-sm font-bold text-slate-900">Community Focus</h3>
                 </div>
                 <p className="text-xs text-slate-600 font-medium leading-relaxed">
-                  Direct support for youth TVET skills, women chamas, and local business startups.
+                  Direct support for youth skills, local trader groups, water points, and rural access roads.
                 </p>
               </div>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-4 flex flex-wrap gap-4">
               <Link
                 href="/agenda"
-                className="inline-flex items-center gap-2 rounded-xl bg-[#00C853] px-6 py-3.5 text-sm font-bold text-white shadow-md hover:bg-[#00E676] transition-all"
+                className="inline-flex items-center gap-2 rounded-xl bg-[#00C853] px-6 py-3.5 text-sm font-bold text-white shadow-md shadow-[#00C853]/20 hover:bg-[#00E676] hover:text-slate-950 transition-all"
               >
-                Read Manifesto Pillars <ArrowRight className="h-4 w-4" />
+                Read the agenda <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link
+                href="/updates"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 hover:border-[#00C853] hover:text-[#00C853] shadow-xs transition-all"
+              >
+                See ground record
               </Link>
             </div>
-          </div>
 
-        </div>
-      </section>
-
-      {/* FIELD ENGAGEMENT RECORD HIGHLIGHT */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-slate-200 bg-white p-8 lg:p-12 space-y-8 shadow-xs">
-          
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-100 pb-6">
-            <div>
-              <span className="text-xs font-extrabold tracking-widest text-[#00C853] uppercase">FIELD ARCHIVE</span>
-              <h2 className="font-heading text-2xl font-extrabold text-slate-900 mt-1 sm:text-3xl">
-                Constituency Presence & Service
-              </h2>
-            </div>
-            <Link
-              href="/media"
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#00C853] hover:text-[#00E676]"
-            >
-              Explore 58 Photo Records <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 items-center">
-            <div className="lg:col-span-6 space-y-4">
-              <h3 className="font-heading text-xl font-bold text-slate-900">
-                Listening Across All 7 Naivasha Wards
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
-                Whether attending church services in Sero Moi Ndabi, meeting local clergy, engaging boda boda operators in Naivasha town, or inspecting water borehole progress in Mai Mahiu, J.M. Gitau believes that constituency leadership requires constant, unvarnished ground feedback.
-              </p>
-              <div className="grid grid-cols-2 gap-3 pt-2">
-                <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-                  <CheckCircle2 className="h-4 w-4 text-[#00C853]" />
-                  <span>Biashara Ward</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-                  <CheckCircle2 className="h-4 w-4 text-[#00C853]" />
-                  <span>Hell&apos;s Gate Ward</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-                  <CheckCircle2 className="h-4 w-4 text-[#00C853]" />
-                  <span>Lakeview Ward</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-                  <CheckCircle2 className="h-4 w-4 text-[#00C853]" />
-                  <span>Mai Mahiu Ward</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-                  <CheckCircle2 className="h-4 w-4 text-[#00C853]" />
-                  <span>Maiela Ward</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-                  <CheckCircle2 className="h-4 w-4 text-[#00C853]" />
-                  <span>Olkaria Ward</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:col-span-6">
-              <div className="relative aspect-[16/10] overflow-hidden rounded-xl bg-slate-100 border border-slate-200">
-                <Image
-                  src={`/${secondaryPhoto}`}
-                  alt="J.M. Gitau Field Engagement"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
           </div>
 
         </div>

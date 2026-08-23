@@ -22,46 +22,46 @@ const JOURNEY_LOCATIONS: JourneyLocation[] = [
     id: 'maiela',
     name: 'Sero Moi Ndabi',
     ward: 'Maiela Ward',
-    tagline: 'Standing with local families & rural agricultural communities',
+    tagline: 'A conversation is where many journeys begin.',
     post: CAMPAIGN_POSTS.find(p => p.post_id === '1563591385781111') || CAMPAIGN_POSTS[0],
-    issue: 'Borehole water access, agricultural feeder roads, and community support',
+    issue: 'Water supply, agricultural feeder roads, and rural community support',
     agendaLink: '/agenda#water-infrastructure'
   },
   {
     id: 'mai-mahiu',
     name: 'Mai Mahiu Gateway',
     ward: 'Mai Mahiu Ward',
-    tagline: 'Empowering transit corridor traders & youth logistics hub',
+    tagline: 'The places are familiar. The conversations are different.',
     post: CAMPAIGN_POSTS.find(p => p.post_id === '1558895482917368') || CAMPAIGN_POSTS[1],
-    issue: 'Dry port logistics jobs, flood control drainage, and market security',
+    issue: 'Logistics opportunities, flood control drainage, and market security',
     agendaLink: '/agenda#youth-women-empowerment'
   },
   {
     id: 'lakeview',
     name: 'Lakeside Communities',
     ward: 'Lakeview Ward',
-    tagline: 'Supporting lake livelihoods & primary school infrastructure',
+    tagline: 'Listening to fishermen, families, and lakeside traders.',
     post: CAMPAIGN_POSTS.find(p => p.post_id === '1554701720003411') || CAMPAIGN_POSTS[2],
-    issue: 'Fishermen economic empowerment, educational bursary access, and lake ecosystem protection',
-    agendaLink: '/agenda#youth-tvet-education'
+    issue: 'Lakeside livelihoods, primary school infrastructure, and bursary access',
+    agendaLink: '/agenda#education-bursaries'
   },
   {
     id: 'biashara',
     name: 'Naivasha Town Center',
     ward: 'Biashara Ward',
-    tagline: 'Engaging MSME traders, boda boda operators & urban enterprise',
+    tagline: 'Everyday realities shaping life in Biashara Ward.',
     post: CAMPAIGN_POSTS.find(p => p.post_id === '1553515230122060') || CAMPAIGN_POSTS[3],
-    issue: 'Market shed modernization, street lighting, and transparent CDF bursary applications',
+    issue: 'Market shed modernization, street lighting, and business environment',
     agendaLink: '/agenda#youth-women-empowerment'
   },
   {
     id: 'olkaria',
     name: 'Geothermal Corridor',
     ward: 'Olkaria Ward',
-    tagline: 'Renewable energy partnerships & technical youth scholarships',
+    tagline: 'Looking ahead across Olkaria and surrounding communities.',
     post: CAMPAIGN_POSTS.find(p => p.post_id === '1552581446882105') || CAMPAIGN_POSTS[4],
-    issue: 'TVET technical training, clean energy community benefits, and health center equipping',
-    agendaLink: '/agenda#youth-tvet-education'
+    issue: 'Vocational training, local community benefits, and healthcare access',
+    agendaLink: '/agenda#education-bursaries'
   }
 ];
 
@@ -82,15 +82,15 @@ export default function JourneyScroll() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-slate-200">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#00C853]/10 border border-[#00C853]/30 px-3.5 py-1 text-xs font-bold text-[#00C853] uppercase tracking-wider mb-3">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#00C853]/10 border border-[#00C853]/30 px-3.5 py-1 text-xs font-extrabold text-[#00C853] uppercase tracking-wider mb-3">
               <Compass className="h-3.5 w-3.5" />
-              <span>SIGNATURE GROUND EXPERIENCE</span>
+              <span>THE JOURNEY</span>
             </div>
             <h2 className="font-heading text-3xl font-extrabold text-slate-900 sm:text-4xl lg:text-5xl tracking-tight">
-              Naivasha, <span className="text-[#00C853]">Through The Journey</span>
+              Naivasha, through the journey.
             </h2>
             <p className="mt-2 text-slate-600 text-sm sm:text-base max-w-2xl font-medium">
-              Explore authentic campaign media connecting local communities, real constituent conversations, ward issues, and J.M. Gitau&apos;s action agenda.
+              From one conversation to the next, the story takes shape on the ground.
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function JourneyScroll() {
               href="/updates"
               className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-xs font-bold text-slate-700 hover:border-[#00C853] hover:text-[#00C853] shadow-xs transition-all"
             >
-              All Ground Engagements <ArrowRight className="h-3.5 w-3.5" />
+              See full record <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>
         </div>

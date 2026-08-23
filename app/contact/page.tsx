@@ -22,20 +22,20 @@ export default function ContactPage() {
   return (
     <div className="space-y-16 pb-20 bg-[#F8FAFC]">
       
-      {/* DCP STANDARDIZED HERO BANNER */}
+      {/* HERO BANNER */}
       <section className="bg-white border-b border-slate-200 py-12 lg:py-16 shadow-xs">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4 text-center max-w-3xl mx-auto">
-          <div className="dcp-badge mx-auto">
-            <span className="h-2 w-2 rounded-full bg-[#00C853]" />
-            <span>SKIZA GROUND • GET IN TOUCH</span>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4 text-center max-w-3xl">
+          <div className="inline-flex items-center gap-2 rounded-full bg-slate-100 border border-slate-200 px-3.5 py-1 text-xs font-extrabold text-[#00C853] uppercase tracking-wider mx-auto">
+            <Mail className="h-3.5 w-3.5 text-[#00C853]" />
+            <span>CONTACT</span>
           </div>
 
           <h1 className="font-heading text-4xl font-extrabold text-slate-900 sm:text-5xl">
-            Contact the <span className="dcp-gradient-heading">Campaign</span>
+            Let&apos;s talk.
           </h1>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-            Reach out to J.M. Gitau&apos;s team, request a constituency meeting, or submit your community feedback under the Democracy for the Citizens Party (DCP).
+            Questions, ideas, invitations or something happening in your community — send a message.
           </p>
         </div>
       </section>

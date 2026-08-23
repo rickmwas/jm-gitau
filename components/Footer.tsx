@@ -13,7 +13,7 @@ export default function Footer() {
           
           {/* Brand Column */}
           <div className="space-y-4 md:col-span-1">
-            <div className="relative h-16 w-48 bg-slate-50 p-2 rounded-xl border border-slate-200 shadow-2xs">
+            <div className="relative h-14 w-44 bg-slate-50 p-2 rounded-xl border border-slate-200 shadow-2xs">
               <Image
                 src="/dcp-official-party-logo.png"
                 alt="Democracy for the Citizens Party Official Logo"
@@ -21,20 +21,24 @@ export default function Footer() {
                 className="object-contain p-1"
               />
             </div>
-            <p className="text-xs text-slate-600 leading-relaxed font-medium">
-              Servant leadership for Naivasha Constituency. Direct community engagements, youth TVET scholarships, water infrastructure, and equitable ward development under the Democracy for the Citizens Party (DCP).
-            </p>
+            <div>
+              <div className="font-heading text-sm font-extrabold text-slate-900">J.M. GITAU</div>
+              <div className="text-xs text-[#00C853] font-bold">Naivasha · 2027</div>
+              <p className="text-xs text-slate-600 mt-2 leading-relaxed font-medium">
+                Listening. Engaging. Looking ahead. A public record of communities, conversations, and priorities across Naivasha.
+              </p>
+            </div>
           </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="font-heading text-xs font-extrabold text-slate-900 tracking-wider uppercase mb-4">Navigation</h3>
             <ul className="space-y-2 text-xs font-medium">
-              <li><Link href="/about" className="hover:text-[#00C853] transition-colors">About J.M. Gitau</Link></li>
-              <li><Link href="/agenda" className="hover:text-[#00C853] transition-colors">Manifesto & 4 Pillars</Link></li>
-              <li><Link href="/updates" className="hover:text-[#00C853] transition-colors">Verified Field Reports</Link></li>
-              <li><Link href="/media" className="hover:text-[#00C853] transition-colors">Media Archive (58 Photos)</Link></li>
-              <li><Link href="/events" className="hover:text-[#00C853] transition-colors">Events & Town Halls</Link></li>
+              <li><Link href="/about" className="hover:text-[#00C853] transition-colors">The Story</Link></li>
+              <li><Link href="/agenda" className="hover:text-[#00C853] transition-colors">The Agenda</Link></li>
+              <li><Link href="/updates" className="hover:text-[#00C853] transition-colors">From the Ground</Link></li>
+              <li><Link href="/media" className="hover:text-[#00C853] transition-colors">The Record</Link></li>
+              <li><Link href="/events" className="hover:text-[#00C853] transition-colors">Calendar</Link></li>
             </ul>
           </div>
 

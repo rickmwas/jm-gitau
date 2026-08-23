@@ -22,12 +22,12 @@ import {
 
 const NAV_ITEMS = [
   { label: 'Home', path: '/', icon: User },
-  { label: 'About J.M.', path: '/about', icon: User },
-  { label: 'Manifesto', path: '/agenda', icon: FileText },
-  { label: 'Naivasha Wards', path: '/naivasha', icon: MapPin },
-  { label: 'Field Reports', path: '/updates', icon: Newspaper },
-  { label: 'Gallery', path: '/media', icon: ImageIcon },
-  { label: 'Events', path: '/events', icon: Calendar },
+  { label: 'The Story', path: '/about', icon: User },
+  { label: 'The Agenda', path: '/agenda', icon: FileText },
+  { label: 'Naivasha', path: '/naivasha', icon: MapPin },
+  { label: 'From the Ground', path: '/updates', icon: Newspaper },
+  { label: 'The Record', path: '/media', icon: ImageIcon },
+  { label: 'Calendar', path: '/events', icon: Calendar },
   { label: 'Contact', path: '/contact', icon: Mail },
 ];
 
@@ -77,7 +77,7 @@ export default function Navbar() {
               className="flex items-center gap-1 text-[#00E676] hover:underline font-semibold"
             >
               <Sparkles className="h-3 w-3" />
-              <span>Read 2027 Manifesto</span>
+              <span>Read the Agenda</span>
             </Link>
           </div>
         </div>

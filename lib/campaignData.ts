@@ -8,7 +8,7 @@ export const SITE = {
   partyFull: "Democracy for the Citizens Party",
   slogan: "Skiza Wakenya • Skiza Ground",
   electionYear: "2027",
-  tagline: "Action, Integrity & Ground-Level Service for Naivasha",
+  tagline: "Listening to Naivasha. Thinking beyond today.",
 };
 
 export const SOCIAL_LINKS = [
@@ -1293,11 +1293,11 @@ export const AGENDA_PILLARS: AgendaPillar[] = [
     id: 'education-bursaries',
     title: 'Education & CDF Bursaries',
     slug: 'education-bursaries',
-    tagline: 'Empowering the next generation of Naivasha leaders.',
-    description: 'Expanding access to secondary, vocational, and tertiary education through transparent, equitable NG-CDF bursary allocation and school infrastructure upgrades.',
+    tagline: 'Room to learn. A chance to move forward.',
+    description: 'Expanding access to secondary, vocational, and tertiary education through transparent bursary allocation and school infrastructure upgrades.',
     icon: 'GraduationCap',
     highlights: [
-      '100% fair and transparent bursary disbursement across all 8 Naivasha Wards.',
+      'Fair and transparent bursary disbursement across all Naivasha Wards.',
       'Constructing modern science labs and computer hubs in constituency secondary schools.',
       'Supporting TVET vocational training scholarships for Naivasha youth.'
     ]
@@ -1306,38 +1306,38 @@ export const AGENDA_PILLARS: AgendaPillar[] = [
     id: 'water-infrastructure',
     title: 'Clean Water & Infrastructure',
     slug: 'water-infrastructure',
-    tagline: 'Reliable water supply and modern roads for every household.',
-    description: 'Drilling community boreholes, piped water distribution networks in Maiela & Mai Mahiu, and upgrading agricultural feeder roads to connect farmers directly to markets.',
+    tagline: 'The basics matter.',
+    description: 'Community water points, piped water distribution networks in rural wards, and upgrading agricultural feeder roads to connect farmers directly to markets.',
     icon: 'Droplets',
     highlights: [
-      'Drilling solar-powered community boreholes in drought-prone areas.',
+      'Solar-powered community boreholes in drought-prone areas.',
       'Upgrading rural access roads to facilitate fresh produce transport from Naivasha farms.',
-      'Expanding street lighting in trading centers for safety and 24-hour economy.'
+      'Expanding street lighting in trading centers for safety and local commerce.'
     ]
   },
   {
     id: 'youth-women-empowerment',
-    title: 'Youth & Women Empowerment',
+    title: 'Youth & Enterprise',
     slug: 'youth-women-empowerment',
-    tagline: 'Creating jobs, micro-grants, and entrepreneurship opportunities.',
-    description: 'Direct constituency funding for youth startups, women self-help groups (chamas), sports tournaments, and digital skill hubs in Naivasha.',
+    tagline: 'Opportunity should not depend on who you know.',
+    description: 'Direct constituency support for youth enterprise, self-help groups, sports tournaments, and digital skill hubs across Naivasha.',
     icon: 'Users',
     highlights: [
       'Constituency Innovation & Digital Hubs for remote work and freelancing.',
-      'Capital seed grants for youth and women-led MSME businesses.',
+      'Capital seed grants for youth and women-led small businesses.',
       'Annual Naivasha Constituency Sports Cup fostering talent and unity.'
     ]
   },
   {
     id: 'healthcare-social-welfare',
-    title: 'Healthcare & Social Welfare',
+    title: 'Healthcare & Social Support',
     slug: 'healthcare-social-welfare',
-    tagline: 'Dignified healthcare access and support for vulnerable families.',
+    tagline: 'Good healthcare should be closer to home.',
     description: 'Strengthening Naivasha Level 4 Hospital, equipping rural dispensaries, and providing emergency medical support funds for vulnerable residents.',
     icon: 'HeartPulse',
     highlights: [
-      'Equipping ward health dispensaries with essential drugs and maternity equipment.',
-      'Organizing free constituency medical camps for senior citizens and mothers.',
+      'Equipping ward health dispensaries with essential supplies and maternity equipment.',
+      'Organizing constituency medical camps for senior citizens and families.',
       'Support programs for vulnerable households, widows, and persons living with disabilities.'
     ]
   }
