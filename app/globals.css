@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  /* Official DCP Kenya Brand Colors: Neon Green, Earthy Brown, Pure White */
+  --bg-light: #ffffff;
+  --bg-subtle: #f8fafc;
+  --bg-card: #ffffff;
+  --border-slate: #e2e8f0;
+  
+  --dcp-neon-green: #00c853;     /* Striking Neon Green */
+  --dcp-neon-green-hover: #00e676;
+  --dcp-brown: #8b4513;          /* Official DCP Skiza Wakenya Earthy Brown */
+  --dcp-brown-dark: #653816;
+  
+  --text-main: #0f172a;
+  --text-muted: #475569;
+}
+
+body {
+  background-color: var(--bg-subtle);
+  color: var(--text-main);
+  font-family: var(--font-inter), sans-serif;
+  min-height: 100vh;
+}
+
+.font-heading {
+  font-family: var(--font-jakarta), sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00c853;
+}
