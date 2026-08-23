@@ -31,109 +31,81 @@ export default function Home() {
   return (
     <div className="space-y-0 bg-[#F8FAFC]">
       
-      {/* 1. EXECUTIVE EDITORIAL HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-emerald-50/60 via-white to-slate-50 text-slate-900 pt-8 pb-20 lg:pt-16 lg:pb-32 border-b border-slate-200">
+      {/* 1. EXECUTIVE EDITORIAL HERO BANNER SECTION */}
+      <section className="relative overflow-hidden bg-white text-slate-900 min-h-[500px] lg:min-h-[560px] flex items-center border-b border-slate-200">
         
-        {/* Subtle Background Gradients */}
-        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#00C853]/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-1/3 w-[400px] h-[400px] bg-[#8B4513]/08 rounded-full blur-3xl pointer-events-none" />
-        
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-center">
+        {/* Full Wide Hero Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/jm-gitau-hero-banner.jpg"
+            alt="Hon. J.M. Gitau - Naivasha Constituency MP Candidate 2027"
+            fill
+            priority
+            className="object-contain object-right"
+          />
+        </div>
+
+        {/* Content Container Aligned Nicely on the Left */}
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-20 w-full">
+          <div className="max-w-xl lg:max-w-2xl space-y-6">
             
-            {/* Left Column Narrative */}
-            <div className="lg:col-span-7 space-y-6">
-              
-              {/* Official Party Badge */}
-              <div className="inline-flex items-center gap-3 rounded-full border border-emerald-500/30 bg-emerald-50 px-4 py-2 text-xs font-bold text-[#00C853] shadow-xs">
-                <div className="relative h-6 w-24 sm:w-28">
-                  <Image
-                    src="/dcp-official-party-logo.png"
-                    alt="Official DCP Logo"
-                    fill
-                    priority
-                    className="object-contain object-left"
-                  />
-                </div>
-                <span className="h-3 w-px bg-emerald-500/40" />
-                <span className="tracking-wider uppercase text-[11px] font-black text-[#00C853]">
-                  SKIZA WAKENYA • NAIVASHA 2027
-                </span>
+            {/* Official Party Badge */}
+            <div className="inline-flex items-center gap-3 rounded-full border border-emerald-500/30 bg-white/90 backdrop-blur-xs px-4 py-2 text-xs font-bold text-[#00C853] shadow-xs">
+              <div className="relative h-6 w-24 sm:w-28">
+                <Image
+                  src="/dcp-official-party-logo.png"
+                  alt="Official DCP Logo"
+                  fill
+                  priority
+                  className="object-contain object-left"
+                />
               </div>
-
-              {/* Main Headline */}
-              <h1 className="font-heading text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl leading-[1.12]">
-                Action-Driven Leadership <br className="hidden sm:inline" />
-                <span className="text-[#00C853]">Built On The Ground.</span>
-              </h1>
-
-              <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-medium">
-                J.M. Gitau&apos;s digital platform & public record of community engagement, ideas, and developmental vision for all 7 Wards of Naivasha Constituency under the Democracy for the Citizens Party (DCP).
-              </p>
-
-              {/* Primary Call to Actions */}
-              <div className="flex flex-wrap gap-4 pt-2">
-                <a
-                  href="#journey"
-                  className="inline-flex items-center gap-2 rounded-xl bg-[#00C853] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#00C853]/20 hover:bg-[#00E676] hover:text-slate-950 transition-all hover:scale-[1.02]"
-                >
-                  Explore The Journey <ArrowRight className="h-4 w-4" />
-                </a>
-                <Link
-                  href="/agenda"
-                  className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 hover:border-[#00C853] hover:text-[#00C853] shadow-xs transition-all"
-                >
-                  Read Manifesto
-                </Link>
-              </div>
-
-              {/* Key Constituency Facts */}
-              <div className="grid grid-cols-3 gap-6 pt-6 border-t border-slate-200">
-                <div>
-                  <div className="text-xl sm:text-2xl font-extrabold text-[#00C853]">7 Wards</div>
-                  <div className="text-xs font-medium text-slate-500">Naivasha Constituency</div>
-                </div>
-                <div>
-                  <div className="text-xl sm:text-2xl font-extrabold text-slate-900">DCP Ticket</div>
-                  <div className="text-xs font-medium text-slate-500">Skiza Wakenya</div>
-                </div>
-                <div>
-                  <div className="text-xl sm:text-2xl font-extrabold text-[#8B4513]">58+ Media</div>
-                  <div className="text-xs font-medium text-slate-500">Ground Engagements</div>
-                </div>
-              </div>
+              <span className="h-3 w-px bg-emerald-500/40" />
+              <span className="tracking-wider uppercase text-[11px] font-black text-[#00C853]">
+                SKIZA WAKENYA • NAIVASHA 2027
+              </span>
             </div>
 
-            {/* Right Column Official Branded Campaign Portrait */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-2xl border border-slate-200 bg-white p-3 shadow-xl">
-                <div className="relative aspect-[3/4] sm:aspect-[4/5] overflow-hidden rounded-xl bg-slate-900">
-                  <Image
-                    src="/jm-gitau-hero-official.jpg"
-                    alt="J.M. Gitau - Official DCP Campaign Portrait"
-                    fill
-                    priority
-                    className="object-cover object-top hover:scale-[1.02] transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-80" />
-                  
-                  {/* Photo Overlay Tag */}
-                  <span className="absolute top-3 left-3 rounded-md bg-[#00C853] px-3 py-1 text-xs font-extrabold text-white shadow-md uppercase tracking-wider">
-                    Official Campaign Portrait
-                  </span>
+            {/* Main Headline */}
+            <h1 className="font-heading text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl leading-[1.12]">
+              Action-Driven Leadership <br className="hidden sm:inline" />
+              <span className="text-[#00C853]">Built On The Ground.</span>
+            </h1>
 
-                  <div className="absolute bottom-3 left-3 right-3 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-md space-y-1">
-                    <div className="flex items-center justify-between text-xs text-slate-700 font-bold">
-                      <span className="inline-flex items-center gap-1.5 text-[#00C853]">
-                        <ShieldCheck className="h-4 w-4" /> Hon. J.M. Gitau
-                      </span>
-                      <span className="text-[#8B4513] bg-amber-50 px-2 py-0.5 rounded border border-amber-200 font-extrabold">DCP Candidate</span>
-                    </div>
-                    <p className="text-xs text-slate-600 font-medium leading-relaxed">
-                      Naivasha MP Candidate 2027 • Democracy for the Citizens Party (DCP)
-                    </p>
-                  </div>
-                </div>
+            {/* Subtitle */}
+            <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-xl font-semibold">
+              J.M. Gitau&apos;s digital platform & public record of community engagement, ideas, and developmental vision for all 7 Wards of Naivasha Constituency under the Democracy for the Citizens Party (DCP).
+            </p>
+
+            {/* Primary Call to Actions */}
+            <div className="flex flex-wrap gap-4 pt-2">
+              <a
+                href="#journey"
+                className="inline-flex items-center gap-2 rounded-xl bg-[#00C853] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#00C853]/20 hover:bg-[#00E676] hover:text-slate-950 transition-all hover:scale-[1.02]"
+              >
+                Explore The Journey <ArrowRight className="h-4 w-4" />
+              </a>
+              <Link
+                href="/agenda"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 hover:border-[#00C853] hover:text-[#00C853] shadow-xs transition-all"
+              >
+                Read Manifesto
+              </Link>
+            </div>
+
+            {/* Key Constituency Facts */}
+            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-slate-200/80 max-w-lg">
+              <div>
+                <div className="text-xl sm:text-2xl font-extrabold text-[#00C853]">7 Wards</div>
+                <div className="text-xs font-bold text-slate-600">Naivasha Constituency</div>
+              </div>
+              <div>
+                <div className="text-xl sm:text-2xl font-extrabold text-slate-900">DCP Ticket</div>
+                <div className="text-xs font-bold text-slate-600">Skiza Wakenya</div>
+              </div>
+              <div>
+                <div className="text-xl sm:text-2xl font-extrabold text-[#8B4513]">58+ Media</div>
+                <div className="text-xs font-bold text-slate-600">Ground Engagements</div>
               </div>
             </div>
 
