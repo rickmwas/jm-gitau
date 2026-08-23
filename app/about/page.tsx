@@ -79,8 +79,8 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 pt-2">
               <div className="rounded-xl border border-slate-200 bg-white p-5 space-y-2 shadow-xs">
                 <div className="flex items-center gap-2.5">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-50 text-[#00C853] font-bold">
-                    <ShieldCheck className="h-5 w-5" />
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#00C853] text-white shadow-xs">
+                    <ShieldCheck className="h-5 w-5 stroke-[2.5]" />
                   </div>
                   <h3 className="font-heading text-sm font-bold text-slate-900">Fair Representation</h3>
                 </div>
@@ -91,8 +91,8 @@ export default function AboutPage() {
 
               <div className="rounded-xl border border-slate-200 bg-white p-5 space-y-2 shadow-xs">
                 <div className="flex items-center gap-2.5">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-amber-50 text-[#8B4513] font-bold">
-                    <Users className="h-5 w-5" />
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#8B4513] text-white shadow-xs">
+                    <Users className="h-5 w-5 stroke-[2.5]" />
                   </div>
                   <h3 className="font-heading text-sm font-bold text-slate-900">Community Focus</h3>
                 </div>

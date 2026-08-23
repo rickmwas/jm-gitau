@@ -82,8 +82,8 @@ export default function JourneyScroll() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-slate-200">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#00C853]/10 border border-[#00C853]/30 px-3.5 py-1 text-xs font-extrabold text-[#00C853] uppercase tracking-wider mb-3">
-              <Compass className="h-3.5 w-3.5" />
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#00C853] px-3.5 py-1 text-xs font-extrabold text-white uppercase tracking-wider mb-3 shadow-xs">
+              <Compass className="h-3.5 w-3.5 stroke-[2.5]" />
               <span>THE JOURNEY</span>
             </div>
             <h2 className="font-heading text-3xl font-extrabold text-slate-900 sm:text-4xl lg:text-5xl tracking-tight">

@@ -28,23 +28,23 @@ export default function Home() {
   return (
     <div className="space-y-0 bg-[#F8FAFC]">
       
-      {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-white text-slate-900 min-h-[500px] lg:min-h-[560px] flex items-center border-b border-slate-200">
+      {/* 1. HERO SECTION — BESPOKE SEAMLESS CANVAS WITH PERFECT HEADROOM */}
+      <section className="relative overflow-hidden bg-white text-slate-900 min-h-[580px] lg:min-h-[660px] flex items-center border-b border-slate-200">
         
-        {/* Full Wide Hero Background Image */}
-        <div className="absolute inset-0 z-0">
+        {/* Fitted Custom Hero Background Image */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
           <Image
-            src="/jm-gitau-hero-banner.jpg"
+            src="/custom-hero-fitted.jpg"
             alt="J.M. Gitau - Naivasha 2027"
             fill
             priority
-            className="object-contain object-right"
+            className="object-cover object-[88%_18%] sm:object-[85%_15%] lg:object-[82%_12%]"
           />
         </div>
 
-        {/* Content Container */}
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-20 w-full">
-          <div className="max-w-xl lg:max-w-2xl space-y-6">
+        {/* Content Container Aligned inside max-w-7xl */}
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 lg:py-24 w-full">
+          <div className="max-w-xl lg:max-w-2xl space-y-7">
             
             {/* Candidate & Campaign Eyebrow */}
             <div className="inline-flex items-center gap-3 rounded-full border border-slate-200 bg-white/95 backdrop-blur-xs px-4 py-2 text-xs font-bold text-slate-800 shadow-xs">
@@ -179,8 +179,8 @@ export default function Home() {
                   className="bg-white rounded-2xl border border-slate-200 p-8 space-y-6 shadow-xs hover:border-[#00C853]/60 hover:shadow-lg transition-all"
                 >
                   <div className="flex items-start justify-between">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 border border-emerald-200 text-[#00C853]">
-                      <IconComp className="h-6 w-6" />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#00C853] text-white shadow-md shadow-[#00C853]/25">
+                      <IconComp className="h-6 w-6 stroke-[2.5]" />
                     </div>
                     <span className="font-mono text-xs font-bold text-slate-400">0{idx + 1}</span>
                   </div>

@@ -43,15 +43,15 @@ export default function AgendaPage() {
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-6">
                 <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 border border-emerald-200 text-[#00C853] shrink-0">
-                    <IconComp className="h-7 w-7" />
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#00C853] text-white shadow-md shadow-[#00C853]/25 shrink-0">
+                    <IconComp className="h-7 w-7 stroke-[2.5]" />
                   </div>
                   <div>
                     <span className="text-xs font-extrabold text-[#8B4513] uppercase tracking-wider">PRIORITY 0{idx + 1}</span>
                     <h2 className="font-heading text-2xl font-extrabold text-slate-900 sm:text-3xl">{pillar.title}</h2>
                   </div>
                 </div>
-                <span className="text-xs font-bold text-[#00C853] bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200 self-start sm:self-center">
+                <span className="text-xs font-extrabold text-[#008E3A] bg-emerald-100 px-3.5 py-1.5 rounded-full self-start sm:self-center">
                   {pillar.tagline}
                 </span>
               </div>
@@ -66,7 +66,9 @@ export default function AgendaPage() {
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
                   {pillar.highlights.map((h, hIdx) => (
                     <div key={hIdx} className="flex items-start gap-2.5 rounded-xl border border-slate-200 bg-slate-50 p-3.5 text-xs font-semibold text-slate-700">
-                      <CheckCircle2 className="h-4 w-4 text-[#00C853] shrink-0 mt-0.5" />
+                      <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#00C853] text-white shrink-0 mt-0.5 shadow-2xs">
+                        <CheckCircle2 className="h-3.5 w-3.5" />
+                      </div>
                       <span>{h}</span>
                     </div>
                   ))}
