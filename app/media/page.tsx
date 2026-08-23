@@ -1,135 +1,166 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import Image from 'next/image';
-import { X, Calendar, Eye } from 'lucide-react';
-import { CAMPAIGN_POSTS } from '@/lib/campaignData';
+import { Camera, Calendar, Tag, Eye, Filter } from 'lucide-react';
+import { CAMPAIGN_POSTS, CampaignPost } from '@/lib/campaignData';
+import MediaLightbox from '@/components/MediaLightbox';
+
+const CATEGORIES = [
+  'ALL',
+  'Church & Community',
+  'Campaign Rallies',
+  'Development & Projects',
+  'Tributes & Condolences',
+  'Press & Statements'
+];
+
+interface GalleryItem {
+  asset_id: string;
+  webPath: string;
+  category: string;
+  date: string;
+  post: CampaignPost;
+}
 
 export default function MediaPage() {
-  const [selectedAsset, setSelectedAsset] = useState<{
-    webPath: string;
-    rawPath: string;
-    category: string;
-    date: string;
-    caption: string;
-    postUrl?: string;
-    dimensions: { width: number; height: number };
-  } | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState('ALL');
+  const [activeItem, setActiveItem] = useState<GalleryItem | null>(null);
 
-  // Flatten all assets
-  const allAssets = CAMPAIGN_POSTS.flatMap((post) =>
-    post.assets.map((asset) => ({
-      assetId: asset.asset_id,
-      webPath: asset.paths.web,
-      rawPath: asset.paths.raw,
-      category: post.category,
-      date: post.date,
-      caption: post.message,
-      postUrl: post.post_url,
-      dimensions: asset.dimensions,
-    }))
-  );
+  // Extract all 58 individual WebP assets into a flat gallery index
+  const galleryItems = useMemo(() => {
+    const items: GalleryItem[] = [];
+    CAMPAIGN_POSTS.forEach((post) => {
+      post.assets.forEach((asset) => {
+        if (asset.paths.web) {
+          items.push({
+            asset_id: asset.asset_id,
+            webPath: asset.paths.web,
+            category: post.category,
+            date: post.date,
+            post
+          });
+        }
+      });
+    });
+    return items;
+  }, []);
+
+  const filteredItems = useMemo(() => {
+    if (selectedCategory === 'ALL') return galleryItems;
+    return galleryItems.filter(item => item.category === selectedCategory);
+  }, [galleryItems, selectedCategory]);
+
+  const activeIndex = activeItem ? filteredItems.findIndex(i => i.asset_id === activeItem.asset_id) : -1;
+
+  const handlePrev = () => {
+    if (activeIndex > 0) {
+      setActiveItem(filteredItems[activeIndex - 1]);
+    }
+  };
+
+  const handleNext = () => {
+    if (activeIndex < filteredItems.length - 1) {
+      setActiveItem(filteredItems[activeIndex + 1]);
+    }
+  };
 
   return (
     <div className="space-y-12 pb-20 bg-[#F8FAFC]">
       
-      {/* DCP STANDARDIZED HERO BANNER */}
-      <section className="bg-white border-b border-slate-200 py-12 lg:py-16 shadow-xs">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4 text-center max-w-3xl mx-auto">
+      {/* HERO BANNER */}
+      <section className="bg-white border-b border-slate-200 py-12 lg:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4 text-center max-w-3xl">
           <div className="dcp-badge mx-auto">
             <span className="h-2 w-2 rounded-full bg-[#00C853]" />
-            <span>SKIZA GROUND • VISUAL MEDIA ARCHIVE</span>
+            <span>AUTHENTIC MEDIA ARCHIVE</span>
           </div>
 
           <h1 className="font-heading text-4xl font-extrabold text-slate-900 sm:text-5xl">
-            Photo & <span className="dcp-gradient-heading">Media Gallery</span>
+            Campaign <span className="text-[#00C853]">Photo Gallery</span>
           </h1>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-            All 58 high-resolution web-optimized field photos captured across Naivasha Constituency under the Democracy for the Citizens Party (DCP).
+            Discover {galleryItems.length} web-optimized photo records of J.M. Gitau&apos;s community engagements, church services, town halls, and ward visits across Naivasha.
           </p>
         </div>
       </section>
 
-      {/* MEDIA GRID */}
+      {/* FILTER BUTTONS */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-          {allAssets.map((item) => (
-            <div
-              key={item.assetId}
-              onClick={() => setSelectedAsset(item)}
-              className="dcp-card group relative aspect-[4/3] overflow-hidden cursor-pointer shadow-sm"
-            >
-              <Image
-                src={`/${item.webPath}`}
-                alt={item.category}
-                fill
-                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-slate-950/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-between p-3.5">
-                <span className="self-start rounded-md bg-[#00C853] px-2.5 py-1 text-[10px] font-bold text-white shadow-xs">
-                  {item.category}
-                </span>
-                <div className="flex items-center justify-between text-xs text-white font-semibold">
-                  <span>{item.date}</span>
-                  <Eye className="h-4 w-4 text-[#00E676]" />
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="bg-white rounded-2xl border border-slate-200 p-4 flex flex-wrap items-center justify-between gap-3 shadow-xs">
+          <div className="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase">
+            <Filter className="h-4 w-4 text-[#00C853]" />
+            <span>Filter Category:</span>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            {CATEGORIES.map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => setSelectedCategory(cat)}
+                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                  selectedCategory === cat
+                    ? 'bg-[#00C853] text-white shadow-md'
+                    : 'bg-slate-50 text-slate-600 border border-slate-200 hover:text-slate-900 hover:bg-slate-100'
+                }`}
+              >
+                {cat} {cat === 'ALL' ? `(${galleryItems.length})` : ''}
+              </button>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* LIGHTBOX MODAL INSPECTOR */}
-      {selectedAsset && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 p-4 backdrop-blur-md"
-          onClick={() => setSelectedAsset(null)}
-        >
-          <div
-            className="relative flex max-h-[90vh] w-full max-w-4xl flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              type="button"
-              onClick={() => setSelectedAsset(null)}
-              className="absolute top-4 right-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-slate-900/80 text-white hover:bg-slate-800"
-            >
-              <X className="h-5 w-5" />
-            </button>
-
-            {/* Modal Image */}
-            <div className="relative flex max-h-[60vh] items-center justify-center bg-slate-950">
-              <div className="relative h-[55vh] w-full">
-                <Image
-                  src={`/${selectedAsset.webPath}`}
-                  alt={selectedAsset.category}
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-
-            {/* Modal Details */}
-            <div className="p-6 space-y-4 overflow-y-auto">
-              <div className="flex items-center justify-between">
-                <span className="rounded-md border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-bold text-[#00C853]">
-                  {selectedAsset.category}
-                </span>
-                <span className="text-xs font-semibold text-slate-500">{selectedAsset.date}</span>
-              </div>
-              <p className="text-sm font-semibold text-slate-800 leading-relaxed whitespace-pre-line">
-                {selectedAsset.caption}
-              </p>
-              <div className="rounded-xl bg-slate-50 border border-slate-200 p-3.5 font-mono text-xs text-slate-600 space-y-1">
-                <div><strong className="text-[#00C853]">Asset Path:</strong> {selectedAsset.webPath}</div>
-                <div><strong className="text-[#00C853]">Resolution:</strong> {selectedAsset.dimensions.width}x{selectedAsset.dimensions.height}px</div>
-              </div>
-            </div>
+      {/* GALLERY MASONRY/GRID */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {filteredItems.length === 0 ? (
+          <div className="text-center py-20 bg-white rounded-2xl border border-slate-200 text-slate-500 font-semibold text-sm">
+            No photos found in this category.
           </div>
-        </div>
-      )}
+        ) : (
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {filteredItems.map((item) => (
+              <div
+                key={item.asset_id}
+                onClick={() => setActiveItem(item)}
+                className="group relative cursor-pointer aspect-[4/3] overflow-hidden rounded-xl bg-slate-100 border border-slate-200 shadow-xs hover:shadow-xl transition-all"
+              >
+                <Image
+                  src={`/${item.webPath}`}
+                  alt={item.category}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-3 flex flex-col justify-between">
+                  <span className="self-start rounded-md bg-[#00C853] px-2 py-0.5 text-[10px] font-bold text-white shadow-xs">
+                    {item.category}
+                  </span>
+                  <div className="flex items-center justify-between text-[11px] text-slate-200 font-semibold">
+                    <span className="flex items-center gap-1">
+                      <Calendar className="h-3 w-3 text-[#00C853]" /> {item.date}
+                    </span>
+                    <Eye className="h-4 w-4 text-white" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+
+      {/* LIGHTBOX PREVIEW */}
+      <MediaLightbox
+        post={activeItem?.post || null}
+        isOpen={!!activeItem}
+        onClose={() => setActiveItem(null)}
+        onPrev={activeIndex > 0 ? handlePrev : undefined}
+        onNext={activeIndex < filteredItems.length - 1 ? handleNext : undefined}
+      />
 
     </div>
   );

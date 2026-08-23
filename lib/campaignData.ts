@@ -2,12 +2,13 @@
 
 export const SITE = {
   candidateName: "J.M. Gitau",
-  candidateFull: "Hon. Jane Kihara / J.M. Gitau",
+  candidateFull: "J.M. Gitau",
   constituency: "Naivasha Constituency",
   party: "DCP",
   partyFull: "Democracy for the Citizens Party",
+  slogan: "Skiza Wakenya • Skiza Ground",
   electionYear: "2027",
-  tagline: "Servant Leadership for Naivasha",
+  tagline: "Action, Integrity & Ground-Level Service for Naivasha",
 };
 
 export const SOCIAL_LINKS = [

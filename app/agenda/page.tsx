@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { GraduationCap, Droplets, Users, HeartPulse, CheckCircle2, ArrowRight, Ear } from 'lucide-react';
+import { GraduationCap, Droplets, Users, HeartPulse, CheckCircle2, ArrowRight, Ear, Send } from 'lucide-react';
 import { AGENDA_PILLARS } from '@/lib/campaignData';
 
 const PILLAR_ICONS: Record<string, any> = {
@@ -13,20 +13,20 @@ export default function AgendaPage() {
   return (
     <div className="space-y-16 pb-20 bg-[#F8FAFC]">
       
-      {/* DCP STANDARDIZED HERO BANNER */}
-      <section className="bg-white border-b border-slate-200 py-12 lg:py-16 shadow-xs">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4 text-center max-w-3xl mx-auto">
+      {/* PAGE HERO BANNER */}
+      <section className="bg-white border-b border-slate-200 py-12 lg:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4 text-center max-w-3xl">
           <div className="dcp-badge mx-auto">
             <span className="h-2 w-2 rounded-full bg-[#00C853]" />
             <span>SKIZA GROUND • CAMPAIGN MANIFESTO</span>
           </div>
 
           <h1 className="font-heading text-4xl font-extrabold text-slate-900 sm:text-5xl">
-            4 Pillars of <span className="dcp-gradient-heading">Action</span>
+            Manifesto & <span className="text-[#00C853]">4 Pillars of Action</span>
           </h1>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-            Our strategic developmental blueprint for Naivasha Constituency 2027–2032 under the Democracy for the Citizens Party (DCP).
+            J.M. Gitau&apos;s developmental roadmap for Naivasha Constituency (2027–2032) under the Democracy for the Citizens Party (DCP).
           </p>
         </div>
       </section>
@@ -39,7 +39,7 @@ export default function AgendaPage() {
             <div
               id={pillar.slug}
               key={pillar.id}
-              className="dcp-card p-8 sm:p-10 space-y-6 scroll-mt-24 shadow-md"
+              className="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 space-y-6 scroll-mt-24 shadow-xs hover:shadow-md transition-all"
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-6">
                 <div className="flex items-center gap-4">
@@ -62,7 +62,7 @@ export default function AgendaPage() {
 
               {/* Highlights */}
               <div className="space-y-3 pt-2">
-                <h3 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider">Key Commitments:</h3>
+                <h3 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider">Action Commitments:</h3>
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
                   {pillar.highlights.map((h, hIdx) => (
                     <div key={hIdx} className="flex items-start gap-2.5 rounded-xl border border-slate-200 bg-slate-50 p-3.5 text-xs font-semibold text-slate-700">
@@ -77,24 +77,30 @@ export default function AgendaPage() {
         })}
       </section>
 
-      {/* POLICY FEEDBACK CTA */}
+      {/* CITIZEN POLICY SUGGESTION CTA */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-emerald-200 bg-gradient-to-r from-emerald-500 via-emerald-600 to-[#8B4513] p-8 text-center text-white space-y-4 shadow-xl">
-          <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-emerald-100">
-            <Ear className="h-4 w-4" />
-            <span>SKIZA GROUND CITIZEN INPUT</span>
-          </div>
-          <h3 className="font-heading text-2xl font-extrabold sm:text-3xl">Have a Policy Suggestion for Naivasha?</h3>
-          <p className="text-emerald-50 text-xs sm:text-sm max-w-xl mx-auto font-medium">
-            We welcome ideas from all constituents in Biashara, Hell&apos;s Gate, Lakeview, Mai Mahiu, Maiela, Olkaria, and Naivasha East.
-          </p>
-          <div className="pt-2">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-xl bg-[#8B4513] px-6 py-3 text-sm font-bold text-white shadow-lg hover:bg-[#653816] transition-all"
-            >
-              Submit Feedback <ArrowRight className="h-4 w-4" />
-            </Link>
+        <div className="rounded-2xl border border-slate-200 bg-white p-8 lg:p-12 text-slate-900 space-y-6 shadow-md">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-2xl">
+              <div className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#00C853]">
+                <Ear className="h-4 w-4" />
+                <span>SKIZA GROUND CITIZEN FEEDBACK</span>
+              </div>
+              <h3 className="font-heading text-2xl font-extrabold text-slate-900 sm:text-3xl">
+                Have a Specific Policy Suggestion for Your Ward?
+              </h3>
+              <p className="text-slate-600 text-xs sm:text-sm font-medium leading-relaxed">
+                J.M. Gitau welcomes direct community input from constituents across Biashara, Hell&apos;s Gate, Lakeview, Mai Mahiu, Maiela, Olkaria, and Naivasha East.
+              </p>
+            </div>
+            <div>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-xl bg-[#00C853] px-6 py-3.5 text-xs font-bold text-white shadow-md hover:bg-[#00E676] hover:text-slate-950 transition-all whitespace-nowrap"
+              >
+                Submit Feedback <Send className="h-3.5 w-3.5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

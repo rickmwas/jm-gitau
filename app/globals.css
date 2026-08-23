@@ -1,33 +1,36 @@
 @import "tailwindcss";
 
 :root {
-  /* Official DCP Kenya Brand Colors: Neon Green, Earthy Brown, Pure White */
+  /* Official DCP Kenya Brand Colors: Neon Green, Earthy Brown, Pure White, Deep Charcoal */
   --bg-light: #ffffff;
   --bg-subtle: #f8fafc;
-  --bg-card: #ffffff;
-  --border-slate: #e2e8f0;
+  --bg-dark: #090d16;
+  --bg-dark-card: #131b2e;
   
-  --dcp-neon-green: #00c853;     /* Striking Neon Green */
-  --dcp-neon-green-hover: #00e676;
-  --dcp-brown: #8b4513;          /* Official DCP Skiza Wakenya Earthy Brown */
+  --dcp-green: #00c853;
+  --dcp-green-hover: #00e676;
+  --dcp-brown: #8b4513;
   --dcp-brown-dark: #653816;
   
-  --text-main: #0f172a;
+  --text-primary: #0f172a;
   --text-muted: #475569;
+  --border-subtle: #e2e8f0;
 }
 
 body {
   background-color: var(--bg-subtle);
-  color: var(--text-main);
-  font-family: var(--font-inter), sans-serif;
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .font-heading {
-  font-family: var(--font-jakarta), sans-serif;
+  font-family: var(--font-jakarta), system-ui, sans-serif;
 }
 
-/* DCP Signature Brand UI Utilities */
+/* DCP Accent Ribbon */
 .dcp-ribbon {
   height: 4px;
   width: 100%;
@@ -49,29 +52,33 @@ body {
   text-transform: uppercase;
 }
 
-.dcp-card {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
+/* Editorial Image Framing & Effects */
+.img-editorial {
+  position: relative;
+  overflow: hidden;
   border-radius: 1rem;
-  transition: all 0.25s ease-in-out;
 }
 
-.dcp-card:hover {
-  border-color: rgba(0, 200, 83, 0.5);
-  transform: translateY(-2px);
-  box-shadow: 0 20px 25px -5px rgba(0, 200, 83, 0.08), 0 8px 10px -6px rgba(0, 200, 83, 0.04);
+.img-editorial img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.dcp-gradient-heading {
-  background: linear-gradient(90deg, #00C853 0%, #059669 40%, #8B4513 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.img-editorial:hover img {
+  transform: scale(1.03);
 }
 
-/* Custom scrollbar */
+/* Scroll Storytelling Experience Utility Classes */
+.journey-section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Accessible Custom Scrollbars */
 ::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
   background: #f1f5f9;
@@ -83,3 +90,14 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #00c853;
 }
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
