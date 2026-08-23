@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Users, Heart, Share2, CheckCircle2, UserCheck } from 'lucide-react';
+import { Users, Heart, Share2, CheckCircle2, UserCheck, Ear } from 'lucide-react';
 import { NAIVASHA_WARDS } from '@/lib/campaignData';
 
 export default function GetInvolvedPage() {
@@ -19,55 +19,62 @@ export default function GetInvolvedPage() {
   };
 
   return (
-    <div className="space-y-16 py-12">
+    <div className="space-y-16 pb-20 bg-[#F8FAFC]">
       
-      {/* Header */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="space-y-4 text-center max-w-3xl mx-auto">
-          <span className="text-xs font-bold tracking-widest text-blue-400 uppercase">VOLUNTEER MOBILIZATION</span>
-          <h1 className="text-4xl font-extrabold text-white sm:text-5xl">Join Team J.M. Gitau 2027</h1>
-          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Be part of the grassroots movement transforming Naivasha Constituency across all 7 Wards.
+      {/* DCP STANDARDIZED HERO BANNER */}
+      <section className="bg-white border-b border-slate-200 py-12 lg:py-16 shadow-xs">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4 text-center max-w-3xl mx-auto">
+          <div className="dcp-badge mx-auto">
+            <span className="h-2 w-2 rounded-full bg-[#00C853]" />
+            <span>SKIZA GROUND • VOLUNTEER MOBILIZATION</span>
+          </div>
+
+          <h1 className="font-heading text-4xl font-extrabold text-slate-900 sm:text-5xl">
+            Join Team <span className="dcp-gradient-heading">J.M. Gitau 2027</span>
+          </h1>
+
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
+            Be part of the grassroots movement transforming Naivasha Constituency across all 7 Wards under the Democracy for the Citizens Party (DCP).
           </p>
         </div>
       </section>
 
-      {/* Grid */}
+      {/* MAIN GRID */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
           
-          {/* Volunteer Roles */}
+          {/* Volunteer Roles Breakdown */}
           <div className="lg:col-span-6 space-y-6">
-            <h2 className="text-2xl font-bold text-white">How You Can Participate</h2>
+            <h2 className="font-heading text-2xl font-extrabold text-slate-900">How You Can Participate</h2>
             
             <div className="space-y-4">
-              <div className="flex items-start gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600/10 text-blue-400 shrink-0">
+              <div className="dcp-card flex items-start gap-4 p-5 shadow-sm">
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-[#00C853] shrink-0 font-bold">
                   <Users className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-white">Ward Youth & Women Mobilizer</h3>
-                  <p className="text-xs text-slate-400 mt-1">Lead local outreach and voter sensitization in your polling center and village.</p>
+                  <h3 className="font-heading text-base font-extrabold text-slate-900">Ward Youth & Women Mobilizer</h3>
+                  <p className="text-xs text-slate-600 font-medium mt-1 leading-relaxed">Lead local outreach and voter sensitization in your polling center and village.</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600/10 text-blue-400 shrink-0">
+              <div className="dcp-card flex items-start gap-4 p-5 shadow-sm">
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-50 text-[#8B4513] shrink-0 font-bold">
                   <Share2 className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-white">Digital & Social Media Ambassador</h3>
-                  <p className="text-xs text-slate-400 mt-1">Share campaign updates, manifesto posts, and field photos across WhatsApp and Facebook groups.</p>
+                  <h3 className="font-heading text-base font-extrabold text-slate-900">Digital & Social Media Ambassador</h3>
+                  <p className="text-xs text-slate-600 font-medium mt-1 leading-relaxed">Share campaign updates, manifesto posts, and field photos across WhatsApp and Facebook groups.</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600/10 text-blue-400 shrink-0">
+              <div className="dcp-card flex items-start gap-4 p-5 shadow-sm">
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-[#00C853] shrink-0 font-bold">
                   <Heart className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-white">Community Event Organizer</h3>
-                  <p className="text-xs text-slate-400 mt-1">Help coordinate sports cups, town halls, and constituency medical camps.</p>
+                  <h3 className="font-heading text-base font-extrabold text-slate-900">Community Event Organizer</h3>
+                  <p className="text-xs text-slate-600 font-medium mt-1 leading-relaxed">Help coordinate sports cups, town halls, and constituency medical camps.</p>
                 </div>
               </div>
             </div>
@@ -75,49 +82,49 @@ export default function GetInvolvedPage() {
 
           {/* Form */}
           <div className="lg:col-span-6">
-            <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-8 space-y-6">
-              <h2 className="text-2xl font-bold text-white">Volunteer Registration</h2>
+            <div className="dcp-card p-8 space-y-6 shadow-md">
+              <h2 className="font-heading text-2xl font-extrabold text-slate-900">Volunteer Registration</h2>
               
               {signedUp ? (
-                <div className="rounded-xl border border-blue-500/30 bg-blue-500/10 p-6 text-center space-y-3">
-                  <UserCheck className="h-10 w-10 text-blue-400 mx-auto" />
-                  <h3 className="text-lg font-bold text-white">Welcome To Team J.M. Gitau!</h3>
-                  <p className="text-xs text-slate-300">
+                <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-8 text-center space-y-3">
+                  <UserCheck className="h-10 w-10 text-[#00C853] mx-auto" />
+                  <h3 className="font-heading text-lg font-bold text-slate-900">Welcome To Team J.M. Gitau!</h3>
+                  <p className="text-xs text-slate-600 font-medium">
                     Thank you for signing up to serve Naivasha Constituency. Our Ward coordinator will contact you directly via phone/WhatsApp.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSignup} className="space-y-4">
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1">Your Full Name *</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">Your Full Name *</label>
                     <input
                       type="text"
                       required
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                       placeholder="Jane Wanjiku"
-                      className="w-full rounded-xl border border-slate-800 bg-slate-950 px-4 py-2.5 text-sm text-white focus:border-blue-500 focus:outline-none"
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs font-semibold text-slate-900 focus:border-[#00C853] focus:outline-none"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1">Phone / WhatsApp Number *</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">Phone / WhatsApp Number *</label>
                     <input
                       type="tel"
                       required
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
                       placeholder="+254 700 000 000"
-                      className="w-full rounded-xl border border-slate-800 bg-slate-950 px-4 py-2.5 text-sm text-white focus:border-blue-500 focus:outline-none"
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs font-semibold text-slate-900 focus:border-[#00C853] focus:outline-none"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1">Naivasha Ward *</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">Naivasha Ward *</label>
                     <select
                       value={form.ward}
                       onChange={(e) => setForm({ ...form, ward: e.target.value })}
-                      className="w-full rounded-xl border border-slate-800 bg-slate-950 px-4 py-2.5 text-sm text-white focus:border-blue-500 focus:outline-none"
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs font-semibold text-slate-900 focus:border-[#00C853] focus:outline-none"
                     >
                       {NAIVASHA_WARDS.map((w) => (
                         <option key={w.id} value={w.name}>{w.name}</option>
@@ -126,11 +133,11 @@ export default function GetInvolvedPage() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1">Preferred Volunteer Role</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">Preferred Volunteer Role</label>
                     <select
                       value={form.role}
                       onChange={(e) => setForm({ ...form, role: e.target.value })}
-                      className="w-full rounded-xl border border-slate-800 bg-slate-950 px-4 py-2.5 text-sm text-white focus:border-blue-500 focus:outline-none"
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs font-semibold text-slate-900 focus:border-[#00C853] focus:outline-none"
                     >
                       <option value="Mobilizer & Youth Leader">Ward Mobilizer & Youth Leader</option>
                       <option value="Digital & Social Media">Digital & Social Media Ambassador</option>
@@ -140,7 +147,7 @@ export default function GetInvolvedPage() {
 
                   <button
                     type="submit"
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-blue-600/30 hover:bg-blue-500 transition-all"
+                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#00C853] px-6 py-3.5 text-xs font-bold text-white shadow-lg shadow-[#00C853]/25 hover:bg-[#00E676] hover:text-slate-950 transition-all"
                   >
                     Complete Registration <CheckCircle2 className="h-4 w-4" />
                   </button>
