@@ -104,33 +104,33 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Column Authentic Photograph Composition */}
+            {/* Right Column Official Branded Campaign Portrait */}
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl border border-slate-200 bg-white p-3 shadow-xl">
-                <div className="relative aspect-[4/5] sm:aspect-[1/1] lg:aspect-[4/5] overflow-hidden rounded-xl bg-slate-100">
+                <div className="relative aspect-[3/4] sm:aspect-[4/5] overflow-hidden rounded-xl bg-slate-900">
                   <Image
-                    src={`/${heroImage}`}
-                    alt="J.M. Gitau Community Engagement in Naivasha"
+                    src="/jm-gitau-hero-official.jpg"
+                    alt="J.M. Gitau - Official DCP Campaign Portrait"
                     fill
                     priority
-                    className="object-cover"
+                    className="object-cover object-top hover:scale-[1.02] transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-80" />
                   
                   {/* Photo Overlay Tag */}
-                  <span className="absolute top-3 left-3 rounded-md bg-[#00C853] px-2.5 py-1 text-[11px] font-bold text-white shadow-md">
-                    Authentic Campaign Record
+                  <span className="absolute top-3 left-3 rounded-md bg-[#00C853] px-3 py-1 text-xs font-extrabold text-white shadow-md uppercase tracking-wider">
+                    Official Campaign Portrait
                   </span>
 
-                  <div className="absolute bottom-3 left-3 right-3 p-3.5 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-md space-y-1">
-                    <div className="flex items-center justify-between text-xs text-slate-600 font-semibold">
-                      <span className="inline-flex items-center gap-1 text-[#00C853]">
-                        <MapPin className="h-3.5 w-3.5" /> Naivasha Constituency
+                  <div className="absolute bottom-3 left-3 right-3 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-md space-y-1">
+                    <div className="flex items-center justify-between text-xs text-slate-700 font-bold">
+                      <span className="inline-flex items-center gap-1.5 text-[#00C853]">
+                        <ShieldCheck className="h-4 w-4" /> Hon. J.M. Gitau
                       </span>
-                      <span className="text-slate-500">{heroPost?.date}</span>
+                      <span className="text-[#8B4513] bg-amber-50 px-2 py-0.5 rounded border border-amber-200 font-extrabold">DCP Candidate</span>
                     </div>
-                    <p className="text-xs text-slate-800 font-medium line-clamp-2 leading-relaxed">
-                      {heroPost?.message}
+                    <p className="text-xs text-slate-600 font-medium leading-relaxed">
+                      Naivasha MP Candidate 2027 • Democracy for the Citizens Party (DCP)
                     </p>
                   </div>
                 </div>
