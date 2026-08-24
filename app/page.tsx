@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { CAMPAIGN_POSTS, AGENDA_PILLARS, SITE } from '@/lib/campaignData';
 import JourneyScroll from '@/components/JourneyScroll';
+import { BrushUnderline, PaintSplashBackground, EarthPaintStroke, SideBrushLeft, SideBrushRight } from '@/components/BrushAccent';
 
 const PILLAR_ICONS: Record<string, any> = {
   GraduationCap,
@@ -26,14 +27,18 @@ export default function Home() {
   const featuredPosts = CAMPAIGN_POSTS.slice(0, 6);
 
   return (
-    <div className="space-y-0 bg-[#F8FAFC]">
+    <div className="space-y-0 bg-[#F8FAFC] relative overflow-hidden">
+      {/* Global Background Splash Watermark */}
+      <PaintSplashBackground className="absolute top-20 -left-20 w-[600px] h-[600px] text-[#00C853]/4 pointer-events-none z-0" />
+      <PaintSplashBackground className="absolute top-[35%] -right-20 w-[600px] h-[600px] text-[#8B4513]/4 pointer-events-none z-0" />
+      <PaintSplashBackground className="absolute bottom-[10%] -left-20 w-[600px] h-[600px] text-[#00C853]/4 pointer-events-none z-0" />
       
       {/* 1. HERO SECTION — DESKTOP CANVAS & BESPOKE MOBILE STACKING BANNER */}
       <section className="relative bg-white text-slate-900 border-b border-slate-200 overflow-hidden">
         
         {/* MOBILE BESPOKE HERO BANNER (Visible on sm:hidden viewports) */}
-        <div className="block sm:hidden bg-slate-950 text-white">
-          <div className="relative aspect-[4/3] w-full bg-slate-900 overflow-hidden">
+        <div className="block sm:hidden bg-white text-slate-900 border-b border-slate-200">
+          <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
             <Image
               src="/custom-hero-fitted.jpg"
               alt="J.M. Gitau - Naivasha 2027"
@@ -41,11 +46,11 @@ export default function Home() {
               priority
               className="object-cover object-[85%_10%]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
             
             {/* Top DCP Party Eyebrow Badge */}
             <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-              <div className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/90 backdrop-blur-md px-3.5 py-1.5 text-[11px] font-extrabold text-[#00E676] shadow-md">
+              <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/95 backdrop-blur-md px-3.5 py-1.5 text-[11px] font-extrabold text-[#00C853] shadow-md">
                 <div className="relative h-4 w-16">
                   <Image
                     src="/dcp-official-party-logo.png"
@@ -60,21 +65,21 @@ export default function Home() {
             </div>
 
             <div className="absolute bottom-4 left-4 right-4">
-              <span className="inline-block rounded-md bg-[#00C853] px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-slate-950">
+              <span className="inline-block rounded-md bg-[#00C853] px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-white shadow-xs">
                 OFFICIAL CAMPAIGN PLATFORM
               </span>
             </div>
           </div>
 
-          <div className="p-6 space-y-5 bg-slate-950">
+          <div className="p-6 space-y-5 bg-white">
             <div className="space-y-2">
-              <h1 className="font-heading text-3xl font-extrabold tracking-tight text-white leading-tight">
+              <h1 className="font-heading text-3xl font-extrabold tracking-tight text-slate-900 leading-tight">
                 Built on the ground.
               </h1>
-              <p className="text-base font-bold text-[#00E676] tracking-tight">
+              <p className="text-base font-bold text-[#00C853] tracking-tight">
                 Listening to Naivasha. Thinking beyond today.
               </p>
-              <p className="text-xs text-slate-300 leading-relaxed font-medium">
+              <p className="text-xs text-slate-600 leading-relaxed font-medium">
                 A living record of conversations, places, and priorities shaping J.M. Gitau&apos;s journey in Naivasha.
               </p>
             </div>
@@ -83,7 +88,7 @@ export default function Home() {
             <div className="space-y-3 pt-1">
               <a
                 href="#journey"
-                className="flex items-center justify-center gap-2 rounded-2xl bg-[#00C853] min-h-[48px] px-6 py-3.5 text-sm font-extrabold text-slate-950 shadow-lg shadow-[#00C853]/30 active:scale-[0.98] transition-all"
+                className="flex items-center justify-center gap-2 rounded-2xl bg-[#00C853] min-h-[48px] px-6 py-3.5 text-sm font-extrabold text-white shadow-lg shadow-[#00C853]/25 active:scale-[0.98] transition-all"
               >
                 <span>Explore the Journey</span>
                 <ArrowRight className="h-4 w-4" />
@@ -93,25 +98,25 @@ export default function Home() {
                 href="https://wa.me/254700000000?text=Hello%20Hon.%20J.M.%20Gitau%2C%20I%20am%20a%20resident%20of%20Naivasha..."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-2xl border border-slate-700 bg-slate-900 min-h-[48px] px-6 py-3.5 text-sm font-bold text-slate-200 active:scale-[0.98] transition-all"
+                className="flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 min-h-[48px] px-6 py-3.5 text-sm font-bold text-slate-800 active:scale-[0.98] transition-all"
               >
                 <span>Direct WhatsApp J.M. Gitau</span>
               </a>
             </div>
 
             {/* Mobile 3-Stat Horizontal Swipe Card */}
-            <div className="flex gap-3 overflow-x-auto pt-4 pb-2 no-scrollbar border-t border-slate-800">
-              <div className="min-w-[130px] rounded-xl bg-slate-900/90 border border-slate-800 p-3 shrink-0">
-                <div className="text-lg font-black text-[#00E676]">7 Wards</div>
-                <div className="text-[10px] font-semibold text-slate-400">Naivasha Constituency</div>
+            <div className="flex gap-3 overflow-x-auto pt-4 pb-2 no-scrollbar border-t border-slate-200">
+              <div className="min-w-[130px] rounded-xl bg-slate-50 border border-slate-200 p-3 shrink-0">
+                <div className="text-lg font-black text-[#00C853]">7 Wards</div>
+                <div className="text-[10px] font-semibold text-slate-500">Naivasha Constituency</div>
               </div>
-              <div className="min-w-[130px] rounded-xl bg-slate-900/90 border border-slate-800 p-3 shrink-0">
-                <div className="text-lg font-black text-white">DCP Ticket</div>
-                <div className="text-[10px] font-semibold text-slate-400">Skiza Wakenya</div>
+              <div className="min-w-[130px] rounded-xl bg-slate-50 border border-slate-200 p-3 shrink-0">
+                <div className="text-lg font-black text-slate-900">DCP Ticket</div>
+                <div className="text-[10px] font-semibold text-slate-500">Skiza Wakenya</div>
               </div>
-              <div className="min-w-[130px] rounded-xl bg-slate-900/90 border border-slate-800 p-3 shrink-0">
-                <div className="text-lg font-black text-[#00E676]">58+ Media</div>
-                <div className="text-[10px] font-semibold text-slate-400">Ground Engagements</div>
+              <div className="min-w-[130px] rounded-xl bg-slate-50 border border-slate-200 p-3 shrink-0">
+                <div className="text-lg font-black text-[#00C853]">58+ Media</div>
+                <div className="text-[10px] font-semibold text-slate-500">Ground Engagements</div>
               </div>
             </div>
 
@@ -120,6 +125,7 @@ export default function Home() {
 
         {/* DESKTOP HERO CANVAS (Visible on sm+ viewports) */}
         <div className="hidden sm:flex relative overflow-hidden min-h-[580px] lg:min-h-[660px] items-center">
+          <SideBrushRight className="absolute -right-10 top-16 w-44 h-[650px] pointer-events-none z-0 hidden lg:block opacity-85" />
           <div className="absolute inset-0 z-0 pointer-events-none">
             <Image
               src="/custom-hero-fitted.jpg"
@@ -149,9 +155,12 @@ export default function Home() {
                 </span>
               </div>
 
-              <h1 className="font-heading text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl leading-[1.12]">
-                Built on the ground.
-              </h1>
+              <div>
+                <h1 className="font-heading text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl leading-[1.12]">
+                  Built on the ground.
+                </h1>
+                <BrushUnderline className="w-48 h-3 text-[#00C853] mt-1.5" />
+              </div>
 
               <div className="space-y-2 max-w-xl">
                 <p className="text-lg sm:text-xl font-bold text-[#00C853] tracking-tight">
@@ -212,9 +221,12 @@ export default function Home() {
               <span>THE STORY</span>
             </div>
             
-            <h2 className="font-heading text-3xl font-extrabold text-slate-900 sm:text-4xl leading-tight">
-              Before the politics, there is the person.
-            </h2>
+            <div className="flex flex-col items-center">
+              <h2 className="font-heading text-3xl font-extrabold text-slate-900 sm:text-4xl leading-tight">
+                Before the politics, there is the person.
+              </h2>
+              <BrushUnderline className="w-44 h-3 text-[#00C853] mt-2" />
+            </div>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-medium">
               J.M. Gitau&apos;s story is connected to the people and places that make Naivasha home — rooted in community work, local conversations, and everyday realities.
@@ -233,8 +245,9 @@ export default function Home() {
       </section>
 
       {/* 4. THE AGENDA — THE WORK AHEAD (EDITORIAL HORIZONTAL FEATURE ROWS) */}
-      <section className="py-16 lg:py-24 bg-slate-100/70 border-b border-slate-200">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-16 lg:py-24 bg-slate-100/70 border-b border-slate-200 relative overflow-hidden">
+        <SideBrushLeft className="absolute -left-10 top-24 w-44 h-[650px] pointer-events-none z-0 hidden lg:block opacity-85" />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-slate-200">
             <div>

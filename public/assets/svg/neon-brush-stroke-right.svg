@@ -1,0 +1,15 @@
+<svg width="220" height="700" viewBox="0 0 220 700" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <!-- Organic Main Neon Green Paint Stroke -->
+  <path d="M280 10C200 90 125 180 140 320C155 460 110 560 180 680C210 720 250 730 290 700C310 670 300 580 280 440C260 300 300 140 280 10Z" fill="#00C853" fill-opacity="0.16"/>
+  <!-- Layered Brighter Highlight Stroke -->
+  <path d="M250 30C185 110 140 210 160 340C180 470 130 560 190 650C230 610 240 500 230 380C220 260 250 140 250 30Z" fill="#00E676" fill-opacity="0.12"/>
+  <!-- Textured Organic Bristle Lines -->
+  <path d="M170 140Q130 240 150 360T180 540" stroke="#00E676" stroke-opacity="0.2" stroke-width="3" stroke-dasharray="12 8" stroke-linecap="round"/>
+  <path d="M190 200Q140 300 165 420T195 600" stroke="#00C853" stroke-opacity="0.15" stroke-width="2" stroke-linecap="round"/>
+  <!-- Paint Drops & Splatters -->
+  <circle cx="105" cy="200" r="5" fill="#00C853" fill-opacity="0.25"/>
+  <circle cx="90" cy="280" r="3" fill="#00E676" fill-opacity="0.3"/>
+  <circle cx="115" cy="410" r="4.5" fill="#00C853" fill-opacity="0.25"/>
+  <circle cx="95" cy="540" r="6" fill="#00E676" fill-opacity="0.2"/>
+  <circle cx="135" cy="640" r="2.5" fill="#00C853" fill-opacity="0.35"/>
+</svg>

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
+import { Inter, Plus_Jakarta_Sans, Permanent_Marker, Caveat } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
@@ -14,6 +14,18 @@ const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
   variable: '--font-jakarta',
   weight: ['500', '600', '700', '800'],
+});
+
+const permanentMarker = Permanent_Marker({
+  subsets: ['latin'],
+  variable: '--font-marker',
+  weight: ['400'],
+});
+
+const caveat = Caveat({
+  subsets: ['latin'],
+  variable: '--font-caveat',
+  weight: ['700'],
 });
 
 export const metadata: Metadata = {
@@ -114,7 +126,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jakarta.variable} h-full scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} ${jakarta.variable} ${permanentMarker.variable} ${caveat.variable} h-full scroll-smooth`}>
       <head>
         <script
           type="application/ld+json"

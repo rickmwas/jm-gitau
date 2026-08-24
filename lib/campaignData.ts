@@ -84,7 +84,83 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
     },
     "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02LXMEXC8F2m1SAuxXEE4cGZb5tPi1JZQcbfQJQLFH2Dw1Gn4ktPpWAy9rYhFnzw35l",
     "video_url": null,
-    "assets": []
+    "assets": [
+      {
+        "asset_id": "2026-08-24_1567763948697188_02",
+        "post_id": "1567763948697188",
+        "file_hash": "c8491d3127e464a38d26271b2cd22919bf974149e9e38e41de706d4043e3ad52",
+        "dimensions": {
+          "width": 590,
+          "height": 395
+        },
+        "original_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/785711110_1567763532030563_8109328303238373839_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x1070&ctp=s590x590&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-jj0jh6LTHkQ7kNvwFPXRqA&_nc_oc=AdpBFPR44HOoxu9eRm7Gl2oNLkxz29up2Sf4wuhKLIuDledbgmSalNQKrtO6UgJU4V5WdLXns5HM5nmUNSPQIBtb&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=QXnElcIWUo6_MajysdkV_A&_nc_ss=72289&oh=00_AQEJzN6eOV5ounyxCiNTPSmjJbt32E0DSb5jdkET1FG4qw&oe=6A91ED2C",
+        "paths": {
+          "raw": "assets/raw/2026-08-24_1567763948697188_02.jpg",
+          "web": "assets/web/images/2026-08-24_1567763948697188_02.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-24_1567763948697188_02_thumb.webp"
+        }
+      },
+      {
+        "asset_id": "2026-08-24_1567763948697188_03",
+        "post_id": "1567763948697188",
+        "file_hash": "270746c744f55a2b8774a18b157c02e00fbaade585e306f95eab71682f30a9e1",
+        "dimensions": {
+          "width": 393,
+          "height": 590
+        },
+        "original_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/785364103_1567763588697224_856686155592781895_n.jpg?stp=dst-jpg_tt6&cstp=mx1365x2048&ctp=s590x590&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7gzNtaU0V6sQ7kNvwHZ4pfZ&_nc_oc=AdqToS-nC4EaWjnsmKmhrlA2Lk7uXWC0uIBrjBZNYJ2FkTgsITa3ZSv6gD9Mbsk56PyUVKNW13Pb9QMxXK5XpteZ&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=QXnElcIWUo6_MajysdkV_A&_nc_ss=72289&oh=00_AQEB18d2dQpeSt-owk1yzTryWU3rxiMO-bMS0CZs1A4ifQ&oe=6A91FDF0",
+        "paths": {
+          "raw": "assets/raw/2026-08-24_1567763948697188_03.jpg",
+          "web": "assets/web/images/2026-08-24_1567763948697188_03.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-24_1567763948697188_03_thumb.webp"
+        }
+      },
+      {
+        "asset_id": "2026-08-24_1567763948697188_04",
+        "post_id": "1567763948697188",
+        "file_hash": "10e3b50dd979791f49e355457a429dcce90b7f702d73b2d7e5078e3f3d321c05",
+        "dimensions": {
+          "width": 590,
+          "height": 393
+        },
+        "original_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/785584750_1567763642030552_4851017396228267291_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s590x590&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DsyA7xdpELQQ7kNvwH-88ik&_nc_oc=AdpVkRAgJ5Li0rTPJPik9Oo-Zy5MgtIcFIyWvA34InBwwGczVnXCBX54Dp24PEbK96LAhQUt9wSmgOsDL7l2g8MS&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=QXnElcIWUo6_MajysdkV_A&_nc_ss=72289&oh=00_AQE6aqrhdDWMtuu1OKAJsJL7LNk4JaeqZVv47yZU4VbDOA&oe=6A91EEC9",
+        "paths": {
+          "raw": "assets/raw/2026-08-24_1567763948697188_04.jpg",
+          "web": "assets/web/images/2026-08-24_1567763948697188_04.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-24_1567763948697188_04_thumb.webp"
+        }
+      },
+      {
+        "asset_id": "2026-08-24_1567763948697188_05",
+        "post_id": "1567763948697188",
+        "file_hash": "825bc54c8e1d67f09552467e7d72f553ce724585c664d75bcc8a382f77ba1160",
+        "dimensions": {
+          "width": 590,
+          "height": 443
+        },
+        "original_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/785035087_1567763708697212_2077840507069797656_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=s590x590&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ljzLqVCeuy8Q7kNvwHISbbI&_nc_oc=AdozQNF2FiZj29GWUDAwirZjgi7grjcm6wKEAQHotlWMq8kAWVNyOwSC6Gmt96UNYlaFTovDTWIs3HkxilJ9Wv49&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=QXnElcIWUo6_MajysdkV_A&_nc_ss=72289&oh=00_AQEu_tgQm4PS0A7mpb49BeuEvW0_qJ431fjc9EUfHbyaJQ&oe=6A91F680",
+        "paths": {
+          "raw": "assets/raw/2026-08-24_1567763948697188_05.jpg",
+          "web": "assets/web/images/2026-08-24_1567763948697188_05.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-24_1567763948697188_05_thumb.webp"
+        }
+      },
+      {
+        "asset_id": "2026-08-24_1567763948697188_06",
+        "post_id": "1567763948697188",
+        "file_hash": "b7aeeb6aff4adf63273174b06c35d1ec2460e24e2c56063377c0ad3bfc1df547",
+        "dimensions": {
+          "width": 590,
+          "height": 527
+        },
+        "original_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/775544245_1567763755363874_3495623095219216213_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x965&ctp=s590x590&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lcmWu7yEr4sQ7kNvwFtZYa4&_nc_oc=AdqIoWBrjOqm863AWjogys0iudG5ei6jdRffA8qN5UtHLOnSsBbm-IoUTUX-KEg60rLiK6-Ek90aku89heBRwLxb&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=QXnElcIWUo6_MajysdkV_A&_nc_ss=72289&oh=00_AQHMqqiN22yjuZnM4IDxxcV-ihUi9sX4aY2kFNk39wcJkQ&oe=6A9213C5",
+        "paths": {
+          "raw": "assets/raw/2026-08-24_1567763948697188_06.jpg",
+          "web": "assets/web/images/2026-08-24_1567763948697188_06.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-24_1567763948697188_06_thumb.webp"
+        }
+      }
+    ]
   },
   {
     "post_id": "1567230208750562",
@@ -99,7 +175,83 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
     },
     "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02bQeybHJfnm4HK45AzEAYzaro7jBAsFzseAjRR8W9vooMoB2NjuF6XbCpkLnas8R7l",
     "video_url": null,
-    "assets": []
+    "assets": [
+      {
+        "asset_id": "2026-08-23_1567230208750562_02",
+        "post_id": "1567230208750562",
+        "file_hash": "c738d775f4139db633c94122643c3e47dcebbc4abb3b7729c8f84c55058e35be",
+        "dimensions": {
+          "width": 590,
+          "height": 395
+        },
+        "original_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/782298337_1567229578750625_4714223487318706907_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x1070&ctp=s590x590&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-eHf5FCgmnEQ7kNvwFf16vn&_nc_oc=AdpH1E1HuxYlI_OxJe8mV3CSZTIqNTQ6E1dvShJeQ1r2j0jdEHul3IpfAw8maw6LP85HAETjvysWFEZ9dIrNQvRt&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=QXnElcIWUo6_MajysdkV_A&_nc_ss=72289&oh=00_AQH6r3iQQwFE50qEFkeLaI0TgMkNWG15fSCh5ZZ5_F8ppw&oe=6A91FC03",
+        "paths": {
+          "raw": "assets/raw/2026-08-23_1567230208750562_02.jpg",
+          "web": "assets/web/images/2026-08-23_1567230208750562_02.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-23_1567230208750562_02_thumb.webp"
+        }
+      },
+      {
+        "asset_id": "2026-08-23_1567230208750562_03",
+        "post_id": "1567230208750562",
+        "file_hash": "f808ab39689702cd5d293379e309765e53ee4bcb32218833dde79523b1313c1d",
+        "dimensions": {
+          "width": 590,
+          "height": 395
+        },
+        "original_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/784928611_1567229745417275_7894802555589269532_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x1070&ctp=s590x590&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cCphVzfjcqYQ7kNvwHRtYtC&_nc_oc=AdrasKcwbARH_6o-opTY8Aii_7Yms-GaRceeAyOlNrDfv6XGcXtFfbCE79pGpWZulxS7fc5ruNhrv1eHxBp8UPJS&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=QXnElcIWUo6_MajysdkV_A&_nc_ss=72289&oh=00_AQHQny8cXVF9Ho1_NFMuICS-sa7j33k5Q9bVmRK45EVwsw&oe=6A91F81F",
+        "paths": {
+          "raw": "assets/raw/2026-08-23_1567230208750562_03.jpg",
+          "web": "assets/web/images/2026-08-23_1567230208750562_03.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-23_1567230208750562_03_thumb.webp"
+        }
+      },
+      {
+        "asset_id": "2026-08-23_1567230208750562_04",
+        "post_id": "1567230208750562",
+        "file_hash": "1d318d3ec3852c28880969ff47f3e2114d347a4519efbea56dd0f74b079e7416",
+        "dimensions": {
+          "width": 590,
+          "height": 395
+        },
+        "original_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/779787085_1567229918750591_1065091378470453462_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x1070&ctp=s590x590&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LRHtJzz83DwQ7kNvwFJ7wnK&_nc_oc=AdqdTBuizGPYeZVeEQCYIUgyRWc8oKNVGgwzQooKcqfgx1Y1GKrr1HqLDFRzj7y9WqoDMdUaHt96Vrg1M-N4vxKp&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&_nc_gid=QXnElcIWUo6_MajysdkV_A&_nc_ss=72289&oh=00_AQG9NpjCOyueRaDpfh3tGnBMln95oxYF128xIuZe5zAFnw&oe=6A91F38D",
+        "paths": {
+          "raw": "assets/raw/2026-08-23_1567230208750562_04.jpg",
+          "web": "assets/web/images/2026-08-23_1567230208750562_04.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-23_1567230208750562_04_thumb.webp"
+        }
+      },
+      {
+        "asset_id": "2026-08-23_1567230208750562_05",
+        "post_id": "1567230208750562",
+        "file_hash": "1a3bf0877b2b1a4c64a3f07728ddeb2f01cf5f1be8a2af90d9f46cc8ec9a9148",
+        "dimensions": {
+          "width": 590,
+          "height": 395
+        },
+        "original_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/781251244_1567230028750580_6481797999637455560_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x1070&ctp=s590x590&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Ua7ZO7vSFgoQ7kNvwHcjYev&_nc_oc=AdosgbOToWMs_3rJ0eaPA3JX8XT9ce_Np_c_m6CZf8T1nA5jY-_PiWYx-h-wfOkKh_Z7lE3o2ySEUg4vujVwWEwF&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=QXnElcIWUo6_MajysdkV_A&_nc_ss=72289&oh=00_AQGMIayoL21knvhAQc0Dws91SFm1kqxYwAePWhpsP2UjSA&oe=6A91ED44",
+        "paths": {
+          "raw": "assets/raw/2026-08-23_1567230208750562_05.jpg",
+          "web": "assets/web/images/2026-08-23_1567230208750562_05.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-23_1567230208750562_05_thumb.webp"
+        }
+      },
+      {
+        "asset_id": "2026-08-23_1567230208750562_06",
+        "post_id": "1567230208750562",
+        "file_hash": "f8b82935dd424c194bc944c50f07f255b883f7dd8d8e7ad3ff67536d101ac897",
+        "dimensions": {
+          "width": 590,
+          "height": 395
+        },
+        "original_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/777851684_1567230145417235_391759450634882603_n.jpg?stp=dst-jpg_tt6&cstp=mx1600x1070&ctp=s590x590&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6BPIHPRlKFEQ7kNvwE3iBNO&_nc_oc=Adortb156HVu5u4HTVfydSZuELFFrH4SLePkJKKUtgrKPjQXlRT0H0n8EXP4gK_Jn2pNCidIHVK8Co0lDGxZGEXd&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=QXnElcIWUo6_MajysdkV_A&_nc_ss=72289&oh=00_AQHQBZLS_vHKF5KQAc6tH_9LGg7mPyGeIrA8qruwbH3A0g&oe=6A91F487",
+        "paths": {
+          "raw": "assets/raw/2026-08-23_1567230208750562_06.jpg",
+          "web": "assets/web/images/2026-08-23_1567230208750562_06.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-23_1567230208750562_06_thumb.webp"
+        }
+      }
+    ]
   },
   {
     "post_id": "1566985745441675",
@@ -114,20 +266,36 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
     },
     "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02dXBw6g7oRVeyVFPyoCD8ohH2A3eB6CWeETLUNbMTspgJZJnNsK6wi9MUd25PvJQpl",
     "video_url": null,
-    "assets": []
+    "assets": [
+      {
+        "asset_id": "2026-08-23_1566985745441675_02",
+        "post_id": "1566985745441675",
+        "file_hash": "d1fe3b12eef0b6d00c018cc6c54c30e3c0d27e0a008b20fbf80997ded000207b",
+        "dimensions": {
+          "width": 526,
+          "height": 789
+        },
+        "original_url": "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-6/784403059_1566985688775014_5607731358658561150_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1536&ctp=p526x296&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=_tlw04Yk88gQ7kNvwEXz5Ai&_nc_oc=AdqZGLPqNXTv3DV03Lr-AmhvAW3osHmkAEsxmSTK3pJa7fqOGotI2hoFq-lLEI0JUu6jCrvSxvuGNGBhih7TNtRR&_nc_zt=23&_nc_ht=scontent-atl3-3.xx&_nc_gid=QXnElcIWUo6_MajysdkV_A&_nc_ss=72289&oh=00_AQFJEjncXCasdC9zgP7KYX_nOaFtpzWCvwl5X5XVROSr_g&oe=6A91FBF0",
+        "paths": {
+          "raw": "assets/raw/2026-08-23_1566985745441675_02.jpg",
+          "web": "assets/web/images/2026-08-23_1566985745441675_02.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-23_1566985745441675_02_thumb.webp"
+        }
+      }
+    ]
   },
   {
     "post_id": "1563591385781111",
     "date": "2026-08-19",
-    "created_at": "2026-08-19T14:33:01Z",
+    "created_at": "2026-08-19T14:33:01.000Z",
     "category": "Church & Community",
-    "message": "Today, I joined family, friends, and relatives of the late Mzee Peter Kinyanjui of Sero Moi Ndabi, Maiela Ward, to stand with them during this difficult moment.\n\nMzee Peter Kinyanjui was a respected resident and community member who served as an area representative in Maiela Ward. His contribution to the community and the relationships he built with those around him will not be forgotten.\n\nI extend my heartfelt condolences to the family, friends, and the entire Sero Moi Ndabi community. May God grant you strength, comfort, and peace during this difficult time.\n\nRest in peace, Mzee Peter Kinyanjui. Your legacy lives on. ️\n\nJM Gitau\nNaivasha Constituency MP 2027\n\n#JMGitau2027 #MaielaWard #SeroMoiNdabi #RestInPeace #ServingThePeople",
+    "message": "Today, I joined family, friends, and relatives of the late Mzee Peter Kinyanjui of Sero Moi Ndabi, Maiela Ward, to stand with them during this difficult moment.\n\nMzee Peter Kinyanjui was a respected resident and community member who served as an area representative in Maiela Ward. His contribution to the community and the relationships he built with those around him will not be forgotten.\n\nI extend my heartfelt condolences to the family, friends, and the entire Sero Moi Ndabi community. May God grant you strength, comfort, and peace during this difficult time.\n\nRest in peace, Mzee Peter Kinyanjui. Your legacy lives on. 🕊️\n\nJM Gitau\nNaivasha Constituency MP 2027\n\n#JMGitau2027 #MaielaWard #SeroMoiNdabi #RestInPeace #ServingThePeople",
     "engagement": {
-      "reactions": 51,
-      "comments": 18,
-      "shares": 10
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02HXbUB3RWURRdEZX7WCPyKuFNBKZ6L2hkpAfAMYxUeLMvwYjoZB9N6bQRRFypMgW6l",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02HMSTsu9meyg1wmqaK2CqtuaDMVjbxnfivWCtL7AZrWHcx8RWUpk9TZmZzR9ZRqMgl",
     "video_url": null,
     "assets": [
       {
@@ -210,15 +378,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1560428656097384",
     "date": "2026-08-16",
-    "created_at": "2026-08-16T07:09:51Z",
+    "created_at": "2026-08-16T07:09:51.000Z",
     "category": "Church & Community",
-    "message": "Blessed Sunday, Naivasha! \n\nMay God bless our families, strengthen us, and fill our hearts with peace, hope, and renewed faith.\n\nHave a blessed and peaceful Sunday. \n\n#JMGitau2027 #Naivasha #BlessedSunday",
+    "message": "Blessed Sunday, Naivasha! 🙏🏾\n\nMay God bless our families, strengthen us, and fill our hearts with peace, hope, and renewed faith.\n\nHave a blessed and peaceful Sunday. 🇰🇪🙏🏾\n\n#JMGitau2027 #Naivasha #BlessedSunday",
     "engagement": {
-      "reactions": 80,
-      "comments": 46,
-      "shares": 2
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029DDPm6Q5hzqL2BAo9Xdrkm8R28LjG4Z2fHkiGSBkARe7h1v6MzQJZEM6iHd1A3tKl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029X1v2bhYi6AXBr6Pw6vSQG7kFF51bd5iUq8Ged1exiihFrbPzeZBdrB9pWX7DNsSl",
     "video_url": null,
     "assets": [
       {
@@ -241,16 +409,16 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1559966506143599",
     "date": "2026-08-15",
-    "created_at": "2026-08-15T17:41:30Z",
+    "created_at": "2026-08-15T17:41:30.000Z",
     "category": "Press & Statements",
-    "message": "H.E. Rigathi Gachagua, EGH Naivasha imeongea ",
+    "message": "H.E. Rigathi Gachagua, EGH Naivasha imeongea 💚",
     "engagement": {
-      "reactions": 50,
-      "comments": 15,
+      "reactions": 0,
+      "comments": 0,
       "shares": 0
     },
     "post_url": "https://www.facebook.com/reel/1822259605799133/",
-    "video_url": "https://www.facebook.com/reel/1822259605799133/",
+    "video_url": null,
     "assets": [
       {
         "asset_id": "2026-08-15_1559966506143599_01",
@@ -272,15 +440,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1559935762813340",
     "date": "2026-08-15",
-    "created_at": "2026-08-15T16:55:25Z",
+    "created_at": "2026-08-15T16:55:25.000Z",
     "category": "Church & Community",
-    "message": "I join other leaders, the clergy, the congregation, family, friends, and the wider Naivasha community in mourning the passing of Bishop Cosmas Kinyanjui David of Victory World Outreach Church, Naivasha.\n\nMy heartfelt condolences go out to his family, the entire church community, and all those whose lives he touched through his ministry and service.\n\nMay God grant the bereaved family strength, comfort, and peace during this difficult time.\n\nMay his soul rest in eternal peace. ️\n\n#RestInPeace\n#BishopCosmasKinyanjui\n#Naivasha\n#ServingThePeople",
+    "message": "I join other leaders, the clergy, the congregation, family, friends, and the wider Naivasha community in mourning the passing of Bishop Cosmas Kinyanjui David of Victory World Outreach Church, Naivasha.\n\nMy heartfelt condolences go out to his family, the entire church community, and all those whose lives he touched through his ministry and service.\n\nMay God grant the bereaved family strength, comfort, and peace during this difficult time.\n\nMay his soul rest in eternal peace. 🕊️\n\n#RestInPeace\n#BishopCosmasKinyanjui\n#Naivasha\n#ServingThePeople",
     "engagement": {
-      "reactions": 23,
-      "comments": 7,
-      "shares": 1
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029t6Lc1SkN6awW2D3vGnV2h1uKD4K2i9cxHTrRyng9gHVoBz7imeGX4NqWBgsHoeRl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029hwLJsB1Yhv52bz9dEaH22eUx1dBFgwaxM9LngJX8sgCWKWcVH5kP1z8wYxkJ5y3l",
     "video_url": null,
     "assets": [
       {
@@ -318,15 +486,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1558895482917368",
     "date": "2026-08-14",
-    "created_at": "2026-08-14T14:54:12Z",
+    "created_at": "2026-08-14T14:54:12.000Z",
     "category": "Campaign Rallies",
-    "message": "THANK YOU, NAIVASHA! \n\nMy people of Naivasha, asanteni sana for the overwhelming love, energy and support you showed us today. Your reception has spoken loudly — Naivasha is ready! \n\nNawapenda pia, and I deeply appreciate every one of you who came out in large numbers to stand with us.\n\nA special thank you to H.E. Rigathi Gachagua for visiting Naivasha and engaging with our people. This is the beginning of a new chapter, and together, we are building the Naivasha we deserve.\n\nNaivasha tuko pamoja!\nNaivasha ni DCP! \nHon. JM Gitau Naivasha MP 2027 \n\nMbele pamoja! ",
+    "message": "THANK YOU, NAIVASHA! 💚🔥\n\nMy people of Naivasha, asanteni sana for the overwhelming love, energy and support you showed us today. Your reception has spoken loudly — Naivasha is ready! 💪🏽\n\nNawapenda pia, and I deeply appreciate every one of you who came out in large numbers to stand with us.\n\nA special thank you to H.E. Rigathi Gachagua for visiting Naivasha and engaging with our people. This is the beginning of a new chapter, and together, we are building the Naivasha we deserve.\n\nNaivasha tuko pamoja!\nNaivasha ni DCP! 💚\nHon. JM Gitau Naivasha MP 2027 \n\nMbele pamoja! 🔥",
     "engagement": {
-      "reactions": 58,
-      "comments": 43,
-      "shares": 13
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0rJHjQjNP67RAfbRgSX5vSapEv8gEeyaAaNHHFyV5Y4MWsGrVrJxhK6X4hLi2Kcvhl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0rc6FgEfr6JaKXwBm8DmuDsETxxi3zem3WKG3R6UJrYzLhktmBohNft3qt42ca7BEl",
     "video_url": null,
     "assets": [
       {
@@ -409,15 +577,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1557570223049894",
     "date": "2026-08-13",
-    "created_at": "2026-08-13T06:17:29Z",
+    "created_at": "2026-08-13T06:17:29.000Z",
     "category": "Press & Statements",
-    "message": "NI KESHO NAIVASHA! \n\nKesho, 14TH AUGUST, tunafungua milango ya Naivasha kumkaribisha kwa heshima na shangwe H.E. RIGATHI GACHAGUA. \n\nNaivasha iko tayari. Watu wako tayari.\nUjumbe wa Naivasha ni mmoja: NAIVASHA NI DCP! ❤️\n\nKaribu Naivasha, H.E. Rigathi Gachagua.\nTushirikiane, tusikilizane na tusonge mbele pamoja.\n\nHon. JM Gitau Naivasha MP 2027 \nMP Naivasha Constituency 2027\n\n NAIVASHA NI DCP! ",
+    "message": "NI KESHO NAIVASHA! 🔥\n\nKesho, 14TH AUGUST, tunafungua milango ya Naivasha kumkaribisha kwa heshima na shangwe H.E. RIGATHI GACHAGUA. 🇰🇪\n\nNaivasha iko tayari. Watu wako tayari.\nUjumbe wa Naivasha ni mmoja: NAIVASHA NI DCP! 💚🤍❤️\n\nKaribu Naivasha, H.E. Rigathi Gachagua.\nTushirikiane, tusikilizane na tusonge mbele pamoja.\n\nHon. JM Gitau Naivasha MP 2027 \nMP Naivasha Constituency 2027\n\n🔥 NAIVASHA NI DCP! 🔥",
     "engagement": {
-      "reactions": 58,
-      "comments": 33,
-      "shares": 5
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0DtvtDKSR5geAjgWysys3NUD4hm6uGGQk7MBMqkdDg58CJiwLMYrVMV9rgPSpECYHl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0DimsvBAgGEvP2DE9rupCX5BKqupJX75M6FtEQ3JpPe2nnshmpLGk4zERx6EUnadQl",
     "video_url": null,
     "assets": [
       {
@@ -440,15 +608,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1554701720003411",
     "date": "2026-08-10",
-    "created_at": "2026-08-10T05:29:25Z",
+    "created_at": "2026-08-10T05:29:25.000Z",
     "category": "Church & Community",
     "message": "Naivasha deserves better.\n\nOur people deserve proper access roads, reliable clean drinking water, quality healthcare, better schools, and essential services that improve everyday life.\n\nDuring my engagement with residents of Banana in Maai Mahiu Ward, I listened to your concerns and witnessed the challenges you continue to face. Your voices matter, and your needs deserve attention.\n\nAs we look towards 2027, I remain committed to championing practical solutions and inclusive development that reaches every community across Naivasha.\n\nYour voice matters. Your needs are my priority.\n\nJM Gitau\nNaivasha MP 2027\n\n#JMGitau2027\n#NaivashaDecides\n#LeadershipThatListens\n#DevelopmentForAll\n#MaaiMahiuWard",
     "engagement": {
-      "reactions": 37,
-      "comments": 15,
-      "shares": 3
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0GRpPX9CPaVpJim6fpsM68uXgKJYMwRadVLKYHCgaCbztGPQPFdCEQSUEs8nN67QKl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0GjcuneVracdL16t9u3PWRCEukWzr1uAnJqs7YfXGTAf3bwg5Kvzro1VdaEeZQfQVl",
     "video_url": null,
     "assets": [
       {
@@ -531,15 +699,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1554431996697050",
     "date": "2026-08-09",
-    "created_at": "2026-08-09T20:47:37Z",
+    "created_at": "2026-08-09T20:47:37.000Z",
     "category": "Church & Community",
-    "message": "I am deeply saddened by the passing of Samuel Karanja (WaKUI), my neighbour, childhood friend, father, brother, and a true servant of the Maai Mahiu community.\n\nSamuel dedicated his life to helping others and made a positive impact in the lives of many. His kindness, friendship, and commitment to serving the community will forever remain in our hearts.\n\nMy heartfelt condolences go out to his family, relatives, friends, and the entire Maai Mahiu community during this difficult time.\n\nMay God grant the family strength, comfort, and peace. May his legacy of kindness and service continue to inspire us.\n\nRest in peace, Karanja. Your memory will live on. ️\n\nJM Gitau\nNaivasha Constituency",
+    "message": "I am deeply saddened by the passing of Samuel Karanja (WaKUI), my neighbour, childhood friend, father, brother, and a true servant of the Maai Mahiu community.\n\nSamuel dedicated his life to helping others and made a positive impact in the lives of many. His kindness, friendship, and commitment to serving the community will forever remain in our hearts.\n\nMy heartfelt condolences go out to his family, relatives, friends, and the entire Maai Mahiu community during this difficult time.\n\nMay God grant the family strength, comfort, and peace. May his legacy of kindness and service continue to inspire us.\n\nRest in peace, Karanja. Your memory will live on. 🕊️\n\nJM Gitau\nNaivasha Constituency",
     "engagement": {
-      "reactions": 125,
-      "comments": 48,
-      "shares": 1
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0GXc6otCSnFbrFXzZASxd7wNfoTHmRNhQ4uVsDeaGLrXDMtDVo2xtQfUqfM6vNfdml",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0GqQd5PVunbB5XEXcF619N3YiurE1o1JFBNUaFTWVnqV5dJTYFwjdbwtuyrFTBrw2l",
     "video_url": null,
     "assets": [
       {
@@ -562,15 +730,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1553972430076340",
     "date": "2026-08-09",
-    "created_at": "2026-08-09T09:09:51Z",
+    "created_at": "2026-08-09T09:09:51.000Z",
     "category": "Church & Community",
-    "message": "Blessed Sunday, Naivasha! \n\nAs we gather in our churches today, let us thank God for His blessings and pray for our families, our communities, and our beloved country Kenya.\n\nLet us pray for peace, unity, better leadership, opportunities for our youth, and a brighter future for our people.\n\nAs we look towards 2027, let us embrace leadership that listens, serves, and puts the interests of the people first.\n\nJM Gitau — Naivasha Constituency MP 2027\n\nGod bless Naivasha. God bless Kenya. \n\n#JMGitau2027\n#NaivashaDecides\n#LeadershipThatListens\n#BlessedSunday\n#TogetherWeCan",
+    "message": "Blessed Sunday, Naivasha! 🙏🏽🇰🇪\n\nAs we gather in our churches today, let us thank God for His blessings and pray for our families, our communities, and our beloved country Kenya.\n\nLet us pray for peace, unity, better leadership, opportunities for our youth, and a brighter future for our people.\n\nAs we look towards 2027, let us embrace leadership that listens, serves, and puts the interests of the people first.\n\nJM Gitau — Naivasha Constituency MP 2027\n\nGod bless Naivasha. God bless Kenya. 🇰🇪🙏🏽\n\n#JMGitau2027\n#NaivashaDecides\n#LeadershipThatListens\n#BlessedSunday\n#TogetherWeCan",
     "engagement": {
-      "reactions": 53,
-      "comments": 32,
-      "shares": 2
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02ni8iKDwnBhV7hqpM3ouCQ9vVP9fjkna6AP4yZ4pnacyEb7vEvMLJYCE37gbb3pZVl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02o1wEajFFBsDyCZs7Hdh7awq6Qn7gpAuyYAFGYc3yfgEczVu54WjGrJEiHkxLZX7bl",
     "video_url": null,
     "assets": [
       {
@@ -608,15 +776,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1553515230122060",
     "date": "2026-08-08",
-    "created_at": "2026-08-08T19:55:55Z",
+    "created_at": "2026-08-08T19:55:55.000Z",
     "category": "Church & Community",
-    "message": "Today, we laid to rest our brother Samwel Wainaina, also known as Kaitagon, who tragically lost his life in a road accident.\n\nMy heartfelt condolences go out to his family, friends, colleagues, and the entire bodaboda fraternity. May Almighty God comfort the bereaved family and grant them strength during this difficult time. May his soul rest in eternal peace. ️\n\nAs we mourn, I urge KeNHA and all relevant authorities to urgently address the safety concerns along the busy Naivasha Road near the Kijabe–Maai Mahiu junction, including proper warning signs and appropriate traffic-calming measures.\n\nThis is a high-risk section, and more needs to be done to protect bodaboda riders, pedestrians, and other road users.\n\nKaitagon's death should not be in vain. Let us act now to prevent further loss of lives.\n\nRest in peace, Kaitagon. Your life mattered, and your memory will live on. ️\n\n#RestInPeaceKaitagon\n#RoadSafety\n#Naivasha\n#KeNHA\n#BodabodaSafety\n#ServingThePeople\n#JMGitau",
+    "message": "Today, we laid to rest our brother Samwel Wainaina, also known as Kaitagon, who tragically lost his life in a road accident.\n\nMy heartfelt condolences go out to his family, friends, colleagues, and the entire bodaboda fraternity. May Almighty God comfort the bereaved family and grant them strength during this difficult time. May his soul rest in eternal peace. 🕊️\n\nAs we mourn, I urge KeNHA and all relevant authorities to urgently address the safety concerns along the busy Naivasha Road near the Kijabe–Maai Mahiu junction, including proper warning signs and appropriate traffic-calming measures.\n\nThis is a high-risk section, and more needs to be done to protect bodaboda riders, pedestrians, and other road users.\n\nKaitagon's death should not be in vain. Let us act now to prevent further loss of lives.\n\nRest in peace, Kaitagon. Your life mattered, and your memory will live on. 🕊️\n\n#RestInPeaceKaitagon\n#RoadSafety\n#Naivasha\n#KeNHA\n#BodabodaSafety\n#ServingThePeople\n#JMGitau",
     "engagement": {
-      "reactions": 25,
-      "comments": 14,
-      "shares": 11
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02igRZ7Wp5UXTjtjP9QtdAC8muqBd2sWwYKfspPUvRX6B6UJba9uMhnYsznM1xDQPzl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0eepqdhcWoXwXpmE2oMfSTkrwyUpBbp4nqJRCcMrghrKzeUo8KYmfzTtTxGbJGWxjl",
     "video_url": null,
     "assets": [
       {
@@ -699,15 +867,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1552581446882105",
     "date": "2026-08-07",
-    "created_at": "2026-08-07T17:07:00Z",
+    "created_at": "2026-08-07T17:07:00.000Z",
     "category": "Development & Projects",
     "message": "Karibu Naivasha, H.E. Rigathi Gachagua, EGH!\n\nOn 14th August 2026, the people of Naivasha warmly welcome you to our constituency.\n\nYour visit is an opportunity to engage with the people, listen to their aspirations, and reaffirm our shared commitment to unity, development, and a better future for all.\n\nWe look forward to hosting you in the Home of Itungati. Karibu sana, and may your visit be fruitful and memorable.\n\nKaribu Naivasha!\n\n#RiggyGNaivashaTour\n#WelcomeToNaivasha\n#HomeOfItungati\n#Naivasha\n#TogetherWeCan",
     "engagement": {
-      "reactions": 36,
-      "comments": 26,
-      "shares": 1
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid05pCZDU7iX6vkqNr3jAMJq5ucKkKnj2rd6F4BH4nQ6vMLzajXNwAqYRkEkkfwjGaJl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid05e3YvKqyhbrdEVd9C4akrqJorbyXRGaXpukozYL9s1e5pPHxWZXFLuqcCjVmRGzEl",
     "video_url": null,
     "assets": [
       {
@@ -790,15 +958,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1549360253870891",
     "date": "2026-08-04",
-    "created_at": "2026-08-04T08:01:52Z",
+    "created_at": "2026-08-04T08:01:52.000Z",
     "category": "Development & Projects",
-    "message": "Good Morning, Naivasha! \n\nA new day is a reminder that the future of our constituency is in our hands. For too long, our people have waited for better roads, more employment opportunities for our youth, quality healthcare, improved schools, and equal development across every ward.\n\nThe time has come to embrace leadership that listens, serves, and delivers.\n\nAs we move closer to 2027, let us choose unity, accountability, and development that benefits every resident of Naivasha. Together, we can build a constituency where every hardworking citizen has a fair opportunity to succeed.\n\nOur voices matter, and our choices will shape the future of generations to come.\n\nHave a blessed and productive day. \n\nNaivasha Kwanza. Development Kwanza. The Future is Now!\n\n— JM Gitau\nNaivasha Constituency MP Aspirant 2027\n\n#JMGitau2027\n#NaivashaKwanza\n#DevelopmentKwanza\n#LeadershipThatListens\n#TogetherWeCan",
+    "message": "Good Morning, Naivasha! \n\nA new day is a reminder that the future of our constituency is in our hands. For too long, our people have waited for better roads, more employment opportunities for our youth, quality healthcare, improved schools, and equal development across every ward.\n\nThe time has come to embrace leadership that listens, serves, and delivers.\n\nAs we move closer to 2027, let us choose unity, accountability, and development that benefits every resident of Naivasha. Together, we can build a constituency where every hardworking citizen has a fair opportunity to succeed.\n\nOur voices matter, and our choices will shape the future of generations to come.\n\nHave a blessed and productive day. 🙏\n\nNaivasha Kwanza. Development Kwanza. The Future is Now!\n\n— JM Gitau\nNaivasha Constituency MP Aspirant 2027\n\n#JMGitau2027\n#NaivashaKwanza\n#DevelopmentKwanza\n#LeadershipThatListens\n#TogetherWeCan",
     "engagement": {
-      "reactions": 67,
-      "comments": 27,
-      "shares": 6
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid025vrt6cFoidxhkGUDyfHDrwu19crTLdiGuthuCLDvrpQe3mR4JUcWSNpwDP8ipx5ql",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid025khsoTz4tyARv4KY8iw1dZ5CbHT6weGjaBXeCfBBF3sZ1hbLny2Nk4zgK8RFhmS1l",
     "video_url": null,
     "assets": [
       {
@@ -821,15 +989,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1548424653964451",
     "date": "2026-08-03",
-    "created_at": "2026-08-03T07:39:55Z",
+    "created_at": "2026-08-03T07:39:55.000Z",
     "category": "Church & Community",
-    "message": "Yesterday, I had the privilege of joining the faithful of PEFA Church in Olkaria Ward, Naivasha Constituency, for a blessed time of worship and fellowship.\n\nI sincerely thank Pastor Francis Ouma, Bishop Alandwa, and the entire congregation for the warm welcome, love, and prayers. Your hospitality, faith, and unity were truly inspiring. May the Almighty God continue to bless your ministry and every family represented.\n\nAs we continue engaging and serving our people, may we remain guided by faith, love, and unity.\n\n“How good and pleasant it is when God’s people live together in unity!” — Psalm 133:1\n\nGod bless PEFA Church.\nGod bless Olkaria Ward.\nGod bless Naivasha Constituency. \n\nHon. JM Gitau\nNaivasha Constituency MP Candidate – 2027\n\n#JMGitau2027\n#LeadershipThatCares\n#OlkariaWard\n#FaithAndUnity\n#TogetherWeCan",
+    "message": "Yesterday, I had the privilege of joining the faithful of PEFA Church in Olkaria Ward, Naivasha Constituency, for a blessed time of worship and fellowship.\n\nI sincerely thank Pastor Francis Ouma, Bishop Alandwa, and the entire congregation for the warm welcome, love, and prayers. Your hospitality, faith, and unity were truly inspiring. May the Almighty God continue to bless your ministry and every family represented.\n\nAs we continue engaging and serving our people, may we remain guided by faith, love, and unity.\n\n“How good and pleasant it is when God’s people live together in unity!” — Psalm 133:1\n\nGod bless PEFA Church.\nGod bless Olkaria Ward.\nGod bless Naivasha Constituency. 🙏\n\nHon. JM Gitau\nNaivasha Constituency MP Candidate – 2027\n\n#JMGitau2027\n#LeadershipThatCares\n#OlkariaWard\n#FaithAndUnity\n#TogetherWeCan",
     "engagement": {
-      "reactions": 59,
-      "comments": 32,
-      "shares": 11
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02ugeWnfqu2YVwSzrs14WpDJcBZ7xryrYKnQrzdZE2YFRwpXhi7H7ryWtsYejLxaAtl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02uWVWVXaAD3wp6umNnL41JAXUKp5kGtMijTim1u6zbQYfqL9ngBT62827SWaHzwdGl",
     "video_url": null,
     "assets": [
       {
@@ -912,15 +1080,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1546755094131407",
     "date": "2026-08-01",
-    "created_at": "2026-08-01T09:59:05Z",
+    "created_at": "2026-08-01T09:59:05.000Z",
     "category": "Campaign Rallies",
-    "message": "Happy New Month, Naivasha! \n\nAs we welcome the month of August, I extend my heartfelt wishes to every family across Naivasha. May this new month bring good health, peace, prosperity, and new opportunities.\n\nTogether, let us continue working towards a united, developed, and prosperous Naivasha, where every voice matters and every dream has an opportunity to grow.\n\nThank you for your continued support, trust, and encouragement. Wishing you all a blessed, peaceful, and fruitful month ahead.\n\nHappy New Month! \n\nJM Gitau\nMP Aspirant – Naivasha Constituency\n\n#HappyNewMonth\n#Naivasha\n#JMGitau\n#DCP\n#SkizaWakenya\n#TogetherWeCan",
+    "message": "Happy New Month, Naivasha! \n\nAs we welcome the month of August, I extend my heartfelt wishes to every family across Naivasha. May this new month bring good health, peace, prosperity, and new opportunities.\n\nTogether, let us continue working towards a united, developed, and prosperous Naivasha, where every voice matters and every dream has an opportunity to grow.\n\nThank you for your continued support, trust, and encouragement. Wishing you all a blessed, peaceful, and fruitful month ahead.\n\nHappy New Month! 🙏\n\nJM Gitau\nMP Aspirant – Naivasha Constituency\n\n#HappyNewMonth\n#Naivasha\n#JMGitau\n#DCP\n#SkizaWakenya\n#TogetherWeCan",
     "engagement": {
-      "reactions": 48,
-      "comments": 40,
-      "shares": 1
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02azJNvP5dF8iFr8A1KmnXPrR64bdY5vP5z9ToH6aCvBCUaxDySGDj8h479kNCiktLl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02ap9NdEotRcRTnEciowuvvNmQ9rSpvQ7AgLhqrYiY4H48pKAwJKM1wU73iSNeoBBKl",
     "video_url": null,
     "assets": [
       {
@@ -943,15 +1111,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1544038727736377",
     "date": "2026-07-29",
-    "created_at": "2026-07-29T10:44:59Z",
+    "created_at": "2026-07-29T10:44:59.000Z",
     "category": "Development & Projects",
     "message": "Yesterday, I had the honour of meeting with the residents of Kihoto in Lakeview Ward, Naivasha Constituency, where we held meaningful discussions on the issues affecting our community and the solutions needed to move our constituency forward.\n\nI am deeply grateful for the warm reception, valuable insights, and overwhelming support you continue to show. Your trust and confidence strengthen my resolve to serve with integrity, accountability, and dedication.\n\nTogether, we will champion better roads, quality education, accessible healthcare, youth empowerment, and inclusive development for every corner of Naivasha.\n\nThe journey to a better Naivasha has begun, and together, we will make it a reality.\n\nHon. JM Gitau\nAspiring MP, Naivasha Constituency – 2027\n\n#JMGitau2027\n#NaivashaConstituency\n#LakeviewWard\n#LeadershipThatListens\n#TogetherWeCan",
     "engagement": {
-      "reactions": 37,
-      "comments": 21,
-      "shares": 1
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0bx7D1Aed5FDAjMwrYwARTWyPYKq2anyKs5726efw69hYNznS9eqszxDuZqrtifDfl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0bmxCi2NtFhiL6aLmwAFnKCA3R7jMLma2QhG8UyzsqJcJA9z5Nzvs2fKxQ1MCcs1Ul",
     "video_url": null,
     "assets": [
       {
@@ -1034,15 +1202,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1543284774478439",
     "date": "2026-07-28",
-    "created_at": "2026-07-28T14:14:14Z",
+    "created_at": "2026-07-28T14:14:14.000Z",
     "category": "Church & Community",
     "message": "Today, I had the privilege of meeting with the parents and pupils of Ngwataniro ECD in the Mount Margaret area of Maai Mahiu Ward. It was an important opportunity to listen to their concerns and witness firsthand the challenges facing this public Early Childhood Development Centre.\n\nParents shared their frustrations over the shortage of classrooms and teachers, challenges that continue to deny our children the quality foundation they deserve. The wider community also raised concerns about inadequate access to clean water, electricity, and other essential public services.\n\nEvery child deserves a safe, supportive, and well-equipped learning environment, and every family deserves access to basic services that improve their quality of life. The people of Mount Margaret have spoken, and their concerns deserve urgent attention.\n\nLeadership is about listening, standing with the people, and working towards practical solutions. I remain committed to championing quality education, improved infrastructure, reliable water and electricity, and inclusive development so that no community is left behind.\n\nTogether, we will build a stronger, more prosperous Naivasha.\n\nHon. JM Gitau\nAspiring MP, Naivasha Constituency – 2027\n\n#JMGitau2027\n#NaivashaDecides\n#LeadershipThatListens\n#EducationForAll\n#DevelopmentForAll\n#TogetherWeCan",
     "engagement": {
-      "reactions": 24,
-      "comments": 11,
-      "shares": 1
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029m6yYGnGnkQhMkdSx7x4N93FMvxtYmhVXnBx1hXMf6hkNBDmwz8V2WHaQqQFyfefl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029awyF8WXy8X6mH2zHUjc7WmrpYcBr2XAGrED2vT8qzS4qm1sWDtZGqvMZe1kG9QGl",
     "video_url": null,
     "assets": [
       {
@@ -1125,15 +1293,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1542986657841584",
     "date": "2026-07-28",
-    "created_at": "2026-07-28T06:48:52Z",
+    "created_at": "2026-07-28T06:48:52.000Z",
     "category": "Press & Statements",
-    "message": "Welcome to Naivasha,H.E. Rigathi Gachagua, EGH .\nNaivasha is honored to receive you as you engage with the people during your Nakuru County tour. Karibu to a land of resilience, opportunity, and hardworking people who remain committed to shaping a better future.\n\nKaribu Naivasha! \n\n#RiggyGNakuruTour #WelcomeToNaivasha #HomeOfItungati #Naivasha #DCP",
+    "message": "Welcome to Naivasha,H.E. Rigathi Gachagua, EGH .\nNaivasha is honored to receive you as you engage with the people during your Nakuru County tour. Karibu to a land of resilience, opportunity, and hardworking people who remain committed to shaping a better future.\n\nKaribu Naivasha! 💚🤝\n\n#RiggyGNakuruTour #WelcomeToNaivasha #HomeOfItungati #Naivasha #DCP",
     "engagement": {
-      "reactions": 42,
-      "comments": 33,
-      "shares": 2
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02CoNKx9HRLenA6ZP8Zb1iiBP3r8cTKt3f2DUaJ2xoxgbPv1TzYRjfy1k4Tuayb6VRl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02CdDKf11gXAzzFDD5LrbCzjcaoucLvU9UfWyNfBz4rQWYznMtGfVgbnSePhqysudFl",
     "video_url": null,
     "assets": [
       {

@@ -30,6 +30,14 @@ body {
   font-family: var(--font-jakarta), system-ui, sans-serif;
 }
 
+.font-brush-marker {
+  font-family: var(--font-marker), 'Permanent Marker', cursive, sans-serif;
+}
+
+.font-brush-script {
+  font-family: var(--font-caveat), 'Caveat', cursive, sans-serif;
+}
+
 /* DCP Accent Ribbon */
 .dcp-ribbon {
   height: 4px;
@@ -99,5 +107,46 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  .slogan-text-shimmer {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background-clip: unset !important;
+    color: #ffffff !important;
+    animation: none !important;
+  }
 }
+
+/* In-Text Character Shimmer Light Sweep for SKIZA WAKENYA Slogan */
+@keyframes text-shimmer {
+  0% {
+    background-position: 180% 0;
+  }
+  30% {
+    background-position: -180% 0;
+  }
+  100% {
+    background-position: -180% 0;
+  }
+}
+
+.slogan-text-shimmer {
+  background: linear-gradient(
+    110deg,
+    #ffffff 35%,
+    #00e676 50%,
+    #ffffff 65%
+  );
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: text-shimmer 5s infinite ease-in-out;
+  display: inline-block;
+  will-change: background-position;
+}
+
+
 
