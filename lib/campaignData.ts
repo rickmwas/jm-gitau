@@ -1,4 +1,4 @@
-// Standalone Campaign Data for Hon. Jane Kihara / J.M. Gitau - Naivasha MP 2027
+// Standalone Campaign Data for Hon. J.M. Gitau - Naivasha MP 2027
 
 export const SITE = {
   candidateName: "J.M. Gitau",

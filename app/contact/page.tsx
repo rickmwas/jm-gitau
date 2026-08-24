@@ -47,7 +47,7 @@ export default function ContactPage() {
           {/* Contact Information */}
           <div className="lg:col-span-5 space-y-6">
             <div className="dcp-card p-6 space-y-6 shadow-sm">
-              <h2 className="font-heading text-xl font-extrabold text-slate-900">Campaign Headquarters</h2>
+              <h2 className="font-heading text-1.5xl font-extrabold text-slate-900">Campaign Headquarters</h2>
               
               <div className="space-y-4 text-sm text-slate-700 font-medium">
                 <div className="flex items-start gap-3">
@@ -58,15 +58,34 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-[#00C853] shrink-0" />
-                  <div>
-                    <strong className="text-slate-900 font-bold">Phone:</strong>
-                    <p className="text-xs text-slate-600">+254 700 000 000</p>
-                  </div>
+                {/* 1-Tap Mobile Action Cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                  <a
+                    href="https://wa.me/254700000000?text=Hello%20Hon.%20J.M.%20Gitau%2C%20I%20am%20a%20constituent%20from%20Naivasha..."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-3.5 rounded-xl bg-[#25D366]/10 border border-[#25D366]/30 text-slate-900 font-bold text-xs min-h-[48px] hover:bg-[#25D366]/20 transition-all"
+                  >
+                    <Send className="h-4 w-4 text-[#25D366]" />
+                    <div>
+                      <span className="block text-[10px] text-[#25D366] font-extrabold uppercase">1-Tap WhatsApp</span>
+                      <span>Chat directly</span>
+                    </div>
+                  </a>
+
+                  <a
+                    href="tel:+254700000000"
+                    className="flex items-center gap-3 p-3.5 rounded-xl bg-slate-100 border border-slate-200 text-slate-900 font-bold text-xs min-h-[48px] hover:bg-slate-200 transition-all"
+                  >
+                    <Phone className="h-4 w-4 text-[#00C853]" />
+                    <div>
+                      <span className="block text-[10px] text-slate-500 font-extrabold uppercase">1-Tap Phone</span>
+                      <span>+254 700 000 000</span>
+                    </div>
+                  </a>
                 </div>
 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 pt-1">
                   <Mail className="h-5 w-5 text-[#00C853] shrink-0" />
                   <div>
                     <strong className="text-slate-900 font-bold">Email:</strong>
