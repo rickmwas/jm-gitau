@@ -19,6 +19,7 @@ export interface CampaignPost {
     post_id: string;
     file_hash: string;
     dimensions: { width: number; height: number };
+    original_url?: string;
     paths: {
       raw: string;
       web: string;
