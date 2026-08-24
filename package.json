@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "scrape-feed": "python ../scripts/scrape_facebook.py --mode apify --limit 15",
+    "ingest-feed": "python ../scripts/scrape_facebook.py --mode file"
   },
   "dependencies": {
     "clsx": "^2.1.1",
