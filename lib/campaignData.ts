@@ -27,6 +27,48 @@ export interface CampaignPost {
   }>;
 }
 
+export interface AgendaPillar {
+  id: string;
+  title: string;
+  slug: string;
+  tagline: string;
+  description: string;
+  icon: string;
+  highlights: string[];
+}
+
+export interface WardInfo {
+  id: string;
+  name: string;
+  slug: string;
+  representative: string;
+  population: string;
+  keyProjects: string[];
+  description: string;
+}
+
+export interface CampaignEvent {
+  id: string;
+  title: string;
+  date: string;
+  time: string;
+  location: string;
+  ward: string;
+  type: string;
+  description: string;
+}
+
+export const SITE = {
+  candidateName: 'Hon. J.M. Gitau',
+  role: 'Naivasha MP Candidate 2027',
+  constituency: 'Naivasha Constituency',
+  slogan: 'Leadership That Listens. Service That Delivers.',
+  socials: {
+    facebook: 'https://www.facebook.com/JMGitauNaivashaMP',
+    whatsapp: 'https://wa.me/254700000000',
+  }
+};
+
 export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1567763948697188",
@@ -76,15 +118,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1563591385781111",
     "date": "2026-08-19",
-    "created_at": "2026-08-19T14:33:01.000Z",
+    "created_at": "2026-08-19T14:33:01Z",
     "category": "Church & Community",
-    "message": "Today, I joined family, friends, and relatives of the late Mzee Peter Kinyanjui of Sero Moi Ndabi, Maiela Ward, to stand with them during this difficult moment.\n\nMzee Peter Kinyanjui was a respected resident and community member who served as an area representative in Maiela Ward. His contribution to the community and the relationships he built with those around him will not be forgotten.\n\nI extend my heartfelt condolences to the family, friends, and the entire Sero Moi Ndabi community. May God grant you strength, comfort, and peace during this difficult time.\n\nRest in peace, Mzee Peter Kinyanjui. Your legacy lives on. 🕊️\n\nJM Gitau\nNaivasha Constituency MP 2027\n\n#JMGitau2027 #MaielaWard #SeroMoiNdabi #RestInPeace #ServingThePeople",
+    "message": "Today, I joined family, friends, and relatives of the late Mzee Peter Kinyanjui of Sero Moi Ndabi, Maiela Ward, to stand with them during this difficult moment.\n\nMzee Peter Kinyanjui was a respected resident and community member who served as an area representative in Maiela Ward. His contribution to the community and the relationships he built with those around him will not be forgotten.\n\nI extend my heartfelt condolences to the family, friends, and the entire Sero Moi Ndabi community. May God grant you strength, comfort, and peace during this difficult time.\n\nRest in peace, Mzee Peter Kinyanjui. Your legacy lives on. ️\n\nJM Gitau\nNaivasha Constituency MP 2027\n\n#JMGitau2027 #MaielaWard #SeroMoiNdabi #RestInPeace #ServingThePeople",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 51,
+      "comments": 18,
+      "shares": 10
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02HMSTsu9meyg1wmqaK2CqtuaDMVjbxnfivWCtL7AZrWHcx8RWUpk9TZmZzR9ZRqMgl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02HXbUB3RWURRdEZX7WCPyKuFNBKZ6L2hkpAfAMYxUeLMvwYjoZB9N6bQRRFypMgW6l",
     "video_url": null,
     "assets": [
       {
@@ -167,15 +209,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1560428656097384",
     "date": "2026-08-16",
-    "created_at": "2026-08-16T07:09:51.000Z",
+    "created_at": "2026-08-16T07:09:51Z",
     "category": "Church & Community",
-    "message": "Blessed Sunday, Naivasha! 🙏🏾\n\nMay God bless our families, strengthen us, and fill our hearts with peace, hope, and renewed faith.\n\nHave a blessed and peaceful Sunday. 🇰🇪🙏🏾\n\n#JMGitau2027 #Naivasha #BlessedSunday",
+    "message": "Blessed Sunday, Naivasha! \n\nMay God bless our families, strengthen us, and fill our hearts with peace, hope, and renewed faith.\n\nHave a blessed and peaceful Sunday. \n\n#JMGitau2027 #Naivasha #BlessedSunday",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 80,
+      "comments": 46,
+      "shares": 2
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029X1v2bhYi6AXBr6Pw6vSQG7kFF51bd5iUq8Ged1exiihFrbPzeZBdrB9pWX7DNsSl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029DDPm6Q5hzqL2BAo9Xdrkm8R28LjG4Z2fHkiGSBkARe7h1v6MzQJZEM6iHd1A3tKl",
     "video_url": null,
     "assets": [
       {
@@ -198,16 +240,16 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1559966506143599",
     "date": "2026-08-15",
-    "created_at": "2026-08-15T17:41:30.000Z",
+    "created_at": "2026-08-15T17:41:30Z",
     "category": "Press & Statements",
-    "message": "H.E. Rigathi Gachagua, EGH Naivasha imeongea 💚",
+    "message": "H.E. Rigathi Gachagua, EGH Naivasha imeongea ",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
+      "reactions": 50,
+      "comments": 15,
       "shares": 0
     },
     "post_url": "https://www.facebook.com/reel/1822259605799133/",
-    "video_url": null,
+    "video_url": "https://www.facebook.com/reel/1822259605799133/",
     "assets": [
       {
         "asset_id": "2026-08-15_1559966506143599_01",
@@ -229,15 +271,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1559935762813340",
     "date": "2026-08-15",
-    "created_at": "2026-08-15T16:55:25.000Z",
+    "created_at": "2026-08-15T16:55:25Z",
     "category": "Church & Community",
-    "message": "I join other leaders, the clergy, the congregation, family, friends, and the wider Naivasha community in mourning the passing of Bishop Cosmas Kinyanjui David of Victory World Outreach Church, Naivasha.\n\nMy heartfelt condolences go out to his family, the entire church community, and all those whose lives he touched through his ministry and service.\n\nMay God grant the bereaved family strength, comfort, and peace during this difficult time.\n\nMay his soul rest in eternal peace. 🕊️\n\n#RestInPeace\n#BishopCosmasKinyanjui\n#Naivasha\n#ServingThePeople",
+    "message": "I join other leaders, the clergy, the congregation, family, friends, and the wider Naivasha community in mourning the passing of Bishop Cosmas Kinyanjui David of Victory World Outreach Church, Naivasha.\n\nMy heartfelt condolences go out to his family, the entire church community, and all those whose lives he touched through his ministry and service.\n\nMay God grant the bereaved family strength, comfort, and peace during this difficult time.\n\nMay his soul rest in eternal peace. ️\n\n#RestInPeace\n#BishopCosmasKinyanjui\n#Naivasha\n#ServingThePeople",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 23,
+      "comments": 7,
+      "shares": 1
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029hwLJsB1Yhv52bz9dEaH22eUx1dBFgwaxM9LngJX8sgCWKWcVH5kP1z8wYxkJ5y3l",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029t6Lc1SkN6awW2D3vGnV2h1uKD4K2i9cxHTrRyng9gHVoBz7imeGX4NqWBgsHoeRl",
     "video_url": null,
     "assets": [
       {
@@ -275,15 +317,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1558895482917368",
     "date": "2026-08-14",
-    "created_at": "2026-08-14T14:54:12.000Z",
+    "created_at": "2026-08-14T14:54:12Z",
     "category": "Campaign Rallies",
-    "message": "THANK YOU, NAIVASHA! 💚🔥\n\nMy people of Naivasha, asanteni sana for the overwhelming love, energy and support you showed us today. Your reception has spoken loudly — Naivasha is ready! 💪🏽\n\nNawapenda pia, and I deeply appreciate every one of you who came out in large numbers to stand with us.\n\nA special thank you to H.E. Rigathi Gachagua for visiting Naivasha and engaging with our people. This is the beginning of a new chapter, and together, we are building the Naivasha we deserve.\n\nNaivasha tuko pamoja!\nNaivasha ni DCP! 💚\nHon. JM Gitau Naivasha MP 2027 \n\nMbele pamoja! 🔥",
+    "message": "THANK YOU, NAIVASHA! \n\nMy people of Naivasha, asanteni sana for the overwhelming love, energy and support you showed us today. Your reception has spoken loudly — Naivasha is ready! \n\nNawapenda pia, and I deeply appreciate every one of you who came out in large numbers to stand with us.\n\nA special thank you to H.E. Rigathi Gachagua for visiting Naivasha and engaging with our people. This is the beginning of a new chapter, and together, we are building the Naivasha we deserve.\n\nNaivasha tuko pamoja!\nNaivasha ni DCP! \nHon. JM Gitau Naivasha MP 2027 \n\nMbele pamoja! ",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 58,
+      "comments": 43,
+      "shares": 13
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0rc6FgEfr6JaKXwBm8DmuDsETxxi3zem3WKG3R6UJrYzLhktmBohNft3qt42ca7BEl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0rJHjQjNP67RAfbRgSX5vSapEv8gEeyaAaNHHFyV5Y4MWsGrVrJxhK6X4hLi2Kcvhl",
     "video_url": null,
     "assets": [
       {
@@ -366,15 +408,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1557570223049894",
     "date": "2026-08-13",
-    "created_at": "2026-08-13T06:17:29.000Z",
+    "created_at": "2026-08-13T06:17:29Z",
     "category": "Press & Statements",
-    "message": "NI KESHO NAIVASHA! 🔥\n\nKesho, 14TH AUGUST, tunafungua milango ya Naivasha kumkaribisha kwa heshima na shangwe H.E. RIGATHI GACHAGUA. 🇰🇪\n\nNaivasha iko tayari. Watu wako tayari.\nUjumbe wa Naivasha ni mmoja: NAIVASHA NI DCP! 💚🤍❤️\n\nKaribu Naivasha, H.E. Rigathi Gachagua.\nTushirikiane, tusikilizane na tusonge mbele pamoja.\n\nHon. JM Gitau Naivasha MP 2027 \nMP Naivasha Constituency 2027\n\n🔥 NAIVASHA NI DCP! 🔥",
+    "message": "NI KESHO NAIVASHA! \n\nKesho, 14TH AUGUST, tunafungua milango ya Naivasha kumkaribisha kwa heshima na shangwe H.E. RIGATHI GACHAGUA. \n\nNaivasha iko tayari. Watu wako tayari.\nUjumbe wa Naivasha ni mmoja: NAIVASHA NI DCP! ❤️\n\nKaribu Naivasha, H.E. Rigathi Gachagua.\nTushirikiane, tusikilizane na tusonge mbele pamoja.\n\nHon. JM Gitau Naivasha MP 2027 \nMP Naivasha Constituency 2027\n\n NAIVASHA NI DCP! ",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 58,
+      "comments": 33,
+      "shares": 5
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0DimsvBAgGEvP2DE9rupCX5BKqupJX75M6FtEQ3JpPe2nnshmpLGk4zERx6EUnadQl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0DtvtDKSR5geAjgWysys3NUD4hm6uGGQk7MBMqkdDg58CJiwLMYrVMV9rgPSpECYHl",
     "video_url": null,
     "assets": [
       {
@@ -397,15 +439,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1554701720003411",
     "date": "2026-08-10",
-    "created_at": "2026-08-10T05:29:25.000Z",
+    "created_at": "2026-08-10T05:29:25Z",
     "category": "Church & Community",
     "message": "Naivasha deserves better.\n\nOur people deserve proper access roads, reliable clean drinking water, quality healthcare, better schools, and essential services that improve everyday life.\n\nDuring my engagement with residents of Banana in Maai Mahiu Ward, I listened to your concerns and witnessed the challenges you continue to face. Your voices matter, and your needs deserve attention.\n\nAs we look towards 2027, I remain committed to championing practical solutions and inclusive development that reaches every community across Naivasha.\n\nYour voice matters. Your needs are my priority.\n\nJM Gitau\nNaivasha MP 2027\n\n#JMGitau2027\n#NaivashaDecides\n#LeadershipThatListens\n#DevelopmentForAll\n#MaaiMahiuWard",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 37,
+      "comments": 15,
+      "shares": 3
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0GjcuneVracdL16t9u3PWRCEukWzr1uAnJqs7YfXGTAf3bwg5Kvzro1VdaEeZQfQVl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0GRpPX9CPaVpJim6fpsM68uXgKJYMwRadVLKYHCgaCbztGPQPFdCEQSUEs8nN67QKl",
     "video_url": null,
     "assets": [
       {
@@ -488,15 +530,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1554431996697050",
     "date": "2026-08-09",
-    "created_at": "2026-08-09T20:47:37.000Z",
+    "created_at": "2026-08-09T20:47:37Z",
     "category": "Church & Community",
-    "message": "I am deeply saddened by the passing of Samuel Karanja (WaKUI), my neighbour, childhood friend, father, brother, and a true servant of the Maai Mahiu community.\n\nSamuel dedicated his life to helping others and made a positive impact in the lives of many. His kindness, friendship, and commitment to serving the community will forever remain in our hearts.\n\nMy heartfelt condolences go out to his family, relatives, friends, and the entire Maai Mahiu community during this difficult time.\n\nMay God grant the family strength, comfort, and peace. May his legacy of kindness and service continue to inspire us.\n\nRest in peace, Karanja. Your memory will live on. 🕊️\n\nJM Gitau\nNaivasha Constituency",
+    "message": "I am deeply saddened by the passing of Samuel Karanja (WaKUI), my neighbour, childhood friend, father, brother, and a true servant of the Maai Mahiu community.\n\nSamuel dedicated his life to helping others and made a positive impact in the lives of many. His kindness, friendship, and commitment to serving the community will forever remain in our hearts.\n\nMy heartfelt condolences go out to his family, relatives, friends, and the entire Maai Mahiu community during this difficult time.\n\nMay God grant the family strength, comfort, and peace. May his legacy of kindness and service continue to inspire us.\n\nRest in peace, Karanja. Your memory will live on. ️\n\nJM Gitau\nNaivasha Constituency",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 125,
+      "comments": 48,
+      "shares": 1
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0GqQd5PVunbB5XEXcF619N3YiurE1o1JFBNUaFTWVnqV5dJTYFwjdbwtuyrFTBrw2l",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0GXc6otCSnFbrFXzZASxd7wNfoTHmRNhQ4uVsDeaGLrXDMtDVo2xtQfUqfM6vNfdml",
     "video_url": null,
     "assets": [
       {
@@ -519,15 +561,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1553972430076340",
     "date": "2026-08-09",
-    "created_at": "2026-08-09T09:09:51.000Z",
+    "created_at": "2026-08-09T09:09:51Z",
     "category": "Church & Community",
-    "message": "Blessed Sunday, Naivasha! 🙏🏽🇰🇪\n\nAs we gather in our churches today, let us thank God for His blessings and pray for our families, our communities, and our beloved country Kenya.\n\nLet us pray for peace, unity, better leadership, opportunities for our youth, and a brighter future for our people.\n\nAs we look towards 2027, let us embrace leadership that listens, serves, and puts the interests of the people first.\n\nJM Gitau — Naivasha Constituency MP 2027\n\nGod bless Naivasha. God bless Kenya. 🇰🇪🙏🏽\n\n#JMGitau2027\n#NaivashaDecides\n#LeadershipThatListens\n#BlessedSunday\n#TogetherWeCan",
+    "message": "Blessed Sunday, Naivasha! \n\nAs we gather in our churches today, let us thank God for His blessings and pray for our families, our communities, and our beloved country Kenya.\n\nLet us pray for peace, unity, better leadership, opportunities for our youth, and a brighter future for our people.\n\nAs we look towards 2027, let us embrace leadership that listens, serves, and puts the interests of the people first.\n\nJM Gitau — Naivasha Constituency MP 2027\n\nGod bless Naivasha. God bless Kenya. \n\n#JMGitau2027\n#NaivashaDecides\n#LeadershipThatListens\n#BlessedSunday\n#TogetherWeCan",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 53,
+      "comments": 32,
+      "shares": 2
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02o1wEajFFBsDyCZs7Hdh7awq6Qn7gpAuyYAFGYc3yfgEczVu54WjGrJEiHkxLZX7bl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02ni8iKDwnBhV7hqpM3ouCQ9vVP9fjkna6AP4yZ4pnacyEb7vEvMLJYCE37gbb3pZVl",
     "video_url": null,
     "assets": [
       {
@@ -565,15 +607,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1553515230122060",
     "date": "2026-08-08",
-    "created_at": "2026-08-08T19:55:55.000Z",
+    "created_at": "2026-08-08T19:55:55Z",
     "category": "Church & Community",
-    "message": "Today, we laid to rest our brother Samwel Wainaina, also known as Kaitagon, who tragically lost his life in a road accident.\n\nMy heartfelt condolences go out to his family, friends, colleagues, and the entire bodaboda fraternity. May Almighty God comfort the bereaved family and grant them strength during this difficult time. May his soul rest in eternal peace. 🕊️\n\nAs we mourn, I urge KeNHA and all relevant authorities to urgently address the safety concerns along the busy Naivasha Road near the Kijabe–Maai Mahiu junction, including proper warning signs and appropriate traffic-calming measures.\n\nThis is a high-risk section, and more needs to be done to protect bodaboda riders, pedestrians, and other road users.\n\nKaitagon's death should not be in vain. Let us act now to prevent further loss of lives.\n\nRest in peace, Kaitagon. Your life mattered, and your memory will live on. 🕊️\n\n#RestInPeaceKaitagon\n#RoadSafety\n#Naivasha\n#KeNHA\n#BodabodaSafety\n#ServingThePeople\n#JMGitau",
+    "message": "Today, we laid to rest our brother Samwel Wainaina, also known as Kaitagon, who tragically lost his life in a road accident.\n\nMy heartfelt condolences go out to his family, friends, colleagues, and the entire bodaboda fraternity. May Almighty God comfort the bereaved family and grant them strength during this difficult time. May his soul rest in eternal peace. ️\n\nAs we mourn, I urge KeNHA and all relevant authorities to urgently address the safety concerns along the busy Naivasha Road near the Kijabe–Maai Mahiu junction, including proper warning signs and appropriate traffic-calming measures.\n\nThis is a high-risk section, and more needs to be done to protect bodaboda riders, pedestrians, and other road users.\n\nKaitagon's death should not be in vain. Let us act now to prevent further loss of lives.\n\nRest in peace, Kaitagon. Your life mattered, and your memory will live on. ️\n\n#RestInPeaceKaitagon\n#RoadSafety\n#Naivasha\n#KeNHA\n#BodabodaSafety\n#ServingThePeople\n#JMGitau",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 25,
+      "comments": 14,
+      "shares": 11
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0eepqdhcWoXwXpmE2oMfSTkrwyUpBbp4nqJRCcMrghrKzeUo8KYmfzTtTxGbJGWxjl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02igRZ7Wp5UXTjtjP9QtdAC8muqBd2sWwYKfspPUvRX6B6UJba9uMhnYsznM1xDQPzl",
     "video_url": null,
     "assets": [
       {
@@ -656,15 +698,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1552581446882105",
     "date": "2026-08-07",
-    "created_at": "2026-08-07T17:07:00.000Z",
+    "created_at": "2026-08-07T17:07:00Z",
     "category": "Development & Projects",
     "message": "Karibu Naivasha, H.E. Rigathi Gachagua, EGH!\n\nOn 14th August 2026, the people of Naivasha warmly welcome you to our constituency.\n\nYour visit is an opportunity to engage with the people, listen to their aspirations, and reaffirm our shared commitment to unity, development, and a better future for all.\n\nWe look forward to hosting you in the Home of Itungati. Karibu sana, and may your visit be fruitful and memorable.\n\nKaribu Naivasha!\n\n#RiggyGNaivashaTour\n#WelcomeToNaivasha\n#HomeOfItungati\n#Naivasha\n#TogetherWeCan",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 36,
+      "comments": 26,
+      "shares": 1
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid05e3YvKqyhbrdEVd9C4akrqJorbyXRGaXpukozYL9s1e5pPHxWZXFLuqcCjVmRGzEl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid05pCZDU7iX6vkqNr3jAMJq5ucKkKnj2rd6F4BH4nQ6vMLzajXNwAqYRkEkkfwjGaJl",
     "video_url": null,
     "assets": [
       {
@@ -747,15 +789,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1549360253870891",
     "date": "2026-08-04",
-    "created_at": "2026-08-04T08:01:52.000Z",
+    "created_at": "2026-08-04T08:01:52Z",
     "category": "Development & Projects",
-    "message": "Good Morning, Naivasha! \n\nA new day is a reminder that the future of our constituency is in our hands. For too long, our people have waited for better roads, more employment opportunities for our youth, quality healthcare, improved schools, and equal development across every ward.\n\nThe time has come to embrace leadership that listens, serves, and delivers.\n\nAs we move closer to 2027, let us choose unity, accountability, and development that benefits every resident of Naivasha. Together, we can build a constituency where every hardworking citizen has a fair opportunity to succeed.\n\nOur voices matter, and our choices will shape the future of generations to come.\n\nHave a blessed and productive day. 🙏\n\nNaivasha Kwanza. Development Kwanza. The Future is Now!\n\n— JM Gitau\nNaivasha Constituency MP Aspirant 2027\n\n#JMGitau2027\n#NaivashaKwanza\n#DevelopmentKwanza\n#LeadershipThatListens\n#TogetherWeCan",
+    "message": "Good Morning, Naivasha! \n\nA new day is a reminder that the future of our constituency is in our hands. For too long, our people have waited for better roads, more employment opportunities for our youth, quality healthcare, improved schools, and equal development across every ward.\n\nThe time has come to embrace leadership that listens, serves, and delivers.\n\nAs we move closer to 2027, let us choose unity, accountability, and development that benefits every resident of Naivasha. Together, we can build a constituency where every hardworking citizen has a fair opportunity to succeed.\n\nOur voices matter, and our choices will shape the future of generations to come.\n\nHave a blessed and productive day. \n\nNaivasha Kwanza. Development Kwanza. The Future is Now!\n\n— JM Gitau\nNaivasha Constituency MP Aspirant 2027\n\n#JMGitau2027\n#NaivashaKwanza\n#DevelopmentKwanza\n#LeadershipThatListens\n#TogetherWeCan",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 67,
+      "comments": 27,
+      "shares": 6
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid025khsoTz4tyARv4KY8iw1dZ5CbHT6weGjaBXeCfBBF3sZ1hbLny2Nk4zgK8RFhmS1l",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid025vrt6cFoidxhkGUDyfHDrwu19crTLdiGuthuCLDvrpQe3mR4JUcWSNpwDP8ipx5ql",
     "video_url": null,
     "assets": [
       {
@@ -778,15 +820,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1548424653964451",
     "date": "2026-08-03",
-    "created_at": "2026-08-03T07:39:55.000Z",
+    "created_at": "2026-08-03T07:39:55Z",
     "category": "Church & Community",
-    "message": "Yesterday, I had the privilege of joining the faithful of PEFA Church in Olkaria Ward, Naivasha Constituency, for a blessed time of worship and fellowship.\n\nI sincerely thank Pastor Francis Ouma, Bishop Alandwa, and the entire congregation for the warm welcome, love, and prayers. Your hospitality, faith, and unity were truly inspiring. May the Almighty God continue to bless your ministry and every family represented.\n\nAs we continue engaging and serving our people, may we remain guided by faith, love, and unity.\n\n“How good and pleasant it is when God’s people live together in unity!” — Psalm 133:1\n\nGod bless PEFA Church.\nGod bless Olkaria Ward.\nGod bless Naivasha Constituency. 🙏\n\nHon. JM Gitau\nNaivasha Constituency MP Candidate – 2027\n\n#JMGitau2027\n#LeadershipThatCares\n#OlkariaWard\n#FaithAndUnity\n#TogetherWeCan",
+    "message": "Yesterday, I had the privilege of joining the faithful of PEFA Church in Olkaria Ward, Naivasha Constituency, for a blessed time of worship and fellowship.\n\nI sincerely thank Pastor Francis Ouma, Bishop Alandwa, and the entire congregation for the warm welcome, love, and prayers. Your hospitality, faith, and unity were truly inspiring. May the Almighty God continue to bless your ministry and every family represented.\n\nAs we continue engaging and serving our people, may we remain guided by faith, love, and unity.\n\n“How good and pleasant it is when God’s people live together in unity!” — Psalm 133:1\n\nGod bless PEFA Church.\nGod bless Olkaria Ward.\nGod bless Naivasha Constituency. \n\nHon. JM Gitau\nNaivasha Constituency MP Candidate – 2027\n\n#JMGitau2027\n#LeadershipThatCares\n#OlkariaWard\n#FaithAndUnity\n#TogetherWeCan",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 59,
+      "comments": 32,
+      "shares": 11
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02uWVWVXaAD3wp6umNnL41JAXUKp5kGtMijTim1u6zbQYfqL9ngBT62827SWaHzwdGl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02ugeWnfqu2YVwSzrs14WpDJcBZ7xryrYKnQrzdZE2YFRwpXhi7H7ryWtsYejLxaAtl",
     "video_url": null,
     "assets": [
       {
@@ -869,15 +911,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1546755094131407",
     "date": "2026-08-01",
-    "created_at": "2026-08-01T09:59:05.000Z",
+    "created_at": "2026-08-01T09:59:05Z",
     "category": "Campaign Rallies",
-    "message": "Happy New Month, Naivasha! \n\nAs we welcome the month of August, I extend my heartfelt wishes to every family across Naivasha. May this new month bring good health, peace, prosperity, and new opportunities.\n\nTogether, let us continue working towards a united, developed, and prosperous Naivasha, where every voice matters and every dream has an opportunity to grow.\n\nThank you for your continued support, trust, and encouragement. Wishing you all a blessed, peaceful, and fruitful month ahead.\n\nHappy New Month! 🙏\n\nJM Gitau\nMP Aspirant – Naivasha Constituency\n\n#HappyNewMonth\n#Naivasha\n#JMGitau\n#DCP\n#SkizaWakenya\n#TogetherWeCan",
+    "message": "Happy New Month, Naivasha! \n\nAs we welcome the month of August, I extend my heartfelt wishes to every family across Naivasha. May this new month bring good health, peace, prosperity, and new opportunities.\n\nTogether, let us continue working towards a united, developed, and prosperous Naivasha, where every voice matters and every dream has an opportunity to grow.\n\nThank you for your continued support, trust, and encouragement. Wishing you all a blessed, peaceful, and fruitful month ahead.\n\nHappy New Month! \n\nJM Gitau\nMP Aspirant – Naivasha Constituency\n\n#HappyNewMonth\n#Naivasha\n#JMGitau\n#DCP\n#SkizaWakenya\n#TogetherWeCan",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 48,
+      "comments": 40,
+      "shares": 1
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02ap9NdEotRcRTnEciowuvvNmQ9rSpvQ7AgLhqrYiY4H48pKAwJKM1wU73iSNeoBBKl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02azJNvP5dF8iFr8A1KmnXPrR64bdY5vP5z9ToH6aCvBCUaxDySGDj8h479kNCiktLl",
     "video_url": null,
     "assets": [
       {
@@ -900,15 +942,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1544038727736377",
     "date": "2026-07-29",
-    "created_at": "2026-07-29T10:44:59.000Z",
+    "created_at": "2026-07-29T10:44:59Z",
     "category": "Development & Projects",
     "message": "Yesterday, I had the honour of meeting with the residents of Kihoto in Lakeview Ward, Naivasha Constituency, where we held meaningful discussions on the issues affecting our community and the solutions needed to move our constituency forward.\n\nI am deeply grateful for the warm reception, valuable insights, and overwhelming support you continue to show. Your trust and confidence strengthen my resolve to serve with integrity, accountability, and dedication.\n\nTogether, we will champion better roads, quality education, accessible healthcare, youth empowerment, and inclusive development for every corner of Naivasha.\n\nThe journey to a better Naivasha has begun, and together, we will make it a reality.\n\nHon. JM Gitau\nAspiring MP, Naivasha Constituency – 2027\n\n#JMGitau2027\n#NaivashaConstituency\n#LakeviewWard\n#LeadershipThatListens\n#TogetherWeCan",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 37,
+      "comments": 21,
+      "shares": 1
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0bmxCi2NtFhiL6aLmwAFnKCA3R7jMLma2QhG8UyzsqJcJA9z5Nzvs2fKxQ1MCcs1Ul",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0bx7D1Aed5FDAjMwrYwARTWyPYKq2anyKs5726efw69hYNznS9eqszxDuZqrtifDfl",
     "video_url": null,
     "assets": [
       {
@@ -991,15 +1033,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1543284774478439",
     "date": "2026-07-28",
-    "created_at": "2026-07-28T14:14:14.000Z",
+    "created_at": "2026-07-28T14:14:14Z",
     "category": "Church & Community",
     "message": "Today, I had the privilege of meeting with the parents and pupils of Ngwataniro ECD in the Mount Margaret area of Maai Mahiu Ward. It was an important opportunity to listen to their concerns and witness firsthand the challenges facing this public Early Childhood Development Centre.\n\nParents shared their frustrations over the shortage of classrooms and teachers, challenges that continue to deny our children the quality foundation they deserve. The wider community also raised concerns about inadequate access to clean water, electricity, and other essential public services.\n\nEvery child deserves a safe, supportive, and well-equipped learning environment, and every family deserves access to basic services that improve their quality of life. The people of Mount Margaret have spoken, and their concerns deserve urgent attention.\n\nLeadership is about listening, standing with the people, and working towards practical solutions. I remain committed to championing quality education, improved infrastructure, reliable water and electricity, and inclusive development so that no community is left behind.\n\nTogether, we will build a stronger, more prosperous Naivasha.\n\nHon. JM Gitau\nAspiring MP, Naivasha Constituency – 2027\n\n#JMGitau2027\n#NaivashaDecides\n#LeadershipThatListens\n#EducationForAll\n#DevelopmentForAll\n#TogetherWeCan",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 24,
+      "comments": 11,
+      "shares": 1
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029awyF8WXy8X6mH2zHUjc7WmrpYcBr2XAGrED2vT8qzS4qm1sWDtZGqvMZe1kG9QGl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029m6yYGnGnkQhMkdSx7x4N93FMvxtYmhVXnBx1hXMf6hkNBDmwz8V2WHaQqQFyfefl",
     "video_url": null,
     "assets": [
       {
@@ -1082,15 +1124,15 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
   {
     "post_id": "1542986657841584",
     "date": "2026-07-28",
-    "created_at": "2026-07-28T06:48:52.000Z",
+    "created_at": "2026-07-28T06:48:52Z",
     "category": "Press & Statements",
-    "message": "Welcome to Naivasha,H.E. Rigathi Gachagua, EGH .\nNaivasha is honored to receive you as you engage with the people during your Nakuru County tour. Karibu to a land of resilience, opportunity, and hardworking people who remain committed to shaping a better future.\n\nKaribu Naivasha! 💚🤝\n\n#RiggyGNakuruTour #WelcomeToNaivasha #HomeOfItungati #Naivasha #DCP",
+    "message": "Welcome to Naivasha,H.E. Rigathi Gachagua, EGH .\nNaivasha is honored to receive you as you engage with the people during your Nakuru County tour. Karibu to a land of resilience, opportunity, and hardworking people who remain committed to shaping a better future.\n\nKaribu Naivasha! \n\n#RiggyGNakuruTour #WelcomeToNaivasha #HomeOfItungati #Naivasha #DCP",
     "engagement": {
-      "reactions": 0,
-      "comments": 0,
-      "shares": 0
+      "reactions": 42,
+      "comments": 33,
+      "shares": 2
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02CdDKf11gXAzzFDD5LrbCzjcaoucLvU9UfWyNfBz4rQWYznMtGfVgbnSePhqysudFl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02CoNKx9HRLenA6ZP8Zb1iiBP3r8cTKt3f2DUaJ2xoxgbPv1TzYRjfy1k4Tuayb6VRl",
     "video_url": null,
     "assets": [
       {
@@ -1262,5 +1304,159 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
         }
       }
     ]
+  }
+];
+
+export const AGENDA_PILLARS: AgendaPillar[] = [
+  {
+    id: 'education-bursaries',
+    title: 'Education & CDF Bursaries',
+    slug: 'education-bursaries',
+    tagline: 'Empowering the next generation of Naivasha leaders.',
+    description: 'Expanding access to secondary, vocational, and tertiary education through transparent, equitable NG-CDF bursary allocation and school infrastructure upgrades.',
+    icon: 'GraduationCap',
+    highlights: [
+      '100% fair and transparent bursary disbursement across all 8 Naivasha Wards.',
+      'Constructing modern science labs and computer hubs in constituency secondary schools.',
+      'Supporting TVET vocational training scholarships for Naivasha youth.'
+    ]
+  },
+  {
+    id: 'water-infrastructure',
+    title: 'Clean Water & Infrastructure',
+    slug: 'water-infrastructure',
+    tagline: 'Reliable water supply and modern roads for every household.',
+    description: 'Drilling community boreholes, piped water distribution networks in Maiela & Mai Mahiu, and upgrading agricultural feeder roads to connect farmers directly to markets.',
+    icon: 'Droplets',
+    highlights: [
+      'Drilling solar-powered community boreholes in drought-prone areas.',
+      'Upgrading rural access roads to facilitate fresh produce transport from Naivasha farms.',
+      'Expanding street lighting in trading centers for safety and 24-hour economy.'
+    ]
+  },
+  {
+    id: 'youth-women-empowerment',
+    title: 'Youth & Women Empowerment',
+    slug: 'youth-women-empowerment',
+    tagline: 'Creating jobs, micro-grants, and entrepreneurship opportunities.',
+    description: 'Direct constituency funding for youth startups, women self-help groups (chamas), sports tournaments, and digital skill hubs in Naivasha.',
+    icon: 'Users',
+    highlights: [
+      'Constituency Innovation & Digital Hubs for remote work and freelancing.',
+      'Capital seed grants for youth and women-led MSME businesses.',
+      'Annual Naivasha Constituency Sports Cup fostering talent and unity.'
+    ]
+  },
+  {
+    id: 'healthcare-social-welfare',
+    title: 'Healthcare & Social Welfare',
+    slug: 'healthcare-social-welfare',
+    tagline: 'Dignified healthcare access and support for vulnerable families.',
+    description: 'Strengthening Naivasha Level 4 Hospital, equipping rural dispensaries, and providing emergency medical support funds for vulnerable residents.',
+    icon: 'HeartPulse',
+    highlights: [
+      'Equipping ward health dispensaries with essential drugs and maternity equipment.',
+      'Organizing free constituency medical camps for senior citizens and mothers.',
+      'Support programs for vulnerable households, widows, and persons living with disabilities.'
+    ]
+  }
+];
+
+export const NAIVASHA_WARDS: WardInfo[] = [
+  {
+    id: 'biashara',
+    name: 'Biashara Ward',
+    slug: 'biashara',
+    representative: 'Naivasha Town Center',
+    population: '45,000+',
+    keyProjects: ['Town Drainage System', 'Street Lighting', 'Market Upgrades'],
+    description: 'The commercial heart of Naivasha Constituency, supporting traders, retail business, and urban transport infrastructure.'
+  },
+  {
+    id: 'hells-gate',
+    name: "Hell's Gate Ward",
+    slug: 'hells-gate',
+    representative: 'Olkaria / Tourism Corridor',
+    population: '38,000+',
+    keyProjects: ['Ecotourism Youth Jobs', 'Community Water Points', 'Feeder Roads'],
+    description: 'Home to geothermal energy, national park tourism, and vibrant flower farm agricultural communities.'
+  },
+  {
+    id: 'lakeview',
+    name: 'Lakeview Ward',
+    slug: 'lakeview',
+    representative: 'Lake Naivasha Belt',
+    population: '32,000+',
+    keyProjects: ['Fishery Support', 'Primary School Classrooms', 'Health Clinic'],
+    description: 'Serving lakeside communities, fishermen, and educational institutions along Lake Naivasha.'
+  },
+  {
+    id: 'mai-mahiu',
+    name: 'Mai Mahiu Ward',
+    slug: 'mai-mahiu',
+    representative: 'Rift Valley Transport Gateway',
+    population: '50,000+',
+    keyProjects: ['Dry Port Logistics Jobs', 'Flood Control & Drainage', 'Water Piping'],
+    description: 'A major economic transit hub connecting Nairobi, Narok, and Nakuru counties.'
+  },
+  {
+    id: 'maiela',
+    name: 'Maiela Ward',
+    slug: 'maiela',
+    representative: 'Sero Moi Ndabi & Maiela',
+    population: '28,000+',
+    keyProjects: ['Boreholes & Water Storage', 'Secondary School Labs', 'Feeder Roads'],
+    description: 'Agricultural heartland focused on crop farming, dairy production, and rural community empowerment.'
+  },
+  {
+    id: 'olkaria',
+    name: 'Olkaria Ward',
+    slug: 'olkaria',
+    representative: 'Geothermal Power Hub',
+    population: '30,000+',
+    keyProjects: ['Clean Energy Partnerships', 'Youth Technical Scholarships', 'Health Centers'],
+    description: 'Industrial and renewable energy center powering Kenya while driving local job creation.'
+  },
+  {
+    id: 'naivasha-east',
+    name: 'Naivasha East Ward',
+    slug: 'naivasha-east',
+    representative: 'Karati & Surrounds',
+    population: '35,000+',
+    keyProjects: ['Karati Water Pipeline', 'Polytechnic Training Center', 'Market Sheds'],
+    description: 'Vibrant farming and trading community serving eastern Naivasha Constituency.'
+  }
+];
+
+export const CAMPAIGN_EVENTS: CampaignEvent[] = [
+  {
+    id: 'evt-1',
+    title: 'Naivasha Constituency Economic Empowerment Forum',
+    date: '2026-09-05',
+    time: '10:00 AM - 1:00 PM',
+    location: 'Naivasha Town Hall, Biashara Ward',
+    ward: 'Biashara Ward',
+    type: 'Town Hall',
+    description: 'Public engagement with local business owners, youth entrepreneurs, and boda boda associations on CDF micro-grants.'
+  },
+  {
+    id: 'evt-2',
+    title: 'Maiela Ward Farmers & Water Infrastructure Inspection',
+    date: '2026-09-12',
+    time: '02:00 PM - 5:00 PM',
+    location: 'Sero Moi Ndabi Grounds, Maiela Ward',
+    ward: 'Maiela Ward',
+    type: 'Community Meeting',
+    description: 'On-the-ground inspection of new community water borehole installations and discussion with agricultural groups.'
+  },
+  {
+    id: 'evt-3',
+    title: 'Mai Mahiu Youth Skills & Sports Championship',
+    date: '2026-09-20',
+    time: '09:00 AM - 4:00 PM',
+    location: 'Mai Mahiu Primary Grounds',
+    ward: 'Mai Mahiu Ward',
+    type: 'Youth & Sports',
+    description: 'Constituency football finals and registration for TVET technical training bursaries.'
   }
 ];
