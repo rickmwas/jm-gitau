@@ -13,9 +13,29 @@ export default function GetInvolvedPage() {
     role: 'Mobilizer & Youth Leader'
   });
 
-  const handleSignup = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSignedUp(true);
+    setSubmitting(true);
+    try {
+      await fetch('/api/volunteers', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fullName: form.name,
+          phone: form.phone,
+          ward: form.ward,
+          interests: [form.role],
+        }),
+      });
+      setSignedUp(true);
+    } catch (err) {
+      console.error('Error recording signup:', err);
+      setSignedUp(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (

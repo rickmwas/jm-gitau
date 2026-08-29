@@ -1,0 +1,71 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  name         String
+  passwordHash String
+  role         String   @default("PRESS") // "SUPERADMIN" | "PRESS"
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Post {
+  id          String   @id @default(uuid())
+  postId      String   @unique
+  date        String
+  createdAt   DateTime @default(now())
+  category    String
+  message     String
+  slug        String?
+  isPublished Boolean  @default(true)
+  isFeatured  Boolean  @default(false)
+  reactions   Int      @default(0)
+  comments    Int      @default(0)
+  shares      Int      @default(0)
+  postUrl     String
+  videoUrl    String?
+  assetsJson  String   @default("[]")
+}
+
+model Event {
+  id          String   @id @default(uuid())
+  title       String
+  date        String
+  time        String
+  location    String
+  ward        String
+  type        String
+  description String
+  status      String   @default("upcoming")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Volunteer {
+  id             String   @id @default(uuid())
+  fullName       String
+  phone          String
+  email          String
+  ward           String
+  pollingStation String?
+  interestsJson  String   @default("[]")
+  status         String   @default("new")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model ScraperLog {
+  id         String   @id @default(uuid())
+  status     String   // "SUCCESS" | "FAILED" | "RUNNING"
+  message    String
+  postsCount Int      @default(0)
+  runAt      DateTime @default(now())
+}

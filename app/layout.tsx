@@ -120,6 +120,8 @@ const jsonLd = {
   ]
 };
 
+import PublicLayoutWrapper from '@/components/PublicLayoutWrapper';
+
 export default function RootLayout({
   children,
 }: {
@@ -134,10 +136,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#F8FAFC] text-[#0F172A] antialiased relative">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppFloat />
+        <PublicLayoutWrapper>{children}</PublicLayoutWrapper>
       </body>
     </html>
   );
