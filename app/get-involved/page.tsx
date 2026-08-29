@@ -134,7 +134,7 @@ export default function GetInvolvedPage() {
                       required
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                      placeholder="+254 700 000 000"
+                      placeholder="e.g. 0712 345 678"
                       className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs font-semibold text-slate-900 focus:border-[#00C853] focus:outline-none"
                     />
                   </div>

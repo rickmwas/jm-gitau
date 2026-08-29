@@ -107,7 +107,7 @@ export default function Home() {
             {/* Mobile 3-Stat Horizontal Swipe Card */}
             <div className="flex gap-3 overflow-x-auto pt-4 pb-2 no-scrollbar border-t border-slate-200">
               <div className="min-w-[130px] rounded-xl bg-slate-50 border border-slate-200 p-3 shrink-0">
-                <div className="text-lg font-black text-[#00C853]">7 Wards</div>
+                <div className="text-lg font-black text-[#00C853]">8 Wards</div>
                 <div className="text-[10px] font-semibold text-slate-500">Naivasha Constituency</div>
               </div>
               <div className="min-w-[130px] rounded-xl bg-slate-50 border border-slate-200 p-3 shrink-0">
@@ -188,7 +188,7 @@ export default function Home() {
 
               <div className="grid grid-cols-3 gap-6 pt-6 border-t border-slate-200/80 max-w-lg">
                 <div>
-                  <div className="text-xl sm:text-2xl font-extrabold text-[#00C853]">7 Wards</div>
+                  <div className="text-xl sm:text-2xl font-extrabold text-[#00C853]">8 Wards</div>
                   <div className="text-xs font-semibold text-slate-500">Naivasha Constituency</div>
                 </div>
                 <div>
@@ -271,9 +271,7 @@ export default function Home() {
           <div className="space-y-16">
             {AGENDA_PILLARS.map((pillar, idx) => {
               const isEven = idx % 2 === 0;
-              // Map representative ground post assets to each pillar for visual authenticity
-              const mappedPost = CAMPAIGN_POSTS[idx % CAMPAIGN_POSTS.length];
-              const asset = mappedPost.assets?.[0]?.paths.web;
+              const asset = pillar.image;
 
               return (
                 <div

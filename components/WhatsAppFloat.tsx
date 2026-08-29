@@ -9,7 +9,7 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with Hon. J.M. Gitau on WhatsApp"
-      className="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-40 flex items-center gap-2.5 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-xl shadow-[#25D366]/35 hover:bg-[#20ba5a] hover:scale-105 active:scale-95 transition-all group"
+      className="hidden sm:flex fixed bottom-6 right-6 z-40 items-center gap-2.5 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-xl shadow-[#25D366]/35 hover:bg-[#20ba5a] hover:scale-105 active:scale-95 transition-all group"
     >
       <div className="relative">
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>

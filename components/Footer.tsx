@@ -53,6 +53,7 @@ export default function Footer() {
               <li><Link href="/naivasha#maiela" className="hover:text-[#00C853] transition-colors">Maiela</Link></li>
               <li><Link href="/naivasha#olkaria" className="hover:text-[#00C853] transition-colors">Olkaria</Link></li>
               <li><Link href="/naivasha#naivasha-east" className="hover:text-[#00C853] transition-colors">Naivasha East</Link></li>
+              <li><Link href="/naivasha#viwandani" className="hover:text-[#00C853] transition-colors">Viwandani</Link></li>
             </ul>
           </div>
 

@@ -35,6 +35,7 @@ export interface AgendaPillar {
   tagline: string;
   description: string;
   icon: string;
+  image: string;
   highlights: string[];
 }
 
@@ -44,6 +45,7 @@ export interface WardInfo {
   slug: string;
   representative: string;
   population: string;
+  image: string;
   keyProjects: string[];
   description: string;
 }
@@ -64,6 +66,8 @@ export const SITE = {
   role: 'Naivasha MP Candidate 2027',
   constituency: 'Naivasha Constituency',
   slogan: 'Leadership That Listens. Service That Delivers.',
+  officialBioImage: 'assets/web/images/2026-08-19_1563591385781111_01.webp',
+  officialSecondaryImage: 'assets/web/images/2026-08-14_1558895482917368_01.webp',
   socials: {
     facebook: 'https://www.facebook.com/JMGitauNaivashaMP',
     whatsapp: 'https://wa.me/254700000000',
@@ -71,6 +75,83 @@ export const SITE = {
 };
 
 export const CAMPAIGN_POSTS: CampaignPost[] = [
+  {
+    "post_id": "1572768801530036",
+    "date": "2026-08-29",
+    "created_at": "2026-08-29T15:02:51.000Z",
+    "category": "Development & Projects",
+    "message": "LET’S HAVE A CONVERSATION, NAIVASHA! 🇰🇪\n\nI’m excited to be live on Kinlark Nafasi TV this Monday, 31st August 2026, from 5:00 PM to 6:30 PM EAT.\n\nWe’ll have an open conversation about Naivasha, our people, development, leadership, opportunities for our youth, and the issues that matter most to our communities.\n\nTune in, watch, engage, and share your questions. Your voice matters, and your views are part of the conversation.\n\nNaivasha is our home. Its future is our responsibility.\n\nJM Gitau | Naivasha MP 2027\n\n#JMGitau2027 #KinlarkNafasiTV #Naivasha #NaivashaMP #PamojaTujengeNaivasha #TheFutureOfNaivasha",
+    "engagement": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02RvMD7vK8TAVr1kjMudcAtaozMhGHoKPjCj8vQSv7j63t85Nb6K9xnowjHqN84MAUl",
+    "video_url": null,
+    "assets": [
+      {
+        "asset_id": "2026-08-29_1572768801530036_02",
+        "post_id": "1572768801530036",
+        "file_hash": "46a731e0156fe8749587c92644ec2622a5a284e6ff6bd088c5ee99a0b5e99a55",
+        "dimensions": {
+          "width": 511,
+          "height": 640
+        },
+        "original_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/782638013_1572768764863373_7403809860107352246_n.jpg?stp=dst-jpg_tt6&cstp=mx1021x1280&ctp=s640x640&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Svq32SCkys0Q7kNvwGCEian&_nc_oc=AdosUPyS2J5mp9GrBydxF7U9a_8DIKEjsUdTO3GOfck0jCLDOuAz_gB1wenuQkml084&_nc_zt=23&_nc_ht=scontent-hou1-1.xx&_nc_gid=vC0P_5miqkoOKfX3XvJclw&_nc_ss=73289&oh=00_AQIABQ5gK-f1_7cGMpglfAdqQVQevhEVEGb_BeF1hEX5Xg&oe=6A990989",
+        "paths": {
+          "raw": "assets/raw/2026-08-29_1572768801530036_02.jpg",
+          "web": "assets/web/images/2026-08-29_1572768801530036_02.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-29_1572768801530036_02_thumb.webp"
+        }
+      }
+    ]
+  },
+  {
+    "post_id": "1571480614992188",
+    "date": "2026-08-28",
+    "created_at": "2026-08-28T04:45:41.000Z",
+    "category": "Church & Community",
+    "message": "I am deeply saddened by the passing of Timothy Mburu (Bosabum Timoh), Secretary General of the Kenya International Taekwon-do Federation, who tragically lost his life in a road accident.\n\nTimothy was a dedicated sportsman, mentor, and role model who devoted himself to nurturing young talent, promoting discipline, and empowering our youth through Taekwon-do, particularly in Maai Mahiu and beyond.\n\nHis untimely passing is a great loss to his family, friends, the sporting fraternity, and the entire community. I extend my heartfelt condolences to his family and loved ones during this difficult time.\n\nMay God grant them strength, comfort, and peace. May Timothy’s legacy continue to inspire the young people he mentored.\n\nMay his soul rest in eternal peace. 🕊️🙏\n\nJeremiah Mungai Gitau (JM Gitau)\nNaivasha Constituency",
+    "engagement": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0Nbp5GbyXL6F9nR8mDe19Ci9KXPe3moKL8xFLrBsPoMBg6KWsXRV5Eu7mYYCjzxZMl",
+    "video_url": null,
+    "assets": [
+      {
+        "asset_id": "2026-08-28_1571480614992188_02",
+        "post_id": "1571480614992188",
+        "file_hash": "bec78a284b88745325c4ab8236c25787cedce6e9a2ae856e73d0727347fdb035",
+        "dimensions": {
+          "width": 526,
+          "height": 789
+        },
+        "original_url": "https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/788385074_1571480588325524_3212760726184834157_n.jpg?stp=dst-jpg_tt6&cstp=mx715x1073&ctp=p526x296&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7UMMd-tJAQ0Q7kNvwHL6tIK&_nc_oc=AdpvMkKIEYMc74-dbmVtV5MOfOm0jPFX3O4X9YOGOBHnwy-UZDmsMoNh9DlVFbo-3S8&_nc_zt=23&_nc_ht=scontent-hou1-1.xx&_nc_gid=vC0P_5miqkoOKfX3XvJclw&_nc_ss=73289&oh=00_AQLWWwUtYrtBgHSvoWzvYF6fH2KLBEIPtIsfe7j4GUOyrg&oe=6A990C42",
+        "paths": {
+          "raw": "assets/raw/2026-08-28_1571480614992188_02.jpg",
+          "web": "assets/web/images/2026-08-28_1571480614992188_02.webp",
+          "thumbnail": "assets/web/thumbnails/2026-08-28_1571480614992188_02_thumb.webp"
+        }
+      }
+    ]
+  },
+  {
+    "post_id": "1569342085206041",
+    "date": "2026-08-25",
+    "created_at": "2026-08-25T19:36:10.000Z",
+    "category": "Press & Statements",
+    "message": "What good is our success if our neighbour has lost hope?\n\nIn Naivasha, our futures are tied together. When one family rises, our community grows stronger.\n\nNone of us truly wins until Naivasha wins.\n\nMake Naivasha work.\n\n-JM Gitau",
+    "engagement": {
+      "reactions": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0rfNUeCRtfGir7XbAKKFSe9FjgwzTXgaTCNcjzncbJAo6tDfUUntde6AZZZwXNDjVl",
+    "video_url": null,
+    "assets": []
+  },
   {
     "post_id": "1567763948697188",
     "date": "2026-08-24",
@@ -82,7 +163,7 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
       "comments": 0,
       "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02LXMEXC8F2m1SAuxXEE4cGZb5tPi1JZQcbfQJQLFH2Dw1Gn4ktPpWAy9rYhFnzw35l",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0GdQ31jxQYUZHzkViL4N24ezdf2n6HXFjBsYWBzrqZoqTQ571JymWDFfK2AkHUwHtl",
     "video_url": null,
     "assets": [
       {
@@ -173,7 +254,7 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
       "comments": 0,
       "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02bQeybHJfnm4HK45AzEAYzaro7jBAsFzseAjRR8W9vooMoB2NjuF6XbCpkLnas8R7l",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0XWhn5q8qJdCaDFXfqbwNBWt1DpCs6X5dJ89yb5p74kmYWz7JgGga4c4HSEPZDQ7Vl",
     "video_url": null,
     "assets": [
       {
@@ -264,7 +345,7 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
       "comments": 0,
       "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02dXBw6g7oRVeyVFPyoCD8ohH2A3eB6CWeETLUNbMTspgJZJnNsK6wi9MUd25PvJQpl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02dxdyLYSzcBwMHxi8or2uXK2F1ywJvRsLHNkvsLSbQsKw1sQNnU2XBS3sGAqjPV6Ql",
     "video_url": null,
     "assets": [
       {
@@ -295,7 +376,7 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
       "comments": 0,
       "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02HMSTsu9meyg1wmqaK2CqtuaDMVjbxnfivWCtL7AZrWHcx8RWUpk9TZmZzR9ZRqMgl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02HJvyZ7um27qZA9pYbYCQbbtwvpBhZWhEZD6gwKCoK2fXBgxierzVfZEH4uBXS4ctl",
     "video_url": null,
     "assets": [
       {
@@ -386,7 +467,7 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
       "comments": 0,
       "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029X1v2bhYi6AXBr6Pw6vSQG7kFF51bd5iUq8Ged1exiihFrbPzeZBdrB9pWX7DNsSl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid05d4iX9XiDq944WoMcnbWY4nCsN8h5qrkHwdV9wvST8VySshvEYWi9MsMB6GPNoLml",
     "video_url": null,
     "assets": [
       {
@@ -448,7 +529,7 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
       "comments": 0,
       "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid029hwLJsB1Yhv52bz9dEaH22eUx1dBFgwaxM9LngJX8sgCWKWcVH5kP1z8wYxkJ5y3l",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid06HwfN4aNt9VsLVecDfKPt72dm1vSr3VP6hoWMGf7WuuZE9MxPAhaWcsnEJzvL5grl",
     "video_url": null,
     "assets": [
       {
@@ -494,7 +575,7 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
       "comments": 0,
       "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0rc6FgEfr6JaKXwBm8DmuDsETxxi3zem3WKG3R6UJrYzLhktmBohNft3qt42ca7BEl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02v7DxGd4CJo3YAsZWwdk34pD4H8hbGzKpLaHPSUqzuCNDe3ezCAaGd6pgCfD34kiUl",
     "video_url": null,
     "assets": [
       {
@@ -585,7 +666,7 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
       "comments": 0,
       "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0DimsvBAgGEvP2DE9rupCX5BKqupJX75M6FtEQ3JpPe2nnshmpLGk4zERx6EUnadQl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02Hhs75D8EJDcCXbAbLQXCZMifVRhGTEDXfhRDUtmJfr2stT9W8L2VmwKZkHTHoM7Ll",
     "video_url": null,
     "assets": [
       {
@@ -616,7 +697,7 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
       "comments": 0,
       "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0GjcuneVracdL16t9u3PWRCEukWzr1uAnJqs7YfXGTAf3bwg5Kvzro1VdaEeZQfQVl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02LEkcP2tCo4CQjkChNNT1a74XbSzbo85UqiGicLRBD599Z7pQ9qDu2cDknXF64kCsl",
     "video_url": null,
     "assets": [
       {
@@ -707,7 +788,7 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
       "comments": 0,
       "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0GqQd5PVunbB5XEXcF619N3YiurE1o1JFBNUaFTWVnqV5dJTYFwjdbwtuyrFTBrw2l",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02LLYKfmtFzrQqdaLeqcaUVkk8FRqswQzLHeMNe19Pt7Ra3RufLcxmwAfCQ8bVkVnbl",
     "video_url": null,
     "assets": [
       {
@@ -738,7 +819,7 @@ export const CAMPAIGN_POSTS: CampaignPost[] = [
       "comments": 0,
       "shares": 0
     },
-    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid02o1wEajFFBsDyCZs7Hdh7awq6Qn7gpAuyYAFGYc3yfgEczVu54WjGrJEiHkxLZX7bl",
+    "post_url": "https://www.facebook.com/JMGitauNaivashaMP/posts/pfbid0j7z35H5Qhj3GddvxK6g31UQsy4a3PMJJNsTag2bjE4kn5yLUR5AqeXCAHM6tebc7l",
     "video_url": null,
     "assets": [
       {
@@ -1481,9 +1562,10 @@ export const AGENDA_PILLARS: AgendaPillar[] = [
     id: 'education-bursaries',
     title: 'Education & CDF Bursaries',
     slug: 'education-bursaries',
-    tagline: 'Empowering the next generation of Naivasha leaders.',
-    description: 'Expanding access to secondary, vocational, and tertiary education through transparent, equitable NG-CDF bursary allocation and school infrastructure upgrades.',
+    tagline: 'Quality education, transparent bursaries, and modern classrooms.',
+    description: 'Expanding access to secondary, vocational, and tertiary education through transparent, equitable NG-CDF bursary allocation and school infrastructure upgrades across all wards.',
     icon: 'GraduationCap',
+    image: 'assets/web/images/2026-07-28_1543284774478439_01.webp',
     highlights: [
       '100% fair and transparent bursary disbursement across all 8 Naivasha Wards.',
       'Constructing modern science labs and computer hubs in constituency secondary schools.',
@@ -1494,35 +1576,38 @@ export const AGENDA_PILLARS: AgendaPillar[] = [
     id: 'water-infrastructure',
     title: 'Clean Water & Infrastructure',
     slug: 'water-infrastructure',
-    tagline: 'Reliable water supply and modern roads for every household.',
+    tagline: 'Reliable piped water and passable roads for every household.',
     description: 'Drilling community boreholes, piped water distribution networks in Maiela & Mai Mahiu, and upgrading agricultural feeder roads to connect farmers directly to markets.',
     icon: 'Droplets',
+    image: 'assets/web/images/2026-08-19_1563591385781111_02.webp',
     highlights: [
       'Drilling solar-powered community boreholes in drought-prone areas.',
       'Upgrading rural access roads to facilitate fresh produce transport from Naivasha farms.',
-      'Expanding street lighting in trading centers for safety and 24-hour economy.'
+      'Expanding street lighting in trading centers for security and 24-hour business.'
     ]
   },
   {
     id: 'youth-women-empowerment',
-    title: 'Youth & Women Empowerment',
+    title: 'Youth & Women Enterprise',
     slug: 'youth-women-empowerment',
-    tagline: 'Creating jobs, micro-grants, and entrepreneurship opportunities.',
+    tagline: 'Direct micro-grants, market space, and practical skills for real jobs.',
     description: 'Direct constituency funding for youth startups, women self-help groups (chamas), sports tournaments, and digital skill hubs in Naivasha.',
     icon: 'Users',
+    image: 'assets/web/images/2026-08-07_1552581446882105_01.webp',
     highlights: [
       'Constituency Innovation & Digital Hubs for remote work and freelancing.',
       'Capital seed grants for youth and women-led MSME businesses.',
-      'Annual Naivasha Constituency Sports Cup fostering talent and unity.'
+      'Annual Naivasha Constituency Sports Cup to nurture talent and support youth.'
     ]
   },
   {
     id: 'healthcare-social-welfare',
     title: 'Healthcare & Social Welfare',
     slug: 'healthcare-social-welfare',
-    tagline: 'Dignified healthcare access and support for vulnerable families.',
+    tagline: 'Equipped dispensaries and direct support for vulnerable families.',
     description: 'Strengthening Naivasha Level 4 Hospital, equipping rural dispensaries, and providing emergency medical support funds for vulnerable residents.',
     icon: 'HeartPulse',
+    image: 'assets/web/images/2026-08-10_1554701720003411_01.webp',
     highlights: [
       'Equipping ward health dispensaries with essential drugs and maternity equipment.',
       'Organizing free constituency medical camps for senior citizens and mothers.',
@@ -1538,6 +1623,7 @@ export const NAIVASHA_WARDS: WardInfo[] = [
     slug: 'biashara',
     representative: 'Naivasha Town Center',
     population: '45,000+',
+    image: 'assets/web/images/2026-08-08_1553515230122060_01.webp',
     keyProjects: ['Town Drainage System', 'Street Lighting', 'Market Upgrades'],
     description: 'The commercial heart of Naivasha Constituency, supporting traders, retail business, and urban transport infrastructure.'
   },
@@ -1547,6 +1633,7 @@ export const NAIVASHA_WARDS: WardInfo[] = [
     slug: 'hells-gate',
     representative: 'Olkaria / Tourism Corridor',
     population: '38,000+',
+    image: 'assets/web/images/2026-08-07_1552581446882105_02.webp',
     keyProjects: ['Ecotourism Youth Jobs', 'Community Water Points', 'Feeder Roads'],
     description: 'Home to geothermal energy, national park tourism, and vibrant flower farm agricultural communities.'
   },
@@ -1556,6 +1643,7 @@ export const NAIVASHA_WARDS: WardInfo[] = [
     slug: 'lakeview',
     representative: 'Lake Naivasha Belt',
     population: '32,000+',
+    image: 'assets/web/images/2026-08-10_1554701720003411_02.webp',
     keyProjects: ['Fishery Support', 'Primary School Classrooms', 'Health Clinic'],
     description: 'Serving lakeside communities, fishermen, and educational institutions along Lake Naivasha.'
   },
@@ -1565,6 +1653,7 @@ export const NAIVASHA_WARDS: WardInfo[] = [
     slug: 'mai-mahiu',
     representative: 'Rift Valley Transport Gateway',
     population: '50,000+',
+    image: 'assets/web/images/2026-08-14_1558895482917368_01.webp',
     keyProjects: ['Dry Port Logistics Jobs', 'Flood Control & Drainage', 'Water Piping'],
     description: 'A major economic transit hub connecting Nairobi, Narok, and Nakuru counties.'
   },
@@ -1574,6 +1663,7 @@ export const NAIVASHA_WARDS: WardInfo[] = [
     slug: 'maiela',
     representative: 'Sero Moi Ndabi & Maiela',
     population: '28,000+',
+    image: 'assets/web/images/2026-08-19_1563591385781111_01.webp',
     keyProjects: ['Boreholes & Water Storage', 'Secondary School Labs', 'Feeder Roads'],
     description: 'Agricultural heartland focused on crop farming, dairy production, and rural community empowerment.'
   },
@@ -1583,6 +1673,7 @@ export const NAIVASHA_WARDS: WardInfo[] = [
     slug: 'olkaria',
     representative: 'Geothermal Power Hub',
     population: '30,000+',
+    image: 'assets/web/images/2026-08-03_1548424653964451_01.webp',
     keyProjects: ['Clean Energy Partnerships', 'Youth Technical Scholarships', 'Health Centers'],
     description: 'Industrial and renewable energy center powering Kenya while driving local job creation.'
   },
@@ -1592,8 +1683,19 @@ export const NAIVASHA_WARDS: WardInfo[] = [
     slug: 'naivasha-east',
     representative: 'Karati & Surrounds',
     population: '35,000+',
+    image: 'assets/web/images/2026-07-28_1543284774478439_02.webp',
     keyProjects: ['Karati Water Pipeline', 'Polytechnic Training Center', 'Market Sheds'],
     description: 'Vibrant farming and trading community serving eastern Naivasha Constituency.'
+  },
+  {
+    id: 'viwandani',
+    name: 'Viwandani Ward',
+    slug: 'viwandani',
+    representative: 'Industrial & Worker Belt',
+    population: '40,000+',
+    image: 'assets/web/images/2026-08-23_1567230208750562_02.webp',
+    keyProjects: ['Worker Health Access', 'Youth Skills Centers', 'Drainage & Lighting'],
+    description: 'Dynamic residential and light-industrial hub home to factory and flower farm workforce communities.'
   }
 ];
 

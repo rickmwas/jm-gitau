@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ShieldCheck, Users, Ear, CheckCircle2, MapPin, HeartHandshake, UserCheck } from 'lucide-react';
-import { CAMPAIGN_POSTS } from '@/lib/campaignData';
+import { SITE } from '@/lib/campaignData';
 
 export default function AboutPage() {
-  const bioPhoto = CAMPAIGN_POSTS[0]?.assets[0]?.paths.web || 'assets/web/images/2026-08-19_1563591385781111_01.webp';
-  const secondaryPhoto = CAMPAIGN_POSTS[1]?.assets[0]?.paths.web || 'assets/web/images/2026-08-14_1558895482917368_01.webp';
+  const bioPhoto = SITE.officialBioImage || 'assets/web/images/2026-08-19_1563591385781111_01.webp';
+  const secondaryPhoto = SITE.officialSecondaryImage || 'assets/web/images/2026-08-14_1558895482917368_01.webp';
 
   return (
     <div className="space-y-16 pb-20 bg-[#F8FAFC]">

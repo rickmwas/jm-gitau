@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { X, ChevronLeft, ChevronRight, Calendar, Tag, ThumbsUp, MessageSquare } from 'lucide-react';
 import { CampaignPost } from '@/lib/campaignData';
@@ -14,6 +14,9 @@ interface MediaLightboxProps {
 }
 
 export default function MediaLightbox({ post, isOpen, onClose, onPrev, onNext }: MediaLightboxProps) {
+  const touchStartX = useRef<number | null>(null);
+  const touchStartY = useRef<number | null>(null);
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!isOpen) return;
@@ -27,16 +30,44 @@ export default function MediaLightbox({ post, isOpen, onClose, onPrev, onNext }:
 
   if (!isOpen || !post) return null;
 
-  const imagePath = post.assets[0]?.paths.web || post.assets[0]?.paths.raw;
+  const imagePath = post.assets?.[0]?.paths?.web || post.assets?.[0]?.paths?.raw;
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null || touchStartY.current === null) return;
+    const deltaX = e.changedTouches[0].clientX - touchStartX.current;
+    const deltaY = e.changedTouches[0].clientY - touchStartY.current;
+
+    // Horizontal Swipe (Next / Prev)
+    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 45) {
+      if (deltaX < 0 && onNext) {
+        onNext(); // Swiped left -> next
+      } else if (deltaX > 0 && onPrev) {
+        onPrev(); // Swiped right -> prev
+      }
+    } else if (deltaY > 90) {
+      // Swiped down -> close
+      onClose();
+    }
+
+    touchStartX.current = null;
+    touchStartY.current = null;
+  };
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 sm:p-6"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/75 backdrop-blur-md p-2 sm:p-6 animate-in fade-in duration-200"
       onClick={onClose}
     >
       <div 
-        className="relative flex flex-col lg:flex-row w-full max-w-6xl max-h-[90vh] bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-2xl"
+        className="relative flex flex-col lg:flex-row w-full max-w-6xl max-h-[92vh] sm:max-h-[90vh] bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-2xl"
         onClick={(e) => e.stopPropagation()}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
       >
         {/* Close Button */}
         <button

@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
+import MobileBottomDock from '@/components/MobileBottomDock';
 
 export default function PublicLayoutWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -16,9 +17,10 @@ export default function PublicLayoutWrapper({ children }: { children: React.Reac
   return (
     <>
       <Navbar />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 pb-16 sm:pb-0">{children}</main>
       <Footer />
       <WhatsAppFloat />
+      <MobileBottomDock />
     </>
   );
 }

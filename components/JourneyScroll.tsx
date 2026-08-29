@@ -85,7 +85,7 @@ const JOURNEY_LOCATIONS: JourneyLocation[] = [
 export default function JourneyScroll() {
   const [activeIdx, setActiveIdx] = useState(0);
   const activeLocation = JOURNEY_LOCATIONS[activeIdx];
-  const mainAsset = activeLocation.post.assets?.[0]?.paths.web;
+  const mainAsset = activeLocation.post?.assets?.[0]?.paths?.web;
   
   // Track scroll position to update active index on desktop scroll
   const sectionRef = useRef<HTMLDivElement>(null);
