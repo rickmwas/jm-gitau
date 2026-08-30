@@ -59,8 +59,11 @@ export const metadata: Metadata = {
     'Hell\'s Gate Ward',
     'Naivasha East'
   ],
-  authors: [{ name: 'Team J.M. Gitau Campaign' }],
-  creator: 'J.M. Gitau 2027 Campaign Secretariat',
+  authors: [
+    { name: 'Team J.M. Gitau Campaign' },
+    { name: 'TerraSept Solutions', url: 'https://terraseptsolutions.com' }
+  ],
+  creator: 'TerraSept Solutions (https://terraseptsolutions.com)',
   publisher: 'Democracy for the Citizens Party (DCP)',
   formatDetection: {
     email: true,

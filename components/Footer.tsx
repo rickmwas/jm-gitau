@@ -86,8 +86,19 @@ export default function Footer() {
 
         </div>
 
-        <div className="mt-12 border-t border-slate-200 pt-6 text-center text-xs text-slate-500 font-medium">
+        <div className="mt-12 border-t border-slate-200 pt-6 text-center text-xs text-slate-500 font-medium space-y-1">
           <p>© {new Date().getFullYear()} J.M. Gitau Naivasha MP Campaign (Democracy for the Citizens Party - DCP). All rights reserved.</p>
+          <p className="text-slate-600 font-semibold">
+            Designed &amp; Developed by{' '}
+            <a
+              href="https://terraseptsolutions.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-700 hover:text-[#00C853] underline decoration-slate-300 hover:decoration-[#00C853] transition-colors"
+            >
+              TerraSept Solutions
+            </a>
+          </p>
         </div>
       </div>
     </footer>
