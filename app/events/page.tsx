@@ -1,10 +1,70 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Calendar, Clock, MapPin, Ear, ArrowRight } from 'lucide-react';
 import { CAMPAIGN_EVENTS } from '@/lib/campaignData';
 
+export const metadata: Metadata = {
+  title: 'Campaign Trail & Events Calendar — Townhalls & Rallies',
+  description: 'Upcoming community visits, rallies, ward listening forums, and townhall meetings with J.M. Gitau across Naivasha Constituency.',
+  alternates: {
+    canonical: 'https://jmgitau2027.co.ke/events',
+  },
+  openGraph: {
+    title: 'Campaign Trail & Events Calendar — J.M. Gitau 2027',
+    description: 'Find upcoming campaign rallies, townhalls, and ward listening sessions across Naivasha Constituency.',
+    url: 'https://jmgitau2027.co.ke/events',
+    images: [
+      {
+        url: '/api/og?title=Campaign+Trail+%26+Events+Calendar&subtitle=Upcoming+Townhalls%2C+Rallies+%26+Listening+Sessions+in+Naivasha',
+        width: 1200,
+        height: 630,
+        alt: 'J.M. Gitau Campaign Events Calendar',
+      },
+    ],
+  },
+};
+
+const eventsJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'J.M. Gitau Naivasha 2027 Campaign Events',
+  description: 'Upcoming public events, rallies, and townhall forums.',
+  itemListElement: CAMPAIGN_EVENTS.map((evt, idx) => ({
+    '@type': 'ListItem',
+    position: idx + 1,
+    item: {
+      '@type': 'Event',
+      name: evt.title,
+      description: evt.description,
+      startDate: `${evt.date} ${evt.time}`,
+      eventStatus: 'https://schema.org/EventScheduled',
+      eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+      location: {
+        '@type': 'Place',
+        name: evt.location,
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: evt.ward,
+          addressRegion: 'Nakuru County',
+          addressCountry: 'KE'
+        }
+      },
+      organizer: {
+        '@type': 'Person',
+        name: 'J.M. Gitau',
+        url: 'https://jmgitau2027.co.ke'
+      }
+    }
+  }))
+};
+
 export default function EventsPage() {
   return (
     <div className="space-y-16 pb-20 bg-[#F8FAFC]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(eventsJsonLd) }}
+      />
       
       {/* HERO BANNER */}
       <section className="bg-white border-b border-slate-200 py-12 lg:py-16 shadow-xs">

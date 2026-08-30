@@ -29,7 +29,11 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: 'J.M. Gitau — Naivasha Constituency MP Candidate 2027 (DCP)',
+  metadataBase: new URL('https://jmgitau2027.co.ke'),
+  title: {
+    default: 'J.M. Gitau — Naivasha Constituency MP Candidate 2027 (DCP)',
+    template: '%s | J.M. Gitau Naivasha 2027',
+  },
   description: 'Official digital platform for J.M. Gitau, candidate for Naivasha Constituency MP 2027 under the Democracy for the Citizens Party (DCP - Skiza Wakenya). Discover our manifesto, ward profiles, water & TVET agenda, and ground campaign records.',
   keywords: [
     'J.M. Gitau',
@@ -37,8 +41,9 @@ export const metadata: Metadata = {
     'JM Gitau Naivasha',
     'JM Gitau 2027',
     'Naivasha MP 2027',
-    'Naivasha Constituency',
+    'Naivasha Constituency MP',
     'DCP Kenya',
+    'Democracy for the Citizens Party',
     'Skiza Wakenya',
     'Skiza Ground',
     'Naivasha Wards',
@@ -46,34 +51,61 @@ export const metadata: Metadata = {
     'Mai Mahiu',
     'Maiela Ward',
     'Lakeview Ward',
-    'Olkaria Ward'
+    'Olkaria Ward',
+    'Hell\'s Gate Ward',
+    'Naivasha East'
   ],
-  metadataBase: new URL('https://jmgitau2027.co.ke'),
+  authors: [{ name: 'Team J.M. Gitau Campaign' }],
+  creator: 'J.M. Gitau 2027 Campaign Secretariat',
+  publisher: 'Democracy for the Citizens Party (DCP)',
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'J.M. Gitau — Naivasha Constituency MP Candidate 2027 (DCP)',
-    description: 'Action-Driven Leadership Built On The Ground. Discover J.M. Gitau\'s vision and manifesto for Naivasha Constituency.',
+    description: 'Action-Driven Leadership Built On The Ground. Discover J.M. Gitau\'s vision, manifesto, and ward development pillars for Naivasha Constituency.',
     url: 'https://jmgitau2027.co.ke',
     siteName: 'J.M. Gitau Naivasha 2027',
+    locale: 'en_KE',
+    type: 'website',
     images: [
+      {
+        url: '/api/og?title=J.M.+Gitau+2027&subtitle=Action-Driven+Leadership+for+Naivasha+Constituency',
+        width: 1200,
+        height: 630,
+        alt: 'J.M. Gitau - Naivasha Constituency MP Candidate 2027',
+        type: 'image/png',
+      },
       {
         url: '/assets/web/images/2026-08-19_1563591385781111_01.webp',
         width: 1200,
         height: 630,
-        alt: 'J.M. Gitau Community Engagement in Naivasha'
+        alt: 'J.M. Gitau Community Engagement in Naivasha',
       }
     ],
-    locale: 'en_KE',
-    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'J.M. Gitau — Naivasha Constituency MP Candidate 2027',
     description: 'Skiza Wakenya • Action-Driven Leadership for Naivasha Constituency.',
-    images: ['/assets/web/images/2026-08-19_1563591385781111_01.webp'],
-  }
+    images: ['/api/og?title=J.M.+Gitau+2027&subtitle=Action-Driven+Leadership+for+Naivasha+Constituency'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 const jsonLd = {
@@ -93,7 +125,7 @@ const jsonLd = {
       },
       jobTitle: 'Parliamentary Candidate',
       workLocation: {
-        '@type': 'Place',
+        '@type': 'AdministrativeArea',
         name: 'Naivasha Constituency',
         address: {
           '@type': 'PostalAddress',
@@ -108,6 +140,14 @@ const jsonLd = {
       ]
     },
     {
+      '@type': 'PoliticalParty',
+      '@id': 'https://jmgitau2027.co.ke/#party',
+      name: 'Democracy for the Citizens Party',
+      alternateName: 'DCP',
+      slogan: 'Skiza Wakenya',
+      url: 'https://jmgitau2027.co.ke'
+    },
+    {
       '@type': 'WebSite',
       '@id': 'https://jmgitau2027.co.ke/#website',
       url: 'https://jmgitau2027.co.ke',
@@ -115,7 +155,8 @@ const jsonLd = {
       description: 'Official digital platform for J.M. Gitau, candidate for Naivasha Constituency MP 2027.',
       publisher: {
         '@id': 'https://jmgitau2027.co.ke/#candidate'
-      }
+      },
+      inLanguage: 'en-KE'
     }
   ]
 };
@@ -130,6 +171,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jakarta.variable} ${permanentMarker.variable} ${caveat.variable} h-full scroll-smooth`}>
       <head>
+        <meta name="theme-color" content="#00C853" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

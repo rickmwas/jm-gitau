@@ -1,6 +1,41 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GraduationCap, Droplets, Users, HeartPulse, CheckCircle2, ArrowRight, Ear, Send, Compass } from 'lucide-react';
 import { AGENDA_PILLARS } from '@/lib/campaignData';
+
+export const metadata: Metadata = {
+  title: 'Manifesto & 5 Pillars of Action — Water, TVET, Youth & Infrastructure',
+  description: 'Explore J.M. Gitau\'s action agenda for Naivasha Constituency: TVET technical bursaries, clean water access, youth empowerment, healthcare, and fair ward bursary distribution.',
+  alternates: {
+    canonical: 'https://jmgitau2027.co.ke/agenda',
+  },
+  openGraph: {
+    title: 'Manifesto & 5 Pillars of Action — J.M. Gitau 2027',
+    description: 'Actionable policy commitments for Naivasha Constituency built around TVET bursaries, water access, and youth opportunities.',
+    url: 'https://jmgitau2027.co.ke/agenda',
+    images: [
+      {
+        url: '/api/og?title=Manifesto+%26+5+Pillars+of+Action&subtitle=TVET+Bursaries%2C+Water+Access+%26+Youth+Empowerment+for+Naivasha',
+        width: 1200,
+        height: 630,
+        alt: 'J.M. Gitau Manifesto & 5 Pillars',
+      },
+    ],
+  },
+};
+
+const agendaJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'J.M. Gitau 5 Pillars of Action for Naivasha Constituency',
+  description: 'Key manifesto pillars and action agenda for J.M. Gitau 2027 parliamentary campaign.',
+  itemListElement: AGENDA_PILLARS.map((pillar, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: pillar.title,
+    description: pillar.description
+  }))
+};
 
 const PILLAR_ICONS: Record<string, any> = {
   GraduationCap,
@@ -12,6 +47,10 @@ const PILLAR_ICONS: Record<string, any> = {
 export default function AgendaPage() {
   return (
     <div className="space-y-16 pb-20 bg-[#F8FAFC]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(agendaJsonLd) }}
+      />
       
       {/* PAGE HERO BANNER */}
       <section className="bg-white border-b border-slate-200 py-12 lg:py-16">

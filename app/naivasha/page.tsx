@@ -1,11 +1,57 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Users, CheckCircle2, ArrowRight, Compass, MessageCircle } from 'lucide-react';
 import { NAIVASHA_WARDS } from '@/lib/campaignData';
 
+export const metadata: Metadata = {
+  title: 'Naivasha Wards Profile & Ground Priority Map',
+  description: 'Explore ward-by-ward profiles across Naivasha Constituency: Biashara, Mai Mahiu, Olkaria, Lakeview, Maiela, Hell\'s Gate, and Naivasha East. See local priorities and ground action plans.',
+  alternates: {
+    canonical: 'https://jmgitau2027.co.ke/naivasha',
+  },
+  openGraph: {
+    title: 'Naivasha Wards Profile & Ground Priority Map — J.M. Gitau 2027',
+    description: 'Detailed constituency profiles for all wards in Naivasha. Ground-tested initiatives tailored to each community.',
+    url: 'https://jmgitau2027.co.ke/naivasha',
+    images: [
+      {
+        url: '/api/og?title=Naivasha+Wards+Profile+%26+Priority+Map&subtitle=Biashara%2C+Mai+Mahiu%2C+Olkaria%2C+Lakeview%2C+Maiela+%26+Naivasha+East',
+        width: 1200,
+        height: 630,
+        alt: 'Naivasha Wards Profile Map - J.M. Gitau 2027',
+      },
+    ],
+  },
+};
+
+const naivashaJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Naivasha Constituency Wards Profile',
+  description: 'List of administrative electoral wards comprising Naivasha Constituency.',
+  itemListElement: NAIVASHA_WARDS.map((ward, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    item: {
+      '@type': 'AdministrativeArea',
+      name: ward.name,
+      description: ward.description,
+      containedInPlace: {
+        '@type': 'AdministrativeArea',
+        name: 'Naivasha Constituency, Nakuru County, Kenya'
+      }
+    }
+  }))
+};
+
 export default function NaivashaPage() {
   return (
     <div className="space-y-10 sm:space-y-16 pb-20 bg-[#F8FAFC]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(naivashaJsonLd) }}
+      />
       
       {/* HERO BANNER */}
       <section className="bg-white border-b border-slate-200 py-12 lg:py-16">

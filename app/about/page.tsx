@@ -1,7 +1,51 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ShieldCheck, Users, Ear, CheckCircle2, MapPin, HeartHandshake, UserCheck } from 'lucide-react';
 import { SITE } from '@/lib/campaignData';
+
+export const metadata: Metadata = {
+  title: 'About J.M. Gitau — Roots, Community Work & Leadership Vision',
+  description: 'Learn about J.M. Gitau, candidate for Member of Parliament for Naivasha Constituency 2027 (DCP). Discover his background, ground community work, and vision for Naivasha.',
+  alternates: {
+    canonical: 'https://jmgitau2027.co.ke/about',
+  },
+  openGraph: {
+    title: 'About J.M. Gitau — Naivasha Constituency MP Candidate 2027',
+    description: 'Before the politics, there is the person. J.M. Gitau\'s story is connected to the people and places that make Naivasha home.',
+    url: 'https://jmgitau2027.co.ke/about',
+    images: [
+      {
+        url: '/api/og?title=About+J.M.+Gitau&subtitle=Roots%2C+Community+Work+%26+Leadership+Vision+for+Naivasha',
+        width: 1200,
+        height: 630,
+        alt: 'About J.M. Gitau - Naivasha MP Candidate 2027',
+      },
+    ],
+  },
+};
+
+const aboutJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@type': 'Person',
+    name: 'J.M. Gitau',
+    alternateName: ['John Maina Gitau', 'JM Gitau'],
+    description: 'Candidate for Member of Parliament, Naivasha Constituency 2027 under Democracy for the Citizens Party (DCP)',
+    jobTitle: 'Parliamentary Candidate',
+    knowsAbout: [
+      'Naivasha Constituency Development',
+      'Water Infrastructure & Boreholes',
+      'TVET Youth Bursaries & Skills Training',
+      'Community Representation'
+    ],
+    homeLocation: {
+      '@type': 'Place',
+      name: 'Naivasha Constituency, Nakuru County, Kenya'
+    }
+  }
+};
 
 export default function AboutPage() {
   const bioPhoto = SITE.officialBioImage || 'assets/web/images/2026-08-19_1563591385781111_01.webp';
@@ -9,6 +53,10 @@ export default function AboutPage() {
 
   return (
     <div className="space-y-16 pb-20 bg-[#F8FAFC]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
+      />
       
       {/* PAGE HERO BANNER */}
       <section className="bg-white border-b border-slate-200 py-12 lg:py-16">
