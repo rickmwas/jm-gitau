@@ -11,14 +11,34 @@ export const metadata: Metadata = {
     title: 'Contact Campaign Secretariat & Ward Offices — J.M. Gitau 2027',
     description: 'We are listening. Get in touch with Team J.M. Gitau across Naivasha Town and all constituent wards.',
     url: 'https://jmgitau2027.co.ke/contact',
+    siteName: 'J.M. Gitau Naivasha 2027',
+    locale: 'en_KE',
+    type: 'website',
     images: [
       {
-        url: '/api/og?title=Contact+Campaign+Secretariat&subtitle=We+Are+Listening.+Get+in+Touch+With+Team+J.M.+Gitau',
+        url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
         width: 1200,
         height: 630,
         alt: 'Contact J.M. Gitau Campaign Secretariat',
+        type: 'image/jpeg',
+      },
+      {
+        url: 'https://jmgitau2027.co.ke/api/og?title=Contact+Campaign+Secretariat&subtitle=We+Are+Listening.+Get+in+Touch+With+Team+J.M.+Gitau',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Campaign Secretariat Banner',
+        type: 'image/png',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Campaign Secretariat & Ward Offices — J.M. Gitau 2027',
+    description: 'We are listening. Get in touch with Team J.M. Gitau across Naivasha Town.',
+    images: [{
+      url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
+      alt: 'Contact J.M. Gitau Campaign Secretariat',
+    }],
   },
 };
 

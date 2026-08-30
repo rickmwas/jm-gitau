@@ -26,14 +26,35 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'J.M. Gitau — Action-Driven Leadership for Naivasha 2027',
     description: 'Empowering Naivasha Constituency through community action, water access, TVET bursaries, and youth empowerment under DCP.',
+    url: 'https://jmgitau2027.co.ke',
+    siteName: 'J.M. Gitau Naivasha 2027',
+    locale: 'en_KE',
+    type: 'website',
     images: [
       {
-        url: '/api/og?title=J.M.+Gitau+2027&subtitle=Action-Driven+Leadership+for+Naivasha+Constituency',
+        url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
         width: 1200,
         height: 630,
         alt: 'J.M. Gitau Naivasha MP Candidate 2027',
+        type: 'image/jpeg',
+      },
+      {
+        url: 'https://jmgitau2027.co.ke/api/og?title=J.M.+Gitau+2027&subtitle=Action-Driven+Leadership+for+Naivasha+Constituency',
+        width: 1200,
+        height: 630,
+        alt: 'J.M. Gitau Campaign Banner',
+        type: 'image/png',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'J.M. Gitau — Action-Driven Leadership for Naivasha 2027',
+    description: 'Empowering Naivasha Constituency through community action, water access, TVET bursaries, and youth empowerment.',
+    images: [{
+      url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
+      alt: 'J.M. Gitau Naivasha MP Candidate 2027',
+    }],
   },
 };
 

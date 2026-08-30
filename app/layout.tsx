@@ -75,17 +75,18 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/api/og?title=J.M.+Gitau+2027&subtitle=Action-Driven+Leadership+for+Naivasha+Constituency',
+        url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
         width: 1200,
         height: 630,
         alt: 'J.M. Gitau - Naivasha Constituency MP Candidate 2027',
-        type: 'image/png',
+        type: 'image/jpeg',
       },
       {
-        url: '/assets/web/images/2026-08-19_1563591385781111_01.webp',
+        url: 'https://jmgitau2027.co.ke/assets/web/images/2026-08-19_1563591385781111_01.webp',
         width: 1200,
         height: 630,
         alt: 'J.M. Gitau Community Engagement in Naivasha',
+        type: 'image/webp',
       }
     ],
   },
@@ -93,7 +94,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'J.M. Gitau — Naivasha Constituency MP Candidate 2027',
     description: 'Skiza Wakenya • Action-Driven Leadership for Naivasha Constituency.',
-    images: ['/api/og?title=J.M.+Gitau+2027&subtitle=Action-Driven+Leadership+for+Naivasha+Constituency'],
+    images: [{
+      url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
+      alt: 'J.M. Gitau - Naivasha Constituency MP Candidate 2027',
+    }],
   },
   robots: {
     index: true,

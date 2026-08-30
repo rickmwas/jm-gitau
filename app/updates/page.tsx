@@ -12,14 +12,34 @@ export const metadata: Metadata = {
     title: 'Ground Campaign Updates & Field Activity Log — J.M. Gitau 2027',
     description: 'Direct field records, church visits, rallies, and townhall discussions with Naivasha Constituency residents.',
     url: 'https://jmgitau2027.co.ke/updates',
+    siteName: 'J.M. Gitau Naivasha 2027',
+    locale: 'en_KE',
+    type: 'website',
     images: [
       {
-        url: '/api/og?title=Ground+Campaign+Updates&subtitle=Community+Forums%2C+Townhalls+%26+Field+Records+in+Naivasha',
+        url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
         width: 1200,
         height: 630,
         alt: 'J.M. Gitau Ground Campaign Updates',
+        type: 'image/jpeg',
+      },
+      {
+        url: 'https://jmgitau2027.co.ke/api/og?title=Ground+Campaign+Updates&subtitle=Community+Forums%2C+Townhalls+%26+Field+Records+in+Naivasha',
+        width: 1200,
+        height: 630,
+        alt: 'J.M. Gitau Ground Campaign Banner',
+        type: 'image/png',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ground Campaign Updates & Field Activity Log — J.M. Gitau 2027',
+    description: 'Direct field records, church visits, rallies, and townhall discussions.',
+    images: [{
+      url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
+      alt: 'J.M. Gitau Field Updates',
+    }],
   },
 };
 

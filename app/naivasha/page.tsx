@@ -14,14 +14,34 @@ export const metadata: Metadata = {
     title: 'Naivasha Wards Profile & Ground Priority Map — J.M. Gitau 2027',
     description: 'Detailed constituency profiles for all wards in Naivasha. Ground-tested initiatives tailored to each community.',
     url: 'https://jmgitau2027.co.ke/naivasha',
+    siteName: 'J.M. Gitau Naivasha 2027',
+    locale: 'en_KE',
+    type: 'website',
     images: [
       {
-        url: '/api/og?title=Naivasha+Wards+Profile+%26+Priority+Map&subtitle=Biashara%2C+Mai+Mahiu%2C+Olkaria%2C+Lakeview%2C+Maiela+%26+Naivasha+East',
+        url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
         width: 1200,
         height: 630,
         alt: 'Naivasha Wards Profile Map - J.M. Gitau 2027',
+        type: 'image/jpeg',
+      },
+      {
+        url: 'https://jmgitau2027.co.ke/api/og?title=Naivasha+Wards+Profile+%26+Priority+Map&subtitle=Biashara%2C+Mai+Mahiu%2C+Olkaria%2C+Lakeview%2C+Maiela+%26+Naivasha+East',
+        width: 1200,
+        height: 630,
+        alt: 'Naivasha Wards Profile Banner',
+        type: 'image/png',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Naivasha Wards Profile & Ground Priority Map — J.M. Gitau 2027',
+    description: 'Detailed constituency profiles for all wards in Naivasha.',
+    images: [{
+      url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
+      alt: 'Naivasha Wards Profile Map',
+    }],
   },
 };
 

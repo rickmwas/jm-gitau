@@ -14,14 +14,34 @@ export const metadata: Metadata = {
     title: 'About J.M. Gitau — Naivasha Constituency MP Candidate 2027',
     description: 'Before the politics, there is the person. J.M. Gitau\'s story is connected to the people and places that make Naivasha home.',
     url: 'https://jmgitau2027.co.ke/about',
+    siteName: 'J.M. Gitau Naivasha 2027',
+    locale: 'en_KE',
+    type: 'profile',
     images: [
       {
-        url: '/api/og?title=About+J.M.+Gitau&subtitle=Roots%2C+Community+Work+%26+Leadership+Vision+for+Naivasha',
+        url: 'https://jmgitau2027.co.ke/jm-gitau-hero-official.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'J.M. Gitau Official Portrait',
+        type: 'image/jpeg',
+      },
+      {
+        url: 'https://jmgitau2027.co.ke/api/og?title=About+J.M.+Gitau&subtitle=Roots%2C+Community+Work+%26+Leadership+Vision+for+Naivasha',
         width: 1200,
         height: 630,
         alt: 'About J.M. Gitau - Naivasha MP Candidate 2027',
+        type: 'image/png',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About J.M. Gitau — Naivasha Constituency MP Candidate 2027',
+    description: 'Before the politics, there is the person. Discover J.M. Gitau\'s story and vision for Naivasha.',
+    images: [{
+      url: 'https://jmgitau2027.co.ke/jm-gitau-hero-official.jpg',
+      alt: 'J.M. Gitau Official Portrait',
+    }],
   },
 };
 

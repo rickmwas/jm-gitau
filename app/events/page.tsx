@@ -13,14 +13,34 @@ export const metadata: Metadata = {
     title: 'Campaign Trail & Events Calendar — J.M. Gitau 2027',
     description: 'Find upcoming campaign rallies, townhalls, and ward listening sessions across Naivasha Constituency.',
     url: 'https://jmgitau2027.co.ke/events',
+    siteName: 'J.M. Gitau Naivasha 2027',
+    locale: 'en_KE',
+    type: 'website',
     images: [
       {
-        url: '/api/og?title=Campaign+Trail+%26+Events+Calendar&subtitle=Upcoming+Townhalls%2C+Rallies+%26+Listening+Sessions+in+Naivasha',
+        url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
         width: 1200,
         height: 630,
         alt: 'J.M. Gitau Campaign Events Calendar',
+        type: 'image/jpeg',
+      },
+      {
+        url: 'https://jmgitau2027.co.ke/api/og?title=Campaign+Trail+%26+Events+Calendar&subtitle=Upcoming+Townhalls%2C+Rallies+%26+Listening+Sessions+in+Naivasha',
+        width: 1200,
+        height: 630,
+        alt: 'J.M. Gitau Events Banner',
+        type: 'image/png',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Campaign Trail & Events Calendar — J.M. Gitau 2027',
+    description: 'Find upcoming campaign rallies, townhalls, and ward listening sessions.',
+    images: [{
+      url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
+      alt: 'J.M. Gitau Events Calendar',
+    }],
   },
 };
 
