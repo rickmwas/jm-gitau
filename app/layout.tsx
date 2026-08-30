@@ -80,15 +80,15 @@ export const metadata: Metadata = {
     images: [
       {
         url: getAbsoluteUrl('/jm-gitau-hero-banner.jpg'),
-        width: 1200,
-        height: 630,
+        width: 1024,
+        height: 682,
         alt: 'J.M. Gitau - Naivasha Constituency MP Candidate 2027',
         type: 'image/jpeg',
       },
       {
         url: getAbsoluteUrl('/assets/web/images/2026-08-19_1563591385781111_01.webp'),
-        width: 1200,
-        height: 630,
+        width: 590,
+        height: 393,
         alt: 'J.M. Gitau Community Engagement in Naivasha',
         type: 'image/webp',
       }

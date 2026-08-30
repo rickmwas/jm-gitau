@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
-        width: 1200,
-        height: 630,
+        width: 1024,
+        height: 682,
         alt: 'J.M. Gitau Manifesto & 5 Pillars',
         type: 'image/jpeg',
       },

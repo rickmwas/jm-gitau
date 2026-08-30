@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: getAbsoluteUrl('/jm-gitau-hero-banner.jpg'),
-        width: 1200,
-        height: 630,
+        width: 1024,
+        height: 682,
         alt: 'J.M. Gitau Naivasha MP Candidate 2027',
         type: 'image/jpeg',
       },

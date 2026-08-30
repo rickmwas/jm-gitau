@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://jmgitau2027.co.ke/assets/web/images/2026-08-19_1563591385781111_01.webp',
-        width: 1200,
-        height: 630,
+        width: 590,
+        height: 393,
         alt: 'J.M. Gitau Campaign Photo Gallery',
         type: 'image/webp',
       },

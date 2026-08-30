@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
-        width: 1200,
-        height: 630,
+        width: 1024,
+        height: 682,
         alt: 'Contact J.M. Gitau Campaign Secretariat',
         type: 'image/jpeg',
       },
