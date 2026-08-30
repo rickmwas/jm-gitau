@@ -16,30 +16,33 @@ import {
 import { CAMPAIGN_POSTS, AGENDA_PILLARS, SITE } from '@/lib/campaignData';
 import JourneyScroll from '@/components/JourneyScroll';
 import { BrushUnderline, PaintSplashBackground, EarthPaintStroke, SideBrushLeft, SideBrushRight } from '@/components/BrushAccent';
+import { getBaseUrl, getAbsoluteUrl } from '@/lib/seo';
+
+const baseUrl = getBaseUrl();
 
 export const metadata: Metadata = {
   title: 'J.M. Gitau — Action-Driven Leadership for Naivasha 2027',
   description: 'Official digital platform for J.M. Gitau, candidate for Naivasha Constituency MP 2027 under Democracy for the Citizens Party (DCP - Skiza Wakenya). Explore our manifesto, ward profiles, and ground campaign updates.',
   alternates: {
-    canonical: 'https://jmgitau2027.co.ke',
+    canonical: baseUrl,
   },
   openGraph: {
     title: 'J.M. Gitau — Action-Driven Leadership for Naivasha 2027',
     description: 'Empowering Naivasha Constituency through community action, water access, TVET bursaries, and youth empowerment under DCP.',
-    url: 'https://jmgitau2027.co.ke',
+    url: baseUrl,
     siteName: 'J.M. Gitau Naivasha 2027',
     locale: 'en_KE',
     type: 'website',
     images: [
       {
-        url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
+        url: getAbsoluteUrl('/jm-gitau-hero-banner.jpg'),
         width: 1200,
         height: 630,
         alt: 'J.M. Gitau Naivasha MP Candidate 2027',
         type: 'image/jpeg',
       },
       {
-        url: 'https://jmgitau2027.co.ke/api/og?title=J.M.+Gitau+2027&subtitle=Action-Driven+Leadership+for+Naivasha+Constituency',
+        url: getAbsoluteUrl('/api/og?title=J.M.+Gitau+2027&subtitle=Action-Driven+Leadership+for+Naivasha+Constituency'),
         width: 1200,
         height: 630,
         alt: 'J.M. Gitau Campaign Banner',
@@ -52,7 +55,7 @@ export const metadata: Metadata = {
     title: 'J.M. Gitau — Action-Driven Leadership for Naivasha 2027',
     description: 'Empowering Naivasha Constituency through community action, water access, TVET bursaries, and youth empowerment.',
     images: [{
-      url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
+      url: getAbsoluteUrl('/jm-gitau-hero-banner.jpg'),
       alt: 'J.M. Gitau Naivasha MP Candidate 2027',
     }],
   },

@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { getAbsoluteUrl } from '@/lib/seo';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -9,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/admin', '/api/admin', '/api/auth'],
       },
     ],
-    sitemap: 'https://jmgitau2027.co.ke/sitemap.xml',
+    sitemap: getAbsoluteUrl('/sitemap.xml'),
   };
 }

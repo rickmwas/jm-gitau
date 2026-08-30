@@ -28,8 +28,12 @@ const caveat = Caveat({
   weight: ['700'],
 });
 
+import { getBaseUrl, getAbsoluteUrl } from '@/lib/seo';
+
+const baseUrl = getBaseUrl();
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://jmgitau2027.co.ke'),
+  metadataBase: new URL(baseUrl),
   title: {
     default: 'J.M. Gitau — Naivasha Constituency MP Candidate 2027 (DCP)',
     template: '%s | J.M. Gitau Naivasha 2027',
@@ -69,20 +73,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'J.M. Gitau — Naivasha Constituency MP Candidate 2027 (DCP)',
     description: 'Action-Driven Leadership Built On The Ground. Discover J.M. Gitau\'s vision, manifesto, and ward development pillars for Naivasha Constituency.',
-    url: 'https://jmgitau2027.co.ke',
+    url: baseUrl,
     siteName: 'J.M. Gitau Naivasha 2027',
     locale: 'en_KE',
     type: 'website',
     images: [
       {
-        url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
+        url: getAbsoluteUrl('/jm-gitau-hero-banner.jpg'),
         width: 1200,
         height: 630,
         alt: 'J.M. Gitau - Naivasha Constituency MP Candidate 2027',
         type: 'image/jpeg',
       },
       {
-        url: 'https://jmgitau2027.co.ke/assets/web/images/2026-08-19_1563591385781111_01.webp',
+        url: getAbsoluteUrl('/assets/web/images/2026-08-19_1563591385781111_01.webp'),
         width: 1200,
         height: 630,
         alt: 'J.M. Gitau Community Engagement in Naivasha',
@@ -95,7 +99,7 @@ export const metadata: Metadata = {
     title: 'J.M. Gitau — Naivasha Constituency MP Candidate 2027',
     description: 'Skiza Wakenya • Action-Driven Leadership for Naivasha Constituency.',
     images: [{
-      url: 'https://jmgitau2027.co.ke/jm-gitau-hero-banner.jpg',
+      url: getAbsoluteUrl('/jm-gitau-hero-banner.jpg'),
       alt: 'J.M. Gitau - Naivasha Constituency MP Candidate 2027',
     }],
   },

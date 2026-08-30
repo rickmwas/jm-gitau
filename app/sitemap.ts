@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
 import { NAIVASHA_WARDS } from '@/lib/campaignData';
+import { getBaseUrl } from '@/lib/seo';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://jmgitau2027.co.ke';
+  const baseUrl = getBaseUrl();
 
   const routes = [
     '',
